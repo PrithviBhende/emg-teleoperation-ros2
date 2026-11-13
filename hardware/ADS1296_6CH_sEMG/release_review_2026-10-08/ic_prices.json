@@ -1,0 +1,444 @@
+{
+  "checked_date": "2026-10-08",
+  "research_clock_utc": "2026-10-08 08:59:31 UTC",
+  "scope": "ADS1296 RevA4 TinySocket CapFix ICs, power protection, switch and MCU socket headers; no purchases or board edits",
+  "warning": "Prices are observed supplier listings, not a landed quotation or delivery guarantee. Fresh page retrieval is distinguished from supplier search snippets. Reconfirm exact MPN, stock, tax, shipping and delivery postcode in checkout before ordering. Cached stock was repeatedly contradicted by refreshed pages, so obsolete cached stock is not a purchase recommendation.",
+  "supplier_terms": {
+    "DigiKey India": {
+      "shipping_inr_under_7000_order": 1200,
+      "free_shipping_order_threshold_inr": 7000,
+      "delivery_statement": "Typically delivered to India within 4 days depending on location; not a guarantee",
+      "tax_import_terms": "CPT: duty, customs and VAT due at delivery; displayed unit prices are not landed totals",
+      "small_quantity_packaging": "Choose Cut Tape, not Digi-Reel. Digi-Reel has additional INR452 reeling fee.",
+      "source_url": "https://www.digikey.in/en/products/detail/onsemi/SS14/965474",
+      "evidence": "Direct product page refreshed today"
+    },
+    "Mouser India": {
+      "shipping_inr": 1200,
+      "tax_import_terms": "Homepage states Standard Invoice INR/USD card orders use FCA and duties/customs/taxes are due at delivery. GST Business Invoice with valid GSTIN uses DDP and GST appears at checkout; confirm eligibility and final quotation.",
+      "source_url": "https://www.mouser.in/",
+      "evidence": "Supplier search listing crawled today; checkout not performed"
+    },
+    "Evelta": {
+      "tax_import_terms": "Part pages explicitly display ex-GST and inclusive-GST prices; shipping extra unless checkout says otherwise",
+      "delivery_statement": "LP5907 listing says usually 2-5 days; actual postcode and order deadline unverified",
+      "authorization": "Supplier claims original products; TI manufacturer-authorized status was not established"
+    },
+    "Hubtronics": {
+      "tax_import_terms": "Tiny Kit price explicitly includes 18% GST; shipping calculated at checkout",
+      "delivery_statement": "No delivery date confirmed for the user's postcode",
+      "authorization": "Exact Waveshare SKU listing verified; manufacturer authorization not established"
+    }
+  },
+  "authenticity_sources": [
+    {
+      "url": "https://www.ti.com/ordering-resources/faqs/purchasing-online/authorized-distributors.html?eloquaCampaignId=2759",
+      "finding": "TI lists Mouser and DigiKey in its current authorized network; Evelta, element14 and RS were not named in this current list. This does not imply any particular third-party seller's stock is counterfeit, but TI-authorized supply-chain verification cannot be assumed.",
+      "evidence": "Official TI manufacturer listing retrieved 2026-10-08; search crawl 3 weeks ago"
+    }
+  ],
+  "parts": [
+    {
+      "mpn": "ADS1296IPAG",
+      "manufacturer": "Texas Instruments",
+      "package": "64-pin TQFP, PAG, 10x10mm body",
+      "required_qty": 1,
+      "optional_spare_qty": 1,
+      "manufacturer_url": "https://www.ti.com/product/ADS1296/part-details/ADS1296IPAG",
+      "sources": [
+        {
+          "seller": "Mouser India",
+          "seller_part": "595-ADS1296IPAG",
+          "url": "https://www.mouser.in/en/ProductDetail/Texas-Instruments/ADS1296IPAG?qs=sGAEpiMZZMtgJDuTUz7Xu9XaB9kOWLvLwc8sBR0S0tA%3D",
+          "currency": "INR",
+          "unit_price_qty1": 4429.78,
+          "subtotal_required_qty": 4429.78,
+          "subtotal_with_one_spare": 8859.56,
+          "moq": 1,
+          "order_multiple": 1,
+          "displayed_stock": 100,
+          "factory_lead_time_weeks": 9,
+          "tax_basis": "Not confirmed inclusive; shipping/customs/tax extra according to checkout/invoice option",
+          "evidence": "Exact supplier search listing crawled last month; direct product open failed. Price and stock MUST be reconfirmed live in browser/checkout before committing. Older category snippet INR4054.26/150stock was excluded as stale.",
+          "purchase_status": "Candidate only; live checkout confirmation required"
+        },
+        {
+          "seller": "DigiKey USA global inventory comparison",
+          "seller_part": "296-27933-ND",
+          "url": "https://www.digikey.com/en/products/detail/texas-instruments/ADS1296IPAG/2440836",
+          "currency": "USD",
+          "unit_price_qty1": 47.54,
+          "subtotal_required_qty": 47.54,
+          "displayed_stock": 140,
+          "factory_lead_time_weeks": 12,
+          "moq": 1,
+          "package_type": "Tray",
+          "evidence": "Direct product page plus stock find refreshed today; DigiKey India exact page could not be retrieved",
+          "purchase_status": "Inventory cross-check, NOT an INR landed quote; no guessed currency conversion"
+        },
+        {
+          "seller": "TI direct",
+          "url": "https://www.ti.com/product/ADS1296/part-details/ADS1296IPAG",
+          "displayed_stock": 0,
+          "unit_price_qty1": null,
+          "evidence": "Official manufacturer direct listing states out of stock; price unavailable"
+        }
+      ]
+    },
+    {
+      "mpn": "LP5907MFX-3.3/NOPB",
+      "manufacturer": "Texas Instruments",
+      "package": "SOT-23-5",
+      "required_qty": 1,
+      "value": "3.3V fixed LDO, 250mA",
+      "sources": [
+        {
+          "seller": "Evelta",
+          "seller_part": "035-LP5907MFX-3.3/NOPB",
+          "url": "https://evelta.com/texas-instruments-lp5907mfx-3-3-nopb-fixed-ldo-voltage-regulator-3-3vout/",
+          "currency": "INR",
+          "unit_price_qty1_ex_gst": 14.50,
+          "unit_price_qty1_inc_gst": 17.11,
+          "subtotal_required_qty_inc_gst": 17.11,
+          "displayed_stock": 155,
+          "moq": 1,
+          "evidence": "Direct exact product page crawled 4 days ago; displayed 155 in stock and 2-5 day typical delivery",
+          "purchase_status": "Lowest exact local listing found; confirm stock and accept non-TI-authorized sourcing risk before ordering"
+        },
+        {
+          "seller": "Mouser India",
+          "url": "https://www.mouser.in/en/c/power/power-management-ics/ldo-voltage-regulators/?series=LP5907",
+          "currency": "INR",
+          "unit_price_qty1": 63.06,
+          "displayed_stock": 97160,
+          "moq": 1,
+          "evidence": "Supplier series/category exact-MPN listing crawled 4 days ago; tax and stock reconfirm at checkout",
+          "purchase_status": "TI-authorized sourcing option"
+        },
+        {
+          "seller": "element14 India",
+          "seller_part": "3122291",
+          "url": "https://in.element14.com/texas-instruments/lp5907mfx-3-3-nopb/ldo-fixed-3-3v-0-25a-sot-23-5/dp/3122291",
+          "currency": "INR",
+          "unit_price_qty1": 60.84,
+          "displayed_stock": 20223,
+          "moq": 1,
+          "delivery_statement": "UK stock, 4-6 business days per listing",
+          "tax_basis": "GST inclusion not explicit in extracted page; final checkout required",
+          "evidence": "Direct exact listing retrieved; original crawl 4 days ago"
+        },
+        {
+          "seller": "RS India",
+          "url": "https://in.rsdelivers.com/product/texas-instruments/lp5907mfx-33/nopb/texas-instruments-lp5907mfx-33/nopb-voltage-regulator-55v-sot-23-5-5-pin/2264862",
+          "currency": "INR",
+          "unit_price_ex_gst": 45.43,
+          "moq": 25,
+          "minimum_order_total_ex_gst": 1135.75,
+          "minimum_order_total_inc_gst": 1340.19,
+          "stock_status": "Stock temporarily unavailable",
+          "purchase_status": "Not an order-ready one-piece option"
+        }
+      ]
+    },
+    {
+      "mpn": "TPD4E001DBVR",
+      "manufacturer": "Texas Instruments",
+      "package": "Standard DBV SOT-23-6; DO NOT substitute reverse-pinout RDBVR",
+      "required_qty": 7,
+      "release_blocker": "No order-ready stock verified at TI, Mouser or DigiKey for the two-week deadline",
+      "sources": [
+        {
+          "seller": "Mouser India",
+          "url": "https://www.mouser.in/en/ProductDetail/Texas-Instruments/TPD4E001DBVR?qs=TeC8nwD7mVpPZhmkNxkg4A%3D%3D",
+          "currency": "INR",
+          "unit_price_qty1": 64.01,
+          "subtotal_7_at_qty1_tier": 448.07,
+          "unit_price_qty10": 28.76,
+          "subtotal_order10": 287.60,
+          "moq": 1,
+          "displayed_stock": 0,
+          "incoming": "27476 expected 2027-01-01; other lots January/March 2027",
+          "factory_lead_time_weeks": 20,
+          "evidence": "Exact supplier listing crawled last week; out of stock",
+          "purchase_status": "Do not order for two-week deadline"
+        },
+        {
+          "seller": "DigiKey India",
+          "url": "https://www.digikey.in/en/products/detail/texas-instruments/TPD4E001DBVR/2523395",
+          "currency": "INR",
+          "unit_price_qty1": 64.02,
+          "subtotal_7_at_qty1_tier": 448.14,
+          "unit_price_qty10": 39.462,
+          "subtotal_order10": 394.62,
+          "displayed_stock": 0,
+          "incoming": "3000 expected 2027-01-04",
+          "factory_lead_time_weeks": 16,
+          "moq": 1,
+          "evidence": "Exact supplier listing; older related/category stock snippets were rejected as stale",
+          "purchase_status": "Do not order for two-week deadline"
+        },
+        {
+          "seller": "RS India",
+          "url": "https://in.rsdelivers.com/product/texas-instruments/tpd4e001dbvr/texas-instruments-tpd4e001dbvr-4-element-uni-esd-w/8120203",
+          "currency": "INR",
+          "moq": 25,
+          "unit_price_ex_gst": 19.82,
+          "minimum_order_total_ex_gst": 495.50,
+          "minimum_order_total_inc_gst": 584.69,
+          "stock_status": "Stock temporarily unavailable; delivery check required",
+          "purchase_status": "Do not treat as stock-backed offer"
+        },
+        {
+          "seller": "TI direct",
+          "url": "https://www.ti.com/product/TPD4E001/part-details/TPD4E001DBVR",
+          "displayed_stock": 0,
+          "unit_price_qty1": null,
+          "evidence": "Official exact direct part page retrieved, crawl yesterday, explicitly out of stock"
+        }
+      ]
+    },
+    {
+      "mpn": "ESP32-S3-Tiny-Kit",
+      "manufacturer": "Waveshare",
+      "manufacturer_sku": "27070",
+      "required_qty": 1,
+      "value": "Original ESP32-S3FH4R2 version, 4MB flash and 2MB PSRAM",
+      "manufacturer_url": "https://docs.waveshare.com/ESP32-S3-Tiny",
+      "sources": [
+        {
+          "seller": "Hubtronics",
+          "url": "https://hubtronics.in/esp32-s3-tiny-kit",
+          "currency": "INR",
+          "unit_price_qty1_ex_gst": 538.14,
+          "unit_price_qty1_inc_gst": 635.00,
+          "subtotal_required_qty_inc_gst": 635.00,
+          "displayed_stock": 34,
+          "moq": 1,
+          "contents": "1 Tiny MCU board + 1 USB-C adapter board + 1 FPC cable",
+          "evidence": "Exact SKU27070 direct product page refreshed today",
+          "purchase_status": "Exact local in-stock candidate; final shipping/date must be checked"
+        },
+        {
+          "seller": "Robu",
+          "url": "https://robu.in/product/waveshare-esp32-s3-mini-development-board-based-on-esp32-s3fh4r2-dual-core-processor-240mhz-running-frequency-usb-port-adapter-board-optional/",
+          "unit_price_qty1": null,
+          "displayed_stock": null,
+          "evidence": "Direct page only exposed navigation, not actual variant/price/stock. Historical screenshot INR759 and old snippets were not reused as current quotes.",
+          "purchase_status": "Cannot verify correct Kit variant or current price"
+        }
+      ]
+    },
+    {
+      "mpn": "M20-7820942",
+      "manufacturer": "Harwin",
+      "required_qty": 2,
+      "value": "Female vertical socket, 1x9, 2.54mm pitch, 8.5mm housing height, 3mm THT tails, accepts 0.64mm square mating pin",
+      "manufacturer_url": "https://www.harwin.com/products/M20-7820942",
+      "status_note": "NOT proven obsolete: official current product page and fresh DigiKey listing show active. A 2019 notification PDF included 'parts still active' and was initially misread; obsolete claim was withdrawn.",
+      "sources": [
+        {
+          "seller": "DigiKey India",
+          "url": "https://www.digikey.in/en/products/detail/harwin-inc/M20-7820942/3919444",
+          "currency": "INR",
+          "unit_price_qty1": 178.68,
+          "subtotal_required_qty": 357.36,
+          "displayed_stock": 1471,
+          "moq": 1,
+          "factory_lead_time_weeks": 22,
+          "evidence": "Direct exact product page refreshed today; factory lead time does not apply to displayed available stock"
+        }
+      ],
+      "cheaper_conditional_options": [
+        {
+          "mpn": "PPPC091LFBN-RC",
+          "manufacturer": "Sullins Connector Solutions",
+          "unit_price_qty1_inr": 62.11,
+          "displayed_stock": 11701,
+          "source_url": "https://www.digikey.in/en/products/detail/harwin-inc/M20-7820942/3919444",
+          "evidence": "Displayed by DigiKey as Similar substitute; own mechanical drawing not verified",
+          "status": "NOT approved replacement: verify same socket height, THT pin/drill fit, mating-pin length and MCU bottom-side component clearance"
+        },
+        {
+          "description": "Female 1x20 Berg strip 2.54mm pitch",
+          "seller": "Robu",
+          "unit_price_listing_inr": 5,
+          "source_url": "https://robu.in/product/female-1-x-20-berg-strip-connector-2-54-mm-pitch/",
+          "evidence": "Supplier category listing crawled yesterday showed INR5; own page failed to expose stock/dimensions",
+          "status": "Unapproved generic budget option; 0.64mm mating specification, 8.5mm height, cuttability and stock not verified. Do not buy as guaranteed dimensional replacement. Female strips may lose a contact when cut."
+        }
+      ]
+    },
+    {
+      "mpn": "M20-9990945",
+      "manufacturer": "Harwin",
+      "required_qty": 2,
+      "value": "Male straight vertical header, 1x9, 2.54mm pitch, 0.64mm square pin, 6.1mm mating length, 3mm THT tail",
+      "manufacturer_url": "https://www.harwin.com/products/M20-9990945",
+      "sources": [
+        {
+          "seller": "Mouser India",
+          "url": "https://www.mouser.in/en/ProductDetail/Harwin/M20-9990945?qs=ulE8k0yEMYbS6Ii%2FrXEOUQ%3D%3D",
+          "currency": "INR",
+          "unit_price_qty1": 38.20,
+          "subtotal_required_qty": 76.40,
+          "displayed_stock": 1425,
+          "moq": 1,
+          "factory_lead_time_weeks": 11,
+          "evidence": "Exact supplier search listing crawled last month; direct open unavailable. Manufacturer drawing overrides contradictory seller title metadata describing horizontal/tin. Checkout confirmation required."
+        }
+      ]
+    },
+    {
+      "mpn": "JS102011SAQN",
+      "manufacturer": "C&K/Littelfuse",
+      "required_qty": 1,
+      "value": "SPDT On-On SMD right-angle slide switch, 300mA at 6V DC",
+      "sources": [
+        {
+          "seller": "DigiKey India",
+          "url": "https://www.digikey.in/en/products/detail/c-k/JS102011SAQN/1640095",
+          "currency": "INR",
+          "unit_price_qty1": 86.00,
+          "subtotal_required_qty": 86.00,
+          "moq": 1,
+          "package_type": "Cut Tape",
+          "displayed_stock": 54148,
+          "factory_lead_time_weeks": 14,
+          "evidence": "Exact direct product page refreshed today"
+        },
+        {
+          "seller": "element14 India",
+          "url": "https://in.element14.com/c-k-components/js102011saqn/switch-spdt-0-6a-6vdc-side-smd/dp/2320017",
+          "currency": "INR",
+          "moq": 10,
+          "order_multiple": 10,
+          "unit_price_at_moq": 68.50,
+          "minimum_order_total": 685.00,
+          "displayed_stock": 7609,
+          "delivery_statement": "4-6 business days UK stock",
+          "tax_basis": "Not explicit in extracted offer; confirm GST at checkout",
+          "evidence": "Exact direct product page; crawler date last month",
+          "purchase_status": "Lower unit price but ten-piece MOQ costs more for one board"
+        }
+      ]
+    },
+    {
+      "mpn": "MF-MSMF075-2",
+      "manufacturer": "Bourns",
+      "required_qty": 1,
+      "value": "1812 PPTC resettable fuse, 750mA hold, 1.5A trip, 13.2V maximum",
+      "status_note": "DigiKey explicitly Not For New Designs; stock available. Consider a reviewed active replacement for long-term production, not a silent footprint change.",
+      "sources": [
+        {
+          "seller": "DigiKey India",
+          "url": "https://www.digikey.in/en/products/detail/bourns-inc/MF-MSMF075-2/662843",
+          "currency": "INR",
+          "unit_price_qty1": 36.31,
+          "subtotal_required_qty": 36.31,
+          "moq": 1,
+          "package_type": "Cut Tape",
+          "displayed_stock": 43179,
+          "evidence": "Exact direct product page refreshed today"
+        }
+      ]
+    },
+    {
+      "mpn": "AO3401A",
+      "manufacturer": "Alpha & Omega Semiconductor",
+      "required_qty": 1,
+      "value": "P-channel 30V MOSFET, SOT-23-3; buy the AOS manufacturer, not an assumed same-name clone",
+      "sources": [
+        {
+          "seller": "DigiKey India",
+          "url": "https://www.digikey.in/en/products/detail/alpha-omega-semiconductor-inc/AO3401A/1855773",
+          "currency": "INR",
+          "unit_price_qty1": 49.69,
+          "subtotal_required_qty": 49.69,
+          "moq": 1,
+          "package_type": "Cut Tape",
+          "displayed_stock": 369825,
+          "evidence": "Exact AOS direct product page refreshed today; lower similar substitutes not adopted"
+        }
+      ]
+    },
+    {
+      "mpn": "SS14",
+      "required_qty": 1,
+      "value": "40V 1A Schottky rectifier, SMA DO-214AC; package must NOT be SOD-123 SS14W",
+      "sources": [
+        {
+          "seller": "DigiKey India",
+          "manufacturer": "onsemi",
+          "url": "https://www.digikey.in/en/products/detail/onsemi/SS14/965474",
+          "currency": "INR",
+          "unit_price_qty1": 42.04,
+          "subtotal_required_qty": 42.04,
+          "moq": 1,
+          "package_type": "Cut Tape",
+          "displayed_stock": 160877,
+          "factory_stock": 525000,
+          "factory_lead_time_weeks": 24,
+          "evidence": "Direct onsemi exact SMA product page refreshed today; use DigiKey in-stock pool rather than waiting factory lead time"
+        },
+        {
+          "seller": "Evelta",
+          "manufacturer": "JD",
+          "url": "https://evelta.com/ss14-sma-40v-1a-schottky-rectifier-diode-2pin-do-214ac/",
+          "currency": "INR",
+          "unit_price_qty1_ex_gst": 2.50,
+          "unit_price_qty1_inc_gst": 2.95,
+          "stock_status": "Extracted page says 'in stock Sold Out' and lacks a stock count; treat unavailable/ambiguous, not ready to order",
+          "evidence": "Exact direct supplier page refreshed today",
+          "purchase_status": "Cheaper listing but manufacturer changed and stock ambiguous; not a verified substitute purchase"
+        }
+      ]
+    }
+  ],
+  "protection_alternatives_not_approved": [
+    {
+      "mpn": "TPD4E001QDBVRQ1",
+      "manufacturer": "Texas Instruments",
+      "package": "DBV SOT-23-6",
+      "url": "https://www.digikey.in/en/products/detail/texas-instruments/TPD4E001QDBVRQ1/4209303",
+      "unit_price_qty1_inr": 111.79,
+      "unit_price_qty10_inr": 70.134,
+      "subtotal_order10_inr": 701.34,
+      "displayed_stock": 0,
+      "incoming": "3000 expected 2026-12-23",
+      "manufacturer_url": "https://www.ti.com/product/TPD4E001-Q1/part-details/TPD4E001QDBVRQ1",
+      "evidence": "DigiKey exact direct page refreshed today; TI direct also out of stock. Cached search stock claims 3312 or 20506 were explicitly rejected.",
+      "technical_warning": "TI maximum leakage is 10nA vs 1nA for catalog part; pin/electrical check required even if stock becomes available",
+      "status": "Not viable for deadline from verified sources"
+    },
+    {
+      "mpn": "TPD4E1U06DBVR",
+      "manufacturer": "Texas Instruments",
+      "url": "https://www.digikey.in/en/products/detail/texas-instruments/TPD4E1U06DBVR/3929533",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf",
+      "package": "DBV SOT-23-6",
+      "unit_price_qty1_inr": 89.82,
+      "subtotal_7_at_qty1_tier_inr": 628.74,
+      "unit_price_qty10_inr": 56.088,
+      "subtotal_order10_inr": 560.88,
+      "moq": 1,
+      "displayed_stock": 28716,
+      "factory_lead_time_weeks": 12,
+      "evidence": "Exact DigiKey India page refreshed today; TI TPD4E001 part page explicitly describes it as pin-to-pin compatible",
+      "manufacturer_compatibility_source": "https://www.ti.com/product/TPD4E001/part-details/TPD4E001DBVR",
+      "technical_warning": "Pin-to-pin does NOT mean electrically equivalent: no assumption that its clamp topology protects ADS1296 inputs identically. Parent design review must verify pin2/pin5 functions, leakage, clamping, failure limits and circuit bias before any substitution.",
+      "status": "Stock-backed alternative for engineering review ONLY; not yet approved for current PCB"
+    },
+    {
+      "mpn": "DT1042-04SO-7",
+      "manufacturer": "Diodes Incorporated",
+      "url": "https://www.digikey.in/en/products/detail/diodes-incorporated/DT1042-04SO-7/4457877",
+      "unit_price_qty1_inr": 40.13,
+      "unit_price_qty10_inr": 24.747,
+      "subtotal_order10_inr": 247.47,
+      "displayed_stock": 127652,
+      "factory_lead_time_weeks": 40,
+      "evidence": "Exact direct product page refreshed today; shown as a similar part elsewhere",
+      "status": "Not approved: exact low-leakage behavior and pinout not audited; stock alone does not prove EMG suitability"
+    }
+  ]
+}

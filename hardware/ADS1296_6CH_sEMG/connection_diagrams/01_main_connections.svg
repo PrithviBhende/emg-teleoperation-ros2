@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1750" viewBox="0 0 2400 1750">
+<rect width="100%" height="100%" fill="#f3f6f9"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif}path,line,rect{stroke-linejoin:round;stroke-linecap:round}</style>
+<text x="55" y="65" font-size="40" fill="#172d41" font-weight="700" text-anchor="start">How the electrodes connect to the computer</text>
+<text x="55" y="108" font-size="23" fill="#526778" font-weight="400" text-anchor="start">Start at the left. Each channel has a + and − electrode wire; the ADS1296 converts them to digital readings.</text>
+<rect x="40" y="145" width="850" height="1235" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="65" y="185" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">1  Electrode inputs and RC filters</text>
+<rect x="1020" y="210" width="325" height="1100" rx="15" fill="#e8f1f8" stroke="#7a9caf" stroke-width="2"/>
+<text x="1182" y="190" font-size="30" fill="#172d41" font-weight="700" text-anchor="middle">U1 · ADS1296</text>
+<text x="1182" y="1340" font-size="20" fill="#526778" font-weight="400" text-anchor="middle">6 simultaneous channels</text>
+<text x="1182" y="1369" font-size="20" fill="#526778" font-weight="400" text-anchor="middle">4,000 samples/s / channel</text>
+<rect x="1925" y="305" width="430" height="955" rx="15" fill="#e8f4ee" stroke="#71a288" stroke-width="2"/>
+<text x="2140" y="356" font-size="29" fill="#172d41" font-weight="700" text-anchor="middle">A1 · Waveshare</text>
+<text x="2140" y="393" font-size="29" fill="#172d41" font-weight="700" text-anchor="middle">ESP32-S3-Tiny</text>
+<text x="2140" y="430" font-size="21" fill="#526778" font-weight="400" text-anchor="middle">Removable socket assembly</text>
+<text x="70" y="228" font-size="24" fill="#172d41" font-weight="700" text-anchor="start">CH1  /  J2</text>
+<text x="70" y="292" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 1  +</text>
+<polyline points="175,285 225,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,285 240,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="272" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,285 340,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="261" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R111 · 22 kΩ</text>
+<polyline points="340,285 485,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="285" r="5" fill="#2177ae"/>
+<polyline points="485,285 500,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="272" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,285 600,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="261" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R113 · 24.9 kΩ</text>
+<polyline points="600,285 1020,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="292" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">16  IN1P</text>
+<text x="70" y="359" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 2  −</text>
+<polyline points="175,352 225,352" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,352 240,352" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="339" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,352 340,352" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="328" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R112 · 22 kΩ</text>
+<polyline points="340,352 485,352" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="352" r="5" fill="#2177ae"/>
+<polyline points="485,352 500,352" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="339" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,352 600,352" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="328" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R114 · 24.9 kΩ</text>
+<polyline points="600,352 1020,352" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="359" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">15  IN1N</text>
+<polyline points="720,285 720,311.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,311.5 735,311.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,325.5 735,325.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="720,325.5 720,352" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="743" y="324.5" font-size="19" fill="#172d41" font-weight="400" text-anchor="start">C111  1.8 nF</text>
+<circle cx="720" cy="285" r="5" fill="#178064"/>
+<circle cx="720" cy="352" r="5" fill="#178064"/>
+<text x="350" y="389" font-size="18" fill="#526778" font-weight="400" text-anchor="start">U3 protection connects at the dots → picture 03</text>
+<text x="70" y="377" font-size="18" fill="#526778" font-weight="400" text-anchor="start">pin 3: NC</text>
+<text x="70" y="405" font-size="24" fill="#172d41" font-weight="700" text-anchor="start">CH2  /  J3</text>
+<text x="70" y="469" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 1  +</text>
+<polyline points="175,462 225,462" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,462 240,462" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="449" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,462 340,462" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="438" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R121 · 22 kΩ</text>
+<polyline points="340,462 485,462" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="462" r="5" fill="#2177ae"/>
+<polyline points="485,462 500,462" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="449" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,462 600,462" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="438" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R123 · 24.9 kΩ</text>
+<polyline points="600,462 1020,462" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="469" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">14  IN2P</text>
+<text x="70" y="536" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 2  −</text>
+<polyline points="175,529 225,529" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,529 240,529" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="516" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,529 340,529" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="505" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R122 · 22 kΩ</text>
+<polyline points="340,529 485,529" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="529" r="5" fill="#2177ae"/>
+<polyline points="485,529 500,529" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="516" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,529 600,529" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="505" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R124 · 24.9 kΩ</text>
+<polyline points="600,529 1020,529" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="536" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">13  IN2N</text>
+<polyline points="720,462 720,488.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,488.5 735,488.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,502.5 735,502.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="720,502.5 720,529" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="743" y="501.5" font-size="19" fill="#172d41" font-weight="400" text-anchor="start">C121  1.8 nF</text>
+<circle cx="720" cy="462" r="5" fill="#178064"/>
+<circle cx="720" cy="529" r="5" fill="#178064"/>
+<text x="350" y="566" font-size="18" fill="#526778" font-weight="400" text-anchor="start">U4 protection connects at the dots → picture 03</text>
+<text x="70" y="554" font-size="18" fill="#526778" font-weight="400" text-anchor="start">pin 3: NC</text>
+<text x="70" y="582" font-size="24" fill="#172d41" font-weight="700" text-anchor="start">CH3  /  J4</text>
+<text x="70" y="646" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 1  +</text>
+<polyline points="175,639 225,639" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,639 240,639" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="626" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,639 340,639" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="615" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R131 · 22 kΩ</text>
+<polyline points="340,639 485,639" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="639" r="5" fill="#2177ae"/>
+<polyline points="485,639 500,639" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="626" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,639 600,639" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="615" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R133 · 24.9 kΩ</text>
+<polyline points="600,639 1020,639" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="646" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">12  IN3P</text>
+<text x="70" y="713" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 2  −</text>
+<polyline points="175,706 225,706" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,706 240,706" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="693" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,706 340,706" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="682" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R132 · 22 kΩ</text>
+<polyline points="340,706 485,706" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="706" r="5" fill="#2177ae"/>
+<polyline points="485,706 500,706" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="693" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,706 600,706" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="682" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R134 · 24.9 kΩ</text>
+<polyline points="600,706 1020,706" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="713" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">11  IN3N</text>
+<polyline points="720,639 720,665.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,665.5 735,665.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,679.5 735,679.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="720,679.5 720,706" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="743" y="678.5" font-size="19" fill="#172d41" font-weight="400" text-anchor="start">C131  1.8 nF</text>
+<circle cx="720" cy="639" r="5" fill="#178064"/>
+<circle cx="720" cy="706" r="5" fill="#178064"/>
+<text x="350" y="743" font-size="18" fill="#526778" font-weight="400" text-anchor="start">U5 protection connects at the dots → picture 03</text>
+<text x="70" y="731" font-size="18" fill="#526778" font-weight="400" text-anchor="start">pin 3: NC</text>
+<text x="70" y="759" font-size="24" fill="#172d41" font-weight="700" text-anchor="start">CH4  /  J5</text>
+<text x="70" y="823" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 1  +</text>
+<polyline points="175,816 225,816" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,816 240,816" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="803" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,816 340,816" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="792" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R141 · 22 kΩ</text>
+<polyline points="340,816 485,816" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="816" r="5" fill="#2177ae"/>
+<polyline points="485,816 500,816" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="803" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,816 600,816" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="792" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R143 · 24.9 kΩ</text>
+<polyline points="600,816 1020,816" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="823" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">10  IN4P</text>
+<text x="70" y="890" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 2  −</text>
+<polyline points="175,883 225,883" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,883 240,883" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="870" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,883 340,883" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="859" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R142 · 22 kΩ</text>
+<polyline points="340,883 485,883" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="883" r="5" fill="#2177ae"/>
+<polyline points="485,883 500,883" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="870" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,883 600,883" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="859" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R144 · 24.9 kΩ</text>
+<polyline points="600,883 1020,883" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="890" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">9  IN4N</text>
+<polyline points="720,816 720,842.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,842.5 735,842.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,856.5 735,856.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="720,856.5 720,883" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="743" y="855.5" font-size="19" fill="#172d41" font-weight="400" text-anchor="start">C141  1.8 nF</text>
+<circle cx="720" cy="816" r="5" fill="#178064"/>
+<circle cx="720" cy="883" r="5" fill="#178064"/>
+<text x="350" y="920" font-size="18" fill="#526778" font-weight="400" text-anchor="start">U6 protection connects at the dots → picture 03</text>
+<text x="70" y="908" font-size="18" fill="#526778" font-weight="400" text-anchor="start">pin 3: NC</text>
+<text x="70" y="936" font-size="24" fill="#172d41" font-weight="700" text-anchor="start">CH5  /  J6</text>
+<text x="70" y="1000" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 1  +</text>
+<polyline points="175,993 225,993" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,993 240,993" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="980" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,993 340,993" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="969" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R151 · 22 kΩ</text>
+<polyline points="340,993 485,993" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="993" r="5" fill="#2177ae"/>
+<polyline points="485,993 500,993" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="980" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,993 600,993" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="969" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R153 · 24.9 kΩ</text>
+<polyline points="600,993 1020,993" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="1000" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">8  IN5P</text>
+<text x="70" y="1067" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 2  −</text>
+<polyline points="175,1060 225,1060" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,1060 240,1060" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="1047" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,1060 340,1060" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="1036" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R152 · 22 kΩ</text>
+<polyline points="340,1060 485,1060" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="1060" r="5" fill="#2177ae"/>
+<polyline points="485,1060 500,1060" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="1047" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,1060 600,1060" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="1036" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R154 · 24.9 kΩ</text>
+<polyline points="600,1060 1020,1060" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="1067" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">7  IN5N</text>
+<polyline points="720,993 720,1019.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,1019.5 735,1019.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,1033.5 735,1033.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="720,1033.5 720,1060" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="743" y="1032.5" font-size="19" fill="#172d41" font-weight="400" text-anchor="start">C151  1.8 nF</text>
+<circle cx="720" cy="993" r="5" fill="#178064"/>
+<circle cx="720" cy="1060" r="5" fill="#178064"/>
+<text x="350" y="1097" font-size="18" fill="#526778" font-weight="400" text-anchor="start">U7 protection connects at the dots → picture 03</text>
+<text x="70" y="1085" font-size="18" fill="#526778" font-weight="400" text-anchor="start">pin 3: NC</text>
+<text x="70" y="1113" font-size="24" fill="#172d41" font-weight="700" text-anchor="start">CH6  /  J7</text>
+<text x="70" y="1177" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 1  +</text>
+<polyline points="175,1170 225,1170" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,1170 240,1170" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="1157" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,1170 340,1170" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="1146" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R161 · 22 kΩ</text>
+<polyline points="340,1170 485,1170" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="1170" r="5" fill="#2177ae"/>
+<polyline points="485,1170 500,1170" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="1157" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,1170 600,1170" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="1146" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R163 · 24.9 kΩ</text>
+<polyline points="600,1170 1020,1170" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="1177" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">6  IN6P</text>
+<text x="70" y="1244" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 2  −</text>
+<polyline points="175,1237 225,1237" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="225,1237 240,1237" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="240" y="1224" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="325,1237 340,1237" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="282.5" y="1213" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R162 · 22 kΩ</text>
+<polyline points="340,1237 485,1237" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="412" cy="1237" r="5" fill="#2177ae"/>
+<polyline points="485,1237 500,1237" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="500" y="1224" width="85" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="585,1237 600,1237" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="542.5" y="1213" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R164 · 24.9 kΩ</text>
+<polyline points="600,1237 1020,1237" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1040" y="1244" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">5  IN6N</text>
+<polyline points="720,1170 720,1196.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,1196.5 735,1196.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="705,1210.5 735,1210.5" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="720,1210.5 720,1237" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="743" y="1209.5" font-size="19" fill="#172d41" font-weight="400" text-anchor="start">C161  1.8 nF</text>
+<circle cx="720" cy="1170" r="5" fill="#178064"/>
+<circle cx="720" cy="1237" r="5" fill="#178064"/>
+<text x="350" y="1274" font-size="18" fill="#526778" font-weight="400" text-anchor="start">U8 protection connects at the dots → picture 03</text>
+<text x="70" y="1262" font-size="18" fill="#526778" font-weight="400" text-anchor="start">pin 3: NC</text>
+<text x="1460" y="245" font-size="28" fill="#172d41" font-weight="700" text-anchor="start">2  Digital wires (SPI + control)</text>
+<text x="1322" y="487" font-size="19" fill="#172d41" font-weight="400" text-anchor="end">39  CS_N</text>
+<text x="1945" y="507" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">socket 5  /  GPIO2</text>
+<polyline points="1345,500 1530,500" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,500 1545,500" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="487" width="110" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1655,500 1670,500" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1600.0" y="476" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R33 · 33 Ω</text>
+<polyline points="1670,500 1925,500" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1322" y="579" font-size="19" fill="#172d41" font-weight="400" text-anchor="end">40  SCLK</text>
+<text x="1945" y="599" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">socket 18  /  GPIO12</text>
+<polyline points="1345,592 1530,592" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,592 1545,592" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="579" width="110" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1655,592 1670,592" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1600.0" y="568" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R31 · 33 Ω</text>
+<polyline points="1670,592 1925,592" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1322" y="671" font-size="19" fill="#172d41" font-weight="400" text-anchor="end">34  DIN / MOSI</text>
+<text x="1945" y="691" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">socket 4  /  GPIO1</text>
+<polyline points="1345,684 1530,684" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,684 1545,684" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="671" width="110" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1655,684 1670,684" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1600.0" y="660" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R32 · 33 Ω</text>
+<polyline points="1670,684 1925,684" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1322" y="763" font-size="19" fill="#172d41" font-weight="400" text-anchor="end">43  DOUT / MISO</text>
+<text x="1945" y="783" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">socket 17  /  GPIO13</text>
+<polyline points="1345,776 1530,776" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,776 1545,776" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="763" width="110" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1655,776 1670,776" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1600.0" y="752" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R34 · 33 Ω</text>
+<polyline points="1670,776 1925,776" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1322" y="855" font-size="19" fill="#172d41" font-weight="400" text-anchor="end">47  DRDY_N</text>
+<text x="1945" y="875" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">socket 16  /  GPIO14</text>
+<polyline points="1345,868 1925,868" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1322" y="947" font-size="19" fill="#172d41" font-weight="400" text-anchor="end">38  START</text>
+<text x="1945" y="967" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">socket 15  /  GPIO15</text>
+<polyline points="1345,960 1925,960" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1322" y="1039" font-size="19" fill="#172d41" font-weight="400" text-anchor="end">35  PWDN_N</text>
+<text x="1945" y="1059" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">socket 14  /  GPIO16</text>
+<polyline points="1345,1052 1925,1052" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1322" y="1131" font-size="19" fill="#172d41" font-weight="400" text-anchor="end">36  RESET_N</text>
+<text x="1945" y="1151" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">socket 13  /  GPIO17</text>
+<polyline points="1345,1144 1925,1144" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1410" y="1285" font-size="19" fill="#526778" font-weight="400" text-anchor="start">_N means the signal is active when LOW.</text>
+<rect x="40" y="1410" width="2315" height="245" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="65" y="1450" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">3  Power, bias and USB connections</text>
+<text x="70" y="1500" font-size="24" fill="#b94542" font-weight="400" text-anchor="start">J1: regulated 5 V → power circuit → VSYS → A1 socket 1</text>
+<text x="70" y="1544" font-size="24" fill="#b94542" font-weight="400" text-anchor="start">LP5907 (U2) → analog 3.3 V (AVDD) → ADS1296 + protection ICs</text>
+<text x="70" y="1588" font-size="24" fill="#b94542" font-weight="400" text-anchor="start">A1 socket 3 → digital 3.3 V (3V3_D) → ADS1296 digital supply</text>
+<text x="1395" y="1500" font-size="25" fill="#172d41" font-weight="700" text-anchor="start">Tiny FPC → kit USB-C adapter → PC / ML</text>
+<text x="1395" y="1544" font-size="24" fill="#178064" font-weight="400" text-anchor="start">J8 pin 1 ← RLD bias circuit (picture 03)</text>
+<text x="1395" y="1588" font-size="22" fill="#526778" font-weight="400" text-anchor="start">Power, pull resistors and capacitors: picture 02</text>
+<text x="55" y="1695" font-size="21" fill="#526778" font-weight="400" text-anchor="start">Filled dots are connections. Matching net names also connect. NC = leave unconnected. Protection branch details are expanded in picture 03.</text>
+<text x="55" y="1727" font-size="19" fill="#526778" font-weight="400" text-anchor="start">ADS1296 A4 TinySocket CapFix • electrical connections from the saved KiCad schematic • drawn pin positions are rearranged for clarity</text>
+</svg>

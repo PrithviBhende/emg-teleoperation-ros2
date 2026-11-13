@@ -1,0 +1,13 @@
+(fp_lib_table
+ (lib (name "Button_Switch_SMD")(type "KiCad")(uri "${KIPRJMOD}/footprints/Button_Switch_SMD.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "Capacitor_SMD")(type "KiCad")(uri "${KIPRJMOD}/footprints/Capacitor_SMD.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "Connector_JST")(type "KiCad")(uri "${KIPRJMOD}/footprints/Connector_JST.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "Diode_SMD")(type "KiCad")(uri "${KIPRJMOD}/footprints/Diode_SMD.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "EMG_A4S")(type "KiCad")(uri "${KIPRJMOD}/footprints/EMG_A4S.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "Fuse")(type "KiCad")(uri "${KIPRJMOD}/footprints/Fuse.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "MountingHole")(type "KiCad")(uri "${KIPRJMOD}/footprints/MountingHole.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "Package_QFP")(type "KiCad")(uri "${KIPRJMOD}/footprints/Package_QFP.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "Package_TO_SOT_SMD")(type "KiCad")(uri "${KIPRJMOD}/footprints/Package_TO_SOT_SMD.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "Resistor_SMD")(type "KiCad")(uri "${KIPRJMOD}/footprints/Resistor_SMD.pretty")(options "")(descr "Portable socket revision"))
+ (lib (name "TestPoint")(type "KiCad")(uri "${KIPRJMOD}/footprints/TestPoint.pretty")(options "")(descr "Portable socket revision"))
+)

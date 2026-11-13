@@ -1,0 +1,873 @@
+{
+  "passed": true,
+  "findings": [],
+  "checks": {
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "erc_violations": 0
+  },
+  "board_sha256": "adb9748b6987b523c18c6ec353b9b18b20cc3a62a4169fec022da6b388176e3e",
+  "outline_mm": [
+    100.0,
+    80.0
+  ],
+  "physical_references": 113,
+  "top_side_references": 109,
+  "back_side_references": [
+    "C14",
+    "C23",
+    "C27",
+    "R21"
+  ],
+  "vias_in_SMD_pads": [],
+  "track_count": 686,
+  "via_count": 122,
+  "track_layers": {
+    "F.Cu": 530,
+    "In2.Cu": 81,
+    "B.Cu": 75
+  },
+  "critical_capacitors": [
+    {
+      "ref": "C5",
+      "pin": 19,
+      "component_centre_to_ADC_pad_mm": 4.902,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 4.65389,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "84f0cd62-5fa0-494c-bbf6-c73c4e3f5533",
+          "fa5eb882-57da-48af-b9ae-053703767080"
+        ],
+        "node_count": 3,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        67.5,
+        77.45
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.3,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "476c9f64-1023-413a-b662-187c35878af7"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C6",
+      "pin": 21,
+      "component_centre_to_ADC_pad_mm": 4.068,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 3.332927,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "8c08703b-aea5-49c4-9d9a-7096d0b6865a",
+          "d6c414a6-4235-4813-88af-78fdc6cca55d"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        70.2,
+        77.45
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.3,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "5698b8a5-e1cc-4179-8dde-f13e8939fab3"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C7",
+      "pin": 22,
+      "component_centre_to_ADC_pad_mm": 5.602,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 5.395217,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "4138a531-7881-4a2b-9569-ad681a72fd79",
+          "4599ea88-de5c-4123-a590-e57f1a9c9916",
+          "8c08703b-aea5-49c4-9d9a-7096d0b6865a",
+          "d699501b-9fc3-4863-bec4-3660e28c34c6"
+        ],
+        "node_count": 8,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        71.8459,
+        80.0676
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 0.949977,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "a3a21e0d-9e91-4044-bbae-6f13ee4651f3"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C15",
+      "pin": 24,
+      "component_centre_to_ADC_pad_mm": 6.744,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 12.200056,
+        "via_count": 2,
+        "via_ids": [
+          "2995e852-f3d6-4020-90f4-3a6f5796a3a3",
+          "b5c17596-87b5-49d3-84da-d2c32290eda4"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1b86b101-00ec-4bed-bb17-b86752586e8c",
+          "23fbe169-537d-4712-9a37-82dc3651de39",
+          "24bccf0b-b258-4e1c-b9ca-c8f9ea4c6765",
+          "817302a8-5b61-468f-8416-c74def0c650c",
+          "b7de0cef-a351-4953-ab06-2bf7f676d856",
+          "d0eaf2dd-e655-4c9c-88a4-743c51b67548",
+          "dacb3458-d00d-406a-be5f-62d6f6a5d189"
+        ],
+        "node_count": 12,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        75.8459,
+        80.0676
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 0.949977,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "25549078-722c-4a09-bd37-7da84ce52247"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C20",
+      "pin": 26,
+      "component_centre_to_ADC_pad_mm": 1.988,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 2.381003,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "70b03d6f-eaed-4ef0-9e09-11ea6530b8a5",
+          "d1c0b0a3-9efe-4ef8-8302-141f33144d87"
+        ],
+        "node_count": 3,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        70.8824,
+        74.8959
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 0.949977,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "dcbe3272-df72-43bd-9588-94eab3b61061"
+        ],
+        "node_count": 3,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C17",
+      "pin": 28,
+      "component_centre_to_ADC_pad_mm": 7.363,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 7.814456,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "23627168-5deb-473d-a79e-dc182ede2dc8",
+          "2a227c0b-a375-4e07-8698-908b798c4534",
+          "407be321-6ea6-4206-8a4e-72eff91f3269",
+          "57b2043d-64ff-4ada-bf08-c0a05c48bff4",
+          "83465d2e-2506-4437-9a65-a34d2ec4d35b",
+          "bd63c7b7-bf82-4261-b05f-03ebede2664f",
+          "d2711f54-dfd0-450d-834e-fe0ead0f5bb6",
+          "f86a7355-9ec6-4574-ad9b-3c15f6a4a279"
+        ],
+        "node_count": 9,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        81.0,
+        77.95
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.3,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "8ffc5410-3a4a-4397-8183-8623b104b0b1"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C18",
+      "pin": 30,
+      "component_centre_to_ADC_pad_mm": 9.321,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 9.688816,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "157a800e-a31e-4730-9b21-d57ecfaf3f63",
+          "58f419fa-6437-422a-876a-7f814f28944b"
+        ],
+        "node_count": 3,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        84.3,
+        77.95
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.3,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "86b2caf2-9840-4ec8-8b1f-daaaf42b82cd"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C8",
+      "pin": 54,
+      "component_centre_to_ADC_pad_mm": 5.786,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 8.177196,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "09fa4397-6737-49be-b839-2315e411b66e",
+          "704d50b9-8bb4-4f58-99dc-5ceffd9d9fbb",
+          "d2bcf940-0807-48ae-8562-48d3d74b1bc9",
+          "e1e16dec-8dbd-425d-a2ed-6a7c5f952ce0"
+        ],
+        "node_count": 7,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        80.649999,
+        58.7
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.299999,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "d9e2d8c5-8e6d-43f1-9bec-439cbd7265a5"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C19",
+      "pin": 55,
+      "component_centre_to_ADC_pad_mm": 6.028,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 5.229565,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "0481ebee-3698-4699-8b1e-03d9c94016e2",
+          "e398bc7c-609e-4947-9e67-d72bdec2efe0"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        75.899999,
+        54.65
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.299999,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "58b9ab39-8c2c-44ba-99c7-0d387d182e5c"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C9",
+      "pin": 56,
+      "component_centre_to_ADC_pad_mm": 5.748,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 12.997377,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "08fa49e3-7392-4e6f-9559-837b33f62561",
+          "27d95445-57ea-44cb-87fd-b31c4ddb5da7",
+          "310a3312-0697-4e4e-afc0-36b738c0309e",
+          "3e6bcac6-cada-4d13-88d2-2e4a09f4c060",
+          "4052a7a1-b049-4b48-9ea8-01adaede16a2",
+          "57e3a003-30ae-45c3-8275-d46ec3c79e11",
+          "6819188b-23e1-47e7-875e-dcb4f40909f9",
+          "7ffb0b61-33dd-46b4-99be-8daa0c18d7d1",
+          "a4a6e2b9-c57f-4fb9-a27d-edc444d4bbbf",
+          "c3079eb6-32aa-44e5-a7ef-058c1d58c664",
+          "d2bcf940-0807-48ae-8562-48d3d74b1bc9",
+          "d6083939-50c9-49c6-9d13-b071a4778f91"
+        ],
+        "node_count": 15,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        73.2,
+        54.65
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.3,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "9bf0b192-0686-427c-a3a5-2181a9e0e9c4"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C10",
+      "pin": 59,
+      "component_centre_to_ADC_pad_mm": 1.987,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 2.381003,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "4add7458-d3f5-4e80-b286-ec4fc46f4b7b",
+          "a98aeae2-2f99-4d61-9e9f-5aee7cf59102",
+          "f52db67d-a144-46aa-b862-0ad7f21f45e2"
+        ],
+        "node_count": 4,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        72.6176,
+        59.1041
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 0.949977,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "85b5ef61-ce34-4c58-a21f-7f809f0b7d1f"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C12",
+      "pin": 48,
+      "component_centre_to_ADC_pad_mm": 6.725,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 6.619696,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "4e59820f-e1bc-4ae0-868d-bc3e651526f1",
+          "bbf04df9-c01b-4359-b36f-1ee07b2d820a",
+          "c402aefa-d226-4aac-9960-41166e17f63c",
+          "f1ad3b50-27ee-45de-9f69-1eb6587cdec8"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        85.9,
+        61.0
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 0.95,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "a3a927b5-12cc-42cd-9d60-db5ba1d0c04b"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C13",
+      "pin": 50,
+      "component_centre_to_ADC_pad_mm": 8.648,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 14.148585,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "04644e61-3153-46b6-8110-be8c0d1a3d4a",
+          "153ef8b5-5193-43fd-935e-8fd3d6a03778",
+          "4e59820f-e1bc-4ae0-868d-bc3e651526f1",
+          "53bbd0df-e81e-489b-8b4c-0e0fc70bb584",
+          "b2eca961-0d23-4e9d-81ae-ec5f668fee12",
+          "bbf04df9-c01b-4359-b36f-1ee07b2d820a",
+          "bf768aaf-ec50-4f4d-af47-42cd3240bed7",
+          "c402aefa-d226-4aac-9960-41166e17f63c",
+          "f1ad3b50-27ee-45de-9f69-1eb6587cdec8",
+          "f43b0c29-125c-4d9c-89a9-07cc62b3f921"
+        ],
+        "node_count": 11,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        85.25,
+        57.5
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.3,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "abdc27c7-6150-4ae3-b14d-b3d081501ca5"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C21",
+      "pin": 64,
+      "component_centre_to_ADC_pad_mm": 5.261,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 4.439797,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "2e1629f8-e7fc-4641-ab95-7c9e3462bb1b",
+          "dcbf7cd4-2883-4528-a04e-fab49139d043"
+        ],
+        "node_count": 3,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        62.05,
+        62.3
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.3,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "7a9f116a-ac6c-4f42-a921-49e9b087d049"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C14",
+      "pin": 24,
+      "component_centre_to_ADC_pad_mm": 0.362,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 3.110292,
+        "via_count": 1,
+        "via_ids": [
+          "b5c17596-87b5-49d3-84da-d2c32290eda4"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "23fbe169-537d-4712-9a37-82dc3651de39",
+          "b7de0cef-a351-4953-ab06-2bf7f676d856",
+          "dacb3458-d00d-406a-be5f-62d6f6a5d189"
+        ],
+        "node_count": 6,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        72.5,
+        71.0443
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.449968,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "B.Cu"
+        ],
+        "track_ids": [
+          "597274c7-b2a2-4ef7-b394-f480f048fc03"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C16",
+      "pin": 28,
+      "component_centre_to_ADC_pad_mm": 12.08,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 14.827071,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "23627168-5deb-473d-a79e-dc182ede2dc8",
+          "2a227c0b-a375-4e07-8698-908b798c4534",
+          "407be321-6ea6-4206-8a4e-72eff91f3269",
+          "57b2043d-64ff-4ada-bf08-c0a05c48bff4",
+          "5c4e8249-1d81-4d95-af7e-771ace13c124",
+          "83465d2e-2506-4437-9a65-a34d2ec4d35b",
+          "949ff785-a4aa-494e-9afb-108c71c8e51e",
+          "b625c1bf-fb8d-47ae-9d1a-8ae14fe983d9",
+          "bd63c7b7-bf82-4261-b05f-03ebede2664f",
+          "bfbbf845-9c6f-4f02-906b-3456712ad0df",
+          "d2711f54-dfd0-450d-834e-fe0ead0f5bb6",
+          "e6c8462d-b317-4458-b237-1871c7cefeb5",
+          "f86a7355-9ec6-4574-ad9b-3c15f6a4a279"
+        ],
+        "node_count": 14,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        80.0,
+        85.774999
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.299999,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "2a226b95-8e19-469b-9999-27c02b93fe45"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C27",
+      "pin": 54,
+      "component_centre_to_ADC_pad_mm": 0.0,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 2.639461,
+        "via_count": 1,
+        "via_ids": [
+          "140cc126-4c3e-4618-be07-0e39d492a939"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "3df612f6-ca75-4f8b-9008-c0b730d99d45",
+          "5fb8733c-3e6e-4799-ba88-0f50ad73d620",
+          "de93cefa-8d22-4e93-b8b5-3c8f2e3ed638"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        74.2,
+        60.1375
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 1.2,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "B.Cu"
+        ],
+        "track_ids": [
+          "79a9be96-18e9-457d-8f57-d39ddd693079"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "ref": "C22",
+      "pin": 48,
+      "component_centre_to_ADC_pad_mm": 1.988,
+      "signal_route": {
+        "found": true,
+        "planar_centreline_mm": 2.381003,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "08661a83-6980-472f-bfa8-1df76dc4ad01",
+          "15c8ca19-2f68-42db-848b-aa72e634d9b7"
+        ],
+        "node_count": 3,
+        "unsupported_arc_ids": []
+      },
+      "ground_via": [
+        79.8959,
+        63.2176
+      ],
+      "ground_route": {
+        "found": true,
+        "planar_centreline_mm": 0.949977,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "93a3f08b-06c6-4bf3-afff-692cc2dcb933"
+        ],
+        "node_count": 2,
+        "unsupported_arc_ids": []
+      }
+    }
+  ],
+  "feedback": [
+    {
+      "terminal": "R21.1",
+      "ADC_pin": "63",
+      "route": {
+        "found": true,
+        "planar_centreline_mm": 2.515838,
+        "via_count": 1,
+        "via_ids": [
+          "ee34a537-3d39-4b36-896f-2411a5c2bdc5"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1680256f-5a36-4161-b368-c72ff6d98b0a",
+          "72072a84-482e-4cec-8b08-0105bb8f80e6",
+          "c04d58e1-7ff2-4173-94ec-165facae174c"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "terminal": "R21.2",
+      "ADC_pin": "61",
+      "route": {
+        "found": true,
+        "planar_centreline_mm": 2.550888,
+        "via_count": 1,
+        "via_ids": [
+          "5b22dac8-d2cc-4479-a6bc-eed219e92f16"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1234f21e-b5f0-4e1d-ba5e-34ff9e6e0e54",
+          "7b74089a-4ebb-424b-aa80-68da2690219f",
+          "a48f68ec-21e3-4792-9b4c-3cc780b8b795"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "terminal": "C23.1",
+      "ADC_pin": "63",
+      "route": {
+        "found": true,
+        "planar_centreline_mm": 3.965838,
+        "via_count": 1,
+        "via_ids": [
+          "ee34a537-3d39-4b36-896f-2411a5c2bdc5"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1680256f-5a36-4161-b368-c72ff6d98b0a",
+          "72072a84-482e-4cec-8b08-0105bb8f80e6",
+          "c04d58e1-7ff2-4173-94ec-165facae174c"
+        ],
+        "node_count": 6,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "terminal": "C23.2",
+      "ADC_pin": "61",
+      "route": {
+        "found": true,
+        "planar_centreline_mm": 4.653921,
+        "via_count": 1,
+        "via_ids": [
+          "5b22dac8-d2cc-4479-a6bc-eed219e92f16"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1234f21e-b5f0-4e1d-ba5e-34ff9e6e0e54",
+          "1dbefa01-d553-4ac7-85b6-fc2eac49dc63",
+          "4c690ba6-0a78-4ad5-a1eb-dcd2bf84cfe0",
+          "7b74089a-4ebb-424b-aa80-68da2690219f",
+          "a48f68ec-21e3-4792-9b4c-3cc780b8b795"
+        ],
+        "node_count": 7,
+        "unsupported_arc_ids": []
+      }
+    }
+  ],
+  "measurement_scope": "Explicit planar copper centreline lengths including pad travel; via depth and paths inside ground pours excluded. No physical tests."
+}

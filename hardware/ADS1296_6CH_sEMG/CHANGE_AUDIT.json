@@ -1,0 +1,33 @@
+{
+  "source_original_unchanged": true,
+  "source_sha256": "a352316d98a2f3175379c2efbbf76298d63867c1373ff33233f2cbea6a610967",
+  "final_sha256": "adb9748b6987b523c18c6ec353b9b18b20cc3a62a4169fec022da6b388176e3e",
+  "changed_placements": [
+    "C10",
+    "C12",
+    "C14",
+    "C15",
+    "C20",
+    "C22",
+    "C23",
+    "C27",
+    "C7",
+    "R21",
+    "R34"
+  ],
+  "restored_footprints": [
+    "C152"
+  ],
+  "existing_values_and_packages_preserved": true,
+  "original_copper_objects_preserved_exactly": 670,
+  "original_copper_objects": 773,
+  "removed_copper_objects": 103,
+  "new_copper_objects": 138,
+  "socket_position_unchanged": true,
+  "backside_parts": [
+    "C14",
+    "C23",
+    "C27",
+    "R21"
+  ]
+}

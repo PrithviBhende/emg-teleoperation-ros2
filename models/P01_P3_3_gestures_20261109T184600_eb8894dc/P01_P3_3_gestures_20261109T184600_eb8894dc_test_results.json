@@ -1,0 +1,703 @@
+{
+  "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+  "labels": [
+    "rest",
+    "index",
+    "fist"
+  ],
+  "results": [
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "A_RMS__LDA",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "A_RMS__SVM",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "A_RMS__KNN",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "B_MAV__LDA",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "B_MAV__SVM",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "B_MAV__KNN",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "C_WL__LDA",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "C_WL__SVM",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "C_WL__KNN",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "D_TD4__LDA",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 0.8,
+      "success_all_attempts": 0.8,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "D_TD4__SVM",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "D_TD4__KNN",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "E_ALL5__LDA",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 0.8,
+      "success_all_attempts": 0.8,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "E_ALL5__SVM",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "E_ALL5__KNN",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "F_MAV_MAX_MIN__LDA",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "F_MAV_MAX_MIN__SVM",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "F_MAV_MAX_MIN__KNN",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "G_TF8__LDA",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "G_TF8__SVM",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    },
+    {
+      "version": "P01_P3_3_gestures_20261109T184600_eb8894dc",
+      "method": "G_TF8__KNN",
+      "protocol": "manual_test_slider",
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "coverage": 1.0,
+      "success_all_attempts": 1.0,
+      "accepted_accuracy": 1.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "labels": [
+        "rest",
+        "index",
+        "fist"
+      ],
+      "trials": 5
+    }
+  ]
+}

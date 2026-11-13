@@ -1,0 +1,215 @@
+{
+  "audit_date_local": "2026-10-08",
+  "scope": "Independent digital-interface, removable MCU, project portability and acquisition-readiness audit. No PCB modification or physical test.",
+  "board": "ADS1296_RevA4_TinySocket.kicad_pcb",
+  "board_sha256": "adb9748b6987b523c18c6ec353b9b18b20cc3a62a4169fec022da6b388176e3e",
+  "release_status": "Digital hardware capability and nominal pin mapping verified; mechanical fit and end-to-end acquisition remain unqualified.",
+  "mcu": {
+    "specified_product": "Waveshare ESP32-S3-Tiny, ESP32-S3FH4R2",
+    "board_only_sku": "27069",
+    "kit_sku": "27070",
+    "kit_needed_for_proposed_native_usb": "Order the kit including its matching USB-C adapter and 8-contact 0.5 mm-pitch FPC cable, or acquire those exact matching accessories separately.",
+    "flash_MB": 4,
+    "psram_MB": 2,
+    "maximum_cpu_MHz": 240,
+    "body_dimensions_mm": [18, 23.5],
+    "native_usb": "GPIO19 D- and GPIO20 D+ through manufacturer FPC and separate Type-C adapter; there is no Type-C socket directly on the Tiny board itself.",
+    "pin_map_checked_against": "Actual saved PCB A1 pad nets, local manufacturer's pinout/dimension images, and official Waveshare schematic.",
+    "signal_map": [
+      {"signal": "CS_N", "gpio": 2, "socket_contact": 5, "ads_pin": 39, "series_resistor": "R33", "series_ohms": 33},
+      {"signal": "DIN_MOSI", "gpio": 1, "socket_contact": 4, "ads_pin": 34, "series_resistor": "R32", "series_ohms": 33},
+      {"signal": "SCLK", "gpio": 12, "socket_contact": 18, "ads_pin": 40, "series_resistor": "R31", "series_ohms": 33},
+      {"signal": "DOUT_MISO", "gpio": 13, "socket_contact": 17, "ads_pin": 43, "series_resistor": "R34", "series_ohms": 33},
+      {"signal": "DRDY_N", "gpio": 14, "socket_contact": 16, "ads_pin": 47},
+      {"signal": "START", "gpio": 15, "socket_contact": 15, "ads_pin": 38},
+      {"signal": "PWDN_N", "gpio": 16, "socket_contact": 14, "ads_pin": 35},
+      {"signal": "RESET_N", "gpio": 17, "socket_contact": 13, "ads_pin": 36}
+    ],
+    "restricted_pins_avoided": [0, 3, 19, 20, 26, 45, 46],
+    "psram_pin_conflict": false,
+    "gpio_matrix": "MOSI/CS are assigned via the ESP32-S3 GPIO matrix; official SPI documentation supports this at the planned 4 MHz.",
+    "supplier_documentation_caveat": "The current Waveshare Arduino prose mentions a USB hub/UART converter, whereas the SKU27069 official hardware schematic shows direct native USB without those devices. Match the purchased SKU to the schematic rather than applying generic prose or another Tiny revision's configuration."
+  },
+  "socket": {
+    "assembly": "Two 1x9 female sockets on carrier plus two 1x9 male headers soldered to Tiny side contacts.",
+    "pitch_mm": 2.54,
+    "row_centre_spacing_mm": 15.24,
+    "nominal_first_contact_offsets_mm": [1.38, 1.59],
+    "carrier_finished_drill_target_mm": 1.0,
+    "carrier_land_mm": 1.8,
+    "carrier_pad_count": 18,
+    "reference_female_part": "Harwin M20-7820942, quantity 2",
+    "reference_male_part": "Harwin M20-9990945, quantity 2",
+    "mapping_and_nominal_geometry_passed": true,
+    "mechanically_qualified": false,
+    "remaining_fit_checks": [
+      "Waveshare's published drawing does not specify the finished Tiny side-hole/castellation diameter and tolerance. Obtain vendor confirmation or inspect an actual board before claiming that 0.64 mm square male pins fit.",
+      "Check header housing clearance, flat seating and FPC connector/cable access on the purchased board.",
+      "The unkeyed socket must be inserted with Tiny 5V aligned to carrier A1 contact 1. Mechanical retention must prevent offset/reversed insertion."
+    ],
+    "deadline_fallback": "If header fit cannot be established, using correctly identified soldered wire connections can validate the electronics, but would not qualify the intended removable socket assembly."
+  },
+  "power_paths": {
+    "usb": "USB VBUS -> Tiny B5819WS diode -> Tiny VCC_5V / carrier VSYS -> carrier LP5907 analog regulator and Tiny onboard digital regulator.",
+    "external": "J1 regulated 5.0-5.25 V -> F1 -> Q1 -> D1 SS14 -> VSYS.",
+    "usb_to_external_input_backfeed_block": "Carrier D1 SS14",
+    "external_input_to_usb_vbus_backfeed_block": "Tiny manufacturer D1 B5819WS",
+    "analog_rail": "LP5907 3.3 V AVDD",
+    "digital_rail": "Tiny 3.3 V output -> ADS1296 DVDD",
+    "parallel_regulator_outputs": false,
+    "isolation_fitted": false,
+    "switch_scope": "SW1 switches only the J1 branch; USB can still power the device.",
+    "physical_startup_power_test_performed": false
+  },
+  "adc_transport_calculations": {
+    "channels": 6,
+    "nominal_samples_per_second_per_channel": 4000,
+    "sample_bits_per_channel": 24,
+    "status_bits_per_frame": 24,
+    "frame_bits": 168,
+    "frame_bytes": 21,
+    "nominal_raw_bytes_per_second": 84000,
+    "nominal_raw_bytes_per_hour": 302400000,
+    "nominal_drdy_period_us": 250,
+    "proposed_spi_clock_Hz": 4000000,
+    "spi_wire_time_us": 42,
+    "spi_wire_utilisation_percent": 16.8,
+    "ti_minimum_sclk_nominal_Hz_including_4tclk_margin": 677291.34,
+    "ti_spi_maximum_Hz_at_2_7_to_3_6V_DVDD": 20000000,
+    "spi_mode": 1,
+    "cpol": 0,
+    "cpha": 1,
+    "bit_order": "MSB first",
+    "channel_format": "Signed 24-bit two's-complement; sign-extend correctly on MCU/PC.",
+    "sample_rate_owner": "ADS1296 internal oscillator and CONFIG1, not an ESP32 timer. Actual measured rate may differ from nominal 4000.",
+    "example_CONFIG1": "0x83: HR mode, DR=011, clock output disabled, single-device daisy setting. An explicitly selected multiple-readback mode is also possible.",
+    "expected_ads1296_id_register": "0x91",
+    "normal_gain6_channel_setting": "CH1SET-CH6SET=0x00; gain bits 000 mean gain 6.",
+    "reference_requirement": "Explicitly enable internal reference and select 2.4 V; reset defaults do not enable the internal reference buffer.",
+    "timing_requirements": [
+      "Wait at least TI power-on interval 2^18/fCLK and until VCAP1 exceeds 1.1 V, whichever is longer, before reset/configuration.",
+      "Issue SDATAC before register access; read back ID and every written configuration register.",
+      "Use 2 MHz SPI for setup commands or explicit timing delays. TI's 4 MHz no-delay command example assumes exact 2.048 MHz master clock; 4tCLK can reach 2.056 us across its timing range.",
+      "Use adequate CS setup/hold, CS-high and command delays; 3 us margins cover the relevant 4tCLK/2tCLK requirements across the stated clock timing range.",
+      "During RDATAC frame read, transmit zero bytes on DIN and read exactly the selected 21 bytes.",
+      "Finish each conversion read before the next update interval; SPI wire time alone excludes ISR scheduling, driver and USB overhead.",
+      "Do not route other peripherals onto the same acquisition clock bus without accounting for DRDY clearing on SCLK."
+    ],
+    "capability_conclusion": "ESP32-S3 SPI and native USB capacity support this workload. That is a capacity calculation, not a measured lossless-capture result."
+  },
+  "software_inventory": {
+    "ads1296_esp32_capture_firmware_present": false,
+    "current_arduino_firmware": {
+      "file": "emg-detection-version-4/emg-detection-version-4.ino",
+      "target": "UNO R4 Minima / Arduino Due, BioAmp Shield A0",
+      "channels": 1,
+      "samples_per_second": 2000,
+      "transport": "115200 UART, five-byte packet containing signed 12-bit filtered signal and unsigned 12-bit envelope.",
+      "compatible_with_this_pcb": false
+    },
+    "current_gui": {
+      "file": "emg_finger_gui_ver-4.py",
+      "input": "Five-byte A5-sync single-channel Version 4 protocol at 2000 samples/s.",
+      "compatible_with_ads1296_frames": false
+    },
+    "current_classifier_demo": {
+      "file": "emg_ml_pipeline.py",
+      "channels": 6,
+      "analysis_samples_per_second": 2000,
+      "window_ms": 250,
+      "hop_ms": 50,
+      "classes": ["rest", "thumb", "index", "middle", "ring", "pinky", "fist", "open_palm"],
+      "entry_point": "Generates synthetic data; no real ADS1296 capture loader, hardware stream receiver or anti-alias/downsample stage is implemented.",
+      "real_hardware_accuracy_proven": false
+    },
+    "required_work": [
+      "Implement ADS1296 register configuration, reset/start sequencing, DRDY-driven six-channel capture and explicit overrun accounting for the verified A4 GPIO map.",
+      "Implement native USB binary framing and the matching PC receiver; maintain full 24-bit raw readings.",
+      "Save original raw recordings with sample counters, measured rate, register settings, board metadata, session/repetition IDs and gesture labels.",
+      "Implement per-channel digital filtering before any 4000-to-2000 decimation, or process at 4000 with correctly recalculated filter/window settings.",
+      "Connect real recordings to training/verification/live test and evaluate held-out repetitions/sessions without overlapping-window leakage."
+    ]
+  },
+  "proposed_protocol_not_yet_implemented": {
+    "acquisition": "DRDY ISR counts events/notifies a high-priority acquisition task; a single 168-bit full-duplex SPI transaction receives each frame into internal RAM. A separate task sends USB data. No printing, flash writes, plotting or ML inside the acquisition path.",
+    "usb": "Native USB CDC or USB Serial/JTAG device endpoint; a COM-port baud setting is not a 115200-UART physical bandwidth ceiling.",
+    "block_size_frames": 16,
+    "payload_bytes": 336,
+    "header_and_crc_example_bytes": 24,
+    "block_bytes_example": 360,
+    "nominal_blocks_per_second": 250,
+    "nominal_usb_bytes_per_second_example": 90000,
+    "required_fields": ["sync magic", "protocol version", "block length", "session id", "first ADC event counter", "frame count", "overrun flags/counters", "raw 21-byte frames", "CRC32"],
+    "example_wire_format": {
+      "byte_order": "Header integers and CRC are little-endian; each ADS1296 raw 21-byte frame retains the device's original MSB-first byte order.",
+      "header_bytes": 20,
+      "header_fields": [
+        {"offset": 0, "bytes": 4, "field": "ASCII EMG4 magic"},
+        {"offset": 4, "bytes": 1, "field": "protocol version, initially 1"},
+        {"offset": 5, "bytes": 1, "field": "flags: overflow/discontinuity/status errors"},
+        {"offset": 6, "bytes": 2, "field": "total block length including header/payload/CRC, 24+21*N"},
+        {"offset": 8, "bytes": 2, "field": "capture session id, allocated uniquely within the host recording"},
+        {"offset": 10, "bytes": 4, "field": "first ADC event counter, uint32 with explicitly handled wrap"},
+        {"offset": 14, "bytes": 2, "field": "N consecutive raw frames, normally 16"},
+        {"offset": 16, "bytes": 4, "field": "cumulative dropped/overrun count"}
+      ],
+      "payload_offset": 20,
+      "crc": "Four-byte CRC-32/ISO-HDLC over the complete 20-byte header and raw payload; reflected polynomial 0xEDB88320, init 0xFFFFFFFF, xorout 0xFFFFFFFF. For N=16, payload ends at offset 355 and CRC occupies offsets 356-359.",
+      "recording_metadata": "Store a full host recording UUID, measured sample rate and register configuration separately; do not infer them from the short on-wire session id."
+    },
+    "gap_rule": "End a block at any discontinuity; start the next with its correct ADC event counter. The receiver records gaps and rejects damaged blocks rather than silently pretending continuity.",
+    "buffering": "A 64 KiB internal-RAM buffer provides approximately 0.73 s at 90 kB/s. Finite buffering cannot guarantee zero loss through an arbitrarily long host stall or disconnect.",
+    "host": "Read binary blocks on a dedicated receiver thread, check CRC/counters, write buffered raw data to disk and update plots separately at a lower display rate.",
+    "radio_policy_for_first_capture": "Keep Wi-Fi/BLE disabled during the first qualification recording to simplify timing and interference checks."
+  },
+  "lossless_acceptance_test_to_run_after_assembly": [
+    "Read ID=0x91 and read back the complete intended configuration; confirm measured supplies/reference/VCAP nodes before acquisition.",
+    "With no body attached, run internal ADC test signal on all six channels and verify known waveform, correct signed code parsing and status prefix 0xC.",
+    "Run a continuous 30-minute nominal-4kSPS capture: approximately 7.2 million six-channel frames. Compare actual hardware DRDY count, serviced acquisition count and PC-received count over the same capture interval; require zero overflow, CRC failure, unexplained counter gaps and invalid status frames.",
+    "An ISR-only sequence count cannot prove that interrupts themselves were never missed. Use ESP32 hardware pulse counting on DRDY or an independent logic-analyzer count/time check, and record deliberate startup/discarded frames separately.",
+    "Inspect DRDY-to-read latency and CS/SCLK timing; ensure read completion precedes the next data update under simultaneous USB transfer and PC plotting.",
+    "Deliberately pause the receiver beyond the buffer capacity or disconnect USB and verify that overflow/gap reporting activates instead of inventing continuous data.",
+    "Then use shorted inputs and known dummy electrode loads to measure noise, clipping and channel behaviour. Physical human recordings require the separately resolved body-bias and isolation arrangement."
+  ],
+  "project_portability": {
+    "native_project_independent_of_older_build_folders": true,
+    "native_project_name_must_be_retained": "ADS1296_RevA4_TinySocket",
+    "child_schematics_checked": 6,
+    "all_child_schematics_present": true,
+    "unique_footprint_types_checked": 17,
+    "all_referenced_footprint_files_present": true,
+    "footprint_library_resolution": "Project-local ${KIPRJMOD}/footprints/*.pretty",
+    "symbol_library_resolution": "Project-local ${KIPRJMOD}/EMG_RevA4_TinySocket.kicad_sym",
+    "optional_3d_models": "Standard ${KICAD10_3DMODEL_DIR} STEP models rely on the installed KiCad 10 3D library; absence affects display, not the embedded PCB footprints or Gerbers.",
+    "historical_script_dependencies": [
+      "tighten_layout.py references tmp/capfix/user_before.kicad_pcb and the A3 board.",
+      "prepare_delivery.py prepare references original A4 and tmp/capfix baselines; package mode uses current folder files.",
+      "finish_capfix.py can use tmp/capfix/route_drc.json."
+    ],
+    "archiving_guidance": "Keep older builds and tmp/capfix baselines together on external storage if future layout regeneration is desired. Those regenerators are not needed to open/edit the final native project or run its current independent verification. Keep root acquisition/ML files separately because they are not included in the hardware folder."
+  },
+  "owned_esp32_s3_zero_followup": {
+    "user_hardware_report": "User reports owning an ESP32-S3-Zero, not the specified Tiny kit; exact Zero revision should be confirmed from the purchased board.",
+    "drop_in_socket_compatible": false,
+    "same_logical_gpio_map_possible": true,
+    "official_original_zero_contact_map": "GPIO1/2/12/13 are exposed in P15; GPIO14/15/16/17 are separate exposed pads P12/P14/P16/P17. The existing eight logical ADS signals can therefore be prototyped by identified wired connections, but not by inserting Zero into A1.",
+    "power_difference": "The original Zero schematic connects its 5V/header VBUS directly to USB VBUS; it does not show Tiny's series B5819WS blocking diode. Do not assume Tiny's external-power-to-USB backfeed protection applies. A Zero substitution requires rechecking power-source ORing or using one verified power source.",
+    "what_can_start_now": "Use the owned Zero for USB binary transport, mock six-channel data, buffer/CRC/sequence tests and firmware structure. Real ADS1296 acquisition and analog noise cannot be verified without ADS1296 hardware.",
+    "no_board_changes_made": true
+  },
+  "two_week_schedule_assessment": {
+    "firmware_work": "Achievable software tasks in parallel with procurement, but substantial new integration is required; no ready ADS1296 capture firmware exists in this workspace.",
+    "mechanical_work": "Nominal fit verified only. Qualify the actual Tiny/header assembly early, before committing the carrier order.",
+    "physical_release": "PCB delivery, soldering/rework, bring-up and real eight-class training depend on hardware arriving and passing tests. No current test establishes a guaranteed working finger classifier within 14 days."
+  },
+  "sources": [
+    {"url": "https://docs.waveshare.com/ESP32-S3-Tiny", "supports": "SKU identity, dimensions/pinout images, split adapter/FPC, memory and processor."},
+    {"url": "https://docs.waveshare.com/ESP32-S3-Tiny/Resources-And-Documents", "supports": "Current official schematic resources."},
+    {"url": "https://files.waveshare.com/wiki/ESP32-S3-Tiny/ESP32-S3-Tiny-Sch.pdf", "supports": "Actual side-contact assignment, native USB and VBUS/VCC_5V diode/regulator wiring."},
+    {"url": "https://files.waveshare.com/wiki/ESP32-S3-Tiny/Tiny-Adapter.pdf", "supports": "USB-C CC resistors, FPC contact assignment and BOOT/RESET switches."},
+    {"url": "https://files.waveshare.com/wiki/ESP32-S3-Zero/ESP32-S3-Zero-Sch.pdf", "supports": "Owned original Zero board exposed GPIOs, native USB and direct 5V/VBUS power connection; not a Tiny socket substitute."},
+    {"url": "https://documentation.espressif.com/esp32-s3_datasheet_en.pdf", "supports": "USB, GPIO matrix, restricted strapping/PSRAM pins and device capability."},
+    {"url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/spi_master.html", "supports": "GPIO-matrix SPI use, timing/driver overhead, internal-memory and ISR considerations."},
+    {"url": "https://www.ti.com/lit/ds/symlink/ads1296.pdf", "supports": "SPI mode1, 20MHz SCLK limit, status/data length, CONFIG1/3, startup and data retrieval timing."}
+  ]
+}

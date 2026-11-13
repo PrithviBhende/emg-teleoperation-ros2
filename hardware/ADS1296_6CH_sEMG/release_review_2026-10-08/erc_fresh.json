@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-08T14:27:40",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.3",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/fa5d92b2-99f0-54ce-819a-5d75a3c64f04",
+            "violations": []
+        },
+        {
+            "path": "/Power and local decoupling/",
+            "uuid_path": "/fa5d92b2-99f0-54ce-819a-5d75a3c64f04/07a7c083-9315-5639-a3b5-2e54bb7265d9",
+            "violations": []
+        },
+        {
+            "path": "/ADS1296 full pin map / reference/",
+            "uuid_path": "/fa5d92b2-99f0-54ce-819a-5d75a3c64f04/9e82d58f-e220-5578-ae30-801e16be381f",
+            "violations": []
+        },
+        {
+            "path": "/Electrode inputs CH1 to CH3/",
+            "uuid_path": "/fa5d92b2-99f0-54ce-819a-5d75a3c64f04/6a91b8a6-479c-53c0-8a32-9b05ee3572db",
+            "violations": []
+        },
+        {
+            "path": "/Electrode inputs CH4 to CH6/",
+            "uuid_path": "/fa5d92b2-99f0-54ce-819a-5d75a3c64f04/94d53145-b9a6-5743-ac45-53666f9a2f07",
+            "violations": []
+        },
+        {
+            "path": "/Body bias and feedback/",
+            "uuid_path": "/fa5d92b2-99f0-54ce-819a-5d75a3c64f04/f87bf281-618a-5985-a224-de01559f7732",
+            "violations": []
+        },
+        {
+            "path": "/Waveshare Tiny / SPI / kit USB/",
+            "uuid_path": "/fa5d92b2-99f0-54ce-819a-5d75a3c64f04/659a67c1-4436-58cb-ace5-6c01c01429fd",
+            "violations": []
+        }
+    ],
+    "source": "ADS1296_RevA4_TinySocket.kicad_sch"
+}

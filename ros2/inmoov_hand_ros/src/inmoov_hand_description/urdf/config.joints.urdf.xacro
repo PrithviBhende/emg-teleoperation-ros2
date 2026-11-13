@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Joint limits in radians for InMoov Hand (finger flexion: 0 = fully open, ~1.57 rad / 90 deg = closed) -->
+  <xacro:property name="r_thumb_joint_lower"             value="0.0" /> 
+  <xacro:property name="r_thumb_joint_upper"             value="1.5708" /> 
+  <xacro:property name="r_thumb_joint_velocity"          value="3.1416" /> 
+
+  <xacro:property name="r_index_joint_lower"             value="0.0" /> 
+  <xacro:property name="r_index_joint_upper"             value="1.5708" /> 
+  <xacro:property name="r_index_joint_velocity"          value="3.1416" /> 
+
+  <xacro:property name="r_middle_joint_lower"            value="0.0" /> 
+  <xacro:property name="r_middle_joint_upper"            value="1.5708" /> 
+  <xacro:property name="r_middle_joint_velocity"         value="3.1416" /> 
+
+  <xacro:property name="r_ring_joint_lower"              value="0.0" /> 
+  <xacro:property name="r_ring_joint_upper"              value="1.5708" /> 
+  <xacro:property name="r_ring_joint_velocity"           value="3.1416" /> 
+
+  <xacro:property name="r_pinky_joint_lower"             value="0.0" /> 
+  <xacro:property name="r_pinky_joint_upper"             value="1.5708" /> 
+  <xacro:property name="r_pinky_joint_velocity"          value="3.1416" /> 
+
+  <!-- Left hand counterparts if instantiated -->
+  <xacro:property name="l_thumb_joint_lower"             value="0.0" /> 
+  <xacro:property name="l_thumb_joint_upper"             value="1.5708" /> 
+  <xacro:property name="l_thumb_joint_velocity"          value="3.1416" /> 
+
+  <xacro:property name="l_index_joint_lower"             value="0.0" /> 
+  <xacro:property name="l_index_joint_upper"             value="1.5708" /> 
+  <xacro:property name="l_index_joint_velocity"          value="3.1416" /> 
+
+  <xacro:property name="l_middle_joint_lower"            value="0.0" /> 
+  <xacro:property name="l_middle_joint_upper"            value="1.5708" /> 
+  <xacro:property name="l_middle_joint_velocity"         value="3.1416" /> 
+
+  <xacro:property name="l_ring_joint_lower"              value="0.0" /> 
+  <xacro:property name="l_ring_joint_upper"              value="1.5708" /> 
+  <xacro:property name="l_ring_joint_velocity"           value="3.1416" /> 
+
+  <xacro:property name="l_pinky_joint_lower"             value="0.0" /> 
+  <xacro:property name="l_pinky_joint_upper"             value="1.5708" /> 
+  <xacro:property name="l_pinky_joint_velocity"          value="3.1416" /> 
+
+  <!-- Wrist roll limits (if wrist joint is used) -->
+  <xacro:property name="r_wrist_roll_joint_lower"        value="-1.5708" /> 
+  <xacro:property name="r_wrist_roll_joint_upper"        value="1.5708" /> 
+  <xacro:property name="r_wrist_roll_joint_velocity"     value="3.1416" /> 
+
+  <xacro:property name="l_wrist_roll_joint_lower"        value="-1.5708" /> 
+  <xacro:property name="l_wrist_roll_joint_upper"        value="1.5708" /> 
+  <xacro:property name="l_wrist_roll_joint_velocity"     value="3.1416" /> 
+
+</robot>

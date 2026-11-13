@@ -1,0 +1,505 @@
+{
+  "passed": true,
+  "six_planar_limits_passed": true,
+  "checked_at_utc": "2026-09-15T17:16:28.177796+00:00",
+  "board_path": "C:\\Users\\prith\\Documents\\MYSPACE\\PROJECTS\\minors\\hardware\\ADS1296_RevA4_TinySocket_CapFix\\ADS1296_RevA4_TinySocket.kicad_pcb",
+  "board_sha256": "adb9748b6987b523c18c6ec353b9b18b20cc3a62a4169fec022da6b388176e3e",
+  "verifier_sha256": "90d4ec175f26366f7a415d1d98e27b3af321f919e4e459903fdf539977714c6f",
+  "trace_graph_sha256": "a0563d04d6fc287837fcd7478550269409b82a21f982d445d531299bd008ad9c",
+  "outline_mm": [
+    100.0,
+    80.0
+  ],
+  "board_thickness_mm": 1.6,
+  "target_measurements": [
+    {
+      "reference": "C22",
+      "ads1296_pin": "48",
+      "component_signal_terminal": "1",
+      "expected_net": "3V3_D",
+      "component_face": "F.Cu",
+      "component_centre_xy_mm": [
+        79.65,
+        63.25
+      ],
+      "adc_pad_centre_xy_mm": [
+        77.6625,
+        63.25
+      ],
+      "component_centre_to_adc_pad_centre_planar_mm": 1.9875,
+      "maximum_planar_mm": 2.0,
+      "planar_limit_passed": true,
+      "assumed_surface_height_difference_mm": 0.0,
+      "estimated_surface_to_surface_straight_line_mm": 1.9875,
+      "signal_path": {
+        "found": true,
+        "planar_centreline_mm": 2.381003,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "08661a83-6980-472f-bfa8-1df76dc4ad01",
+          "15c8ca19-2f68-42db-848b-aa72e634d9b7"
+        ],
+        "node_count": 3,
+        "unsupported_arc_ids": []
+      },
+      "ground_return": {
+        "found": true,
+        "assignment_source": "local_routes.json",
+        "via_uuid": "ce5c1e38-1069-49d7-88f1-4ee2fa6b5601",
+        "via_xy_mm": [
+          79.8959,
+          63.2176
+        ],
+        "ground_pad_centre_to_via_centre_planar_mm": 0.949977,
+        "via_spans_In1_Cu": true,
+        "other_declared_users_of_same_via": [],
+        "direct_explicit_same_face_path": {
+          "found": true,
+          "planar_centreline_mm": 0.949977,
+          "via_count": 0,
+          "via_ids": [],
+          "layers": [
+            "F.Cu"
+          ],
+          "track_ids": [
+            "93a3f08b-06c6-4bf3-afff-692cc2dcb933"
+          ],
+          "node_count": 2,
+          "unsupported_arc_ids": []
+        }
+      }
+    },
+    {
+      "reference": "C10",
+      "ads1296_pin": "59",
+      "component_signal_terminal": "1",
+      "expected_net": "AVDD",
+      "component_face": "F.Cu",
+      "component_centre_xy_mm": [
+        70.75,
+        59.35
+      ],
+      "adc_pad_centre_xy_mm": [
+        70.75,
+        61.3375
+      ],
+      "component_centre_to_adc_pad_centre_planar_mm": 1.9875,
+      "maximum_planar_mm": 2.0,
+      "planar_limit_passed": true,
+      "assumed_surface_height_difference_mm": 0.0,
+      "estimated_surface_to_surface_straight_line_mm": 1.9875,
+      "signal_path": {
+        "found": true,
+        "planar_centreline_mm": 2.381003,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "4add7458-d3f5-4e80-b286-ec4fc46f4b7b",
+          "a98aeae2-2f99-4d61-9e9f-5aee7cf59102",
+          "f52db67d-a144-46aa-b862-0ad7f21f45e2"
+        ],
+        "node_count": 4,
+        "unsupported_arc_ids": []
+      },
+      "ground_return": {
+        "found": true,
+        "assignment_source": "local_routes.json",
+        "via_uuid": "d4b160f2-ae41-4ed9-a299-7f3b77dbbcd4",
+        "via_xy_mm": [
+          72.6176,
+          59.1041
+        ],
+        "ground_pad_centre_to_via_centre_planar_mm": 0.949977,
+        "via_spans_In1_Cu": true,
+        "other_declared_users_of_same_via": [],
+        "direct_explicit_same_face_path": {
+          "found": true,
+          "planar_centreline_mm": 0.949977,
+          "via_count": 0,
+          "via_ids": [],
+          "layers": [
+            "F.Cu"
+          ],
+          "track_ids": [
+            "85b5ef61-ce34-4c58-a21f-7f809f0b7d1f"
+          ],
+          "node_count": 2,
+          "unsupported_arc_ids": []
+        }
+      }
+    },
+    {
+      "reference": "C14",
+      "ads1296_pin": "24",
+      "component_signal_terminal": "1",
+      "expected_net": "VREFP",
+      "component_face": "B.Cu",
+      "component_centre_xy_mm": [
+        71.75,
+        72.3
+      ],
+      "adc_pad_centre_xy_mm": [
+        71.75,
+        72.6625
+      ],
+      "component_centre_to_adc_pad_centre_planar_mm": 0.3625,
+      "maximum_planar_mm": 2.0,
+      "planar_limit_passed": true,
+      "assumed_surface_height_difference_mm": 1.6,
+      "estimated_surface_to_surface_straight_line_mm": 1.640551,
+      "signal_path": {
+        "found": true,
+        "planar_centreline_mm": 3.110292,
+        "via_count": 1,
+        "via_ids": [
+          "b5c17596-87b5-49d3-84da-d2c32290eda4"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "23fbe169-537d-4712-9a37-82dc3651de39",
+          "b7de0cef-a351-4953-ab06-2bf7f676d856",
+          "dacb3458-d00d-406a-be5f-62d6f6a5d189"
+        ],
+        "node_count": 6,
+        "unsupported_arc_ids": []
+      },
+      "ground_return": {
+        "found": true,
+        "assignment_source": "local_routes.json",
+        "via_uuid": "ca2a2313-9742-4a94-8894-011c68e35b82",
+        "via_xy_mm": [
+          72.5,
+          71.0443
+        ],
+        "ground_pad_centre_to_via_centre_planar_mm": 1.449968,
+        "via_spans_In1_Cu": true,
+        "other_declared_users_of_same_via": [],
+        "direct_explicit_same_face_path": {
+          "found": true,
+          "planar_centreline_mm": 1.449968,
+          "via_count": 0,
+          "via_ids": [],
+          "layers": [
+            "B.Cu"
+          ],
+          "track_ids": [
+            "597274c7-b2a2-4ef7-b394-f480f048fc03"
+          ],
+          "node_count": 2,
+          "unsupported_arc_ids": []
+        }
+      }
+    },
+    {
+      "reference": "C20",
+      "ads1296_pin": "26",
+      "component_signal_terminal": "1",
+      "expected_net": "VCAP4",
+      "component_face": "F.Cu",
+      "component_centre_xy_mm": [
+        72.75,
+        74.65
+      ],
+      "adc_pad_centre_xy_mm": [
+        72.75,
+        72.6625
+      ],
+      "component_centre_to_adc_pad_centre_planar_mm": 1.9875,
+      "maximum_planar_mm": 2.0,
+      "planar_limit_passed": true,
+      "assumed_surface_height_difference_mm": 0.0,
+      "estimated_surface_to_surface_straight_line_mm": 1.9875,
+      "signal_path": {
+        "found": true,
+        "planar_centreline_mm": 2.381003,
+        "via_count": 0,
+        "via_ids": [],
+        "layers": [
+          "F.Cu"
+        ],
+        "track_ids": [
+          "70b03d6f-eaed-4ef0-9e09-11ea6530b8a5",
+          "d1c0b0a3-9efe-4ef8-8302-141f33144d87"
+        ],
+        "node_count": 3,
+        "unsupported_arc_ids": []
+      },
+      "ground_return": {
+        "found": true,
+        "assignment_source": "local_routes.json",
+        "via_uuid": "954674db-f4cb-4571-9c81-359cad933a59",
+        "via_xy_mm": [
+          70.8824,
+          74.8959
+        ],
+        "ground_pad_centre_to_via_centre_planar_mm": 0.949977,
+        "via_spans_In1_Cu": true,
+        "other_declared_users_of_same_via": [],
+        "direct_explicit_same_face_path": {
+          "found": true,
+          "planar_centreline_mm": 0.949977,
+          "via_count": 0,
+          "via_ids": [],
+          "layers": [
+            "F.Cu"
+          ],
+          "track_ids": [
+            "dcbe3272-df72-43bd-9588-94eab3b61061"
+          ],
+          "node_count": 3,
+          "unsupported_arc_ids": []
+        }
+      }
+    },
+    {
+      "reference": "C27",
+      "ads1296_pin": "54",
+      "component_signal_terminal": "1",
+      "expected_net": "AVDD",
+      "component_face": "B.Cu",
+      "component_centre_xy_mm": [
+        73.25,
+        61.3375
+      ],
+      "adc_pad_centre_xy_mm": [
+        73.25,
+        61.3375
+      ],
+      "component_centre_to_adc_pad_centre_planar_mm": 0.0,
+      "maximum_planar_mm": 2.0,
+      "planar_limit_passed": true,
+      "assumed_surface_height_difference_mm": 1.6,
+      "estimated_surface_to_surface_straight_line_mm": 1.6,
+      "signal_path": {
+        "found": true,
+        "planar_centreline_mm": 2.639461,
+        "via_count": 1,
+        "via_ids": [
+          "140cc126-4c3e-4618-be07-0e39d492a939"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "3df612f6-ca75-4f8b-9008-c0b730d99d45",
+          "5fb8733c-3e6e-4799-ba88-0f50ad73d620",
+          "de93cefa-8d22-4e93-b8b5-3c8f2e3ed638"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      },
+      "ground_return": {
+        "found": true,
+        "assignment_source": "local_routes.json",
+        "via_uuid": "99eca76c-c20a-4b2a-b224-ca700de3b6ad",
+        "via_xy_mm": [
+          74.2,
+          60.1375
+        ],
+        "ground_pad_centre_to_via_centre_planar_mm": 1.2,
+        "via_spans_In1_Cu": true,
+        "other_declared_users_of_same_via": [],
+        "direct_explicit_same_face_path": {
+          "found": true,
+          "planar_centreline_mm": 1.2,
+          "via_count": 0,
+          "via_ids": [],
+          "layers": [
+            "B.Cu"
+          ],
+          "track_ids": [
+            "79a9be96-18e9-457d-8f57-d39ddd693079"
+          ],
+          "node_count": 2,
+          "unsupported_arc_ids": []
+        }
+      }
+    },
+    {
+      "reference": "R21",
+      "ads1296_pin": "61",
+      "component_signal_terminal": "2",
+      "expected_net": "RLDINV",
+      "component_face": "B.Cu",
+      "component_centre_xy_mm": [
+        68.9,
+        61.3375
+      ],
+      "adc_pad_centre_xy_mm": [
+        69.75,
+        61.3375
+      ],
+      "component_centre_to_adc_pad_centre_planar_mm": 0.85,
+      "maximum_planar_mm": 3.0,
+      "planar_limit_passed": true,
+      "assumed_surface_height_difference_mm": 1.6,
+      "estimated_surface_to_surface_straight_line_mm": 1.811767,
+      "signal_path": {
+        "found": true,
+        "planar_centreline_mm": 2.550888,
+        "via_count": 1,
+        "via_ids": [
+          "5b22dac8-d2cc-4479-a6bc-eed219e92f16"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1234f21e-b5f0-4e1d-ba5e-34ff9e6e0e54",
+          "7b74089a-4ebb-424b-aa80-68da2690219f",
+          "a48f68ec-21e3-4792-9b4c-3cc780b8b795"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      }
+    }
+  ],
+  "feedback_terminals": [
+    {
+      "reference": "R21",
+      "terminal": "1",
+      "adc_pin": "63",
+      "net": "RLDOUT",
+      "path": {
+        "found": true,
+        "planar_centreline_mm": 2.515838,
+        "via_count": 1,
+        "via_ids": [
+          "ee34a537-3d39-4b36-896f-2411a5c2bdc5"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1680256f-5a36-4161-b368-c72ff6d98b0a",
+          "72072a84-482e-4cec-8b08-0105bb8f80e6",
+          "c04d58e1-7ff2-4173-94ec-165facae174c"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "reference": "R21",
+      "terminal": "2",
+      "adc_pin": "61",
+      "net": "RLDINV",
+      "path": {
+        "found": true,
+        "planar_centreline_mm": 2.550888,
+        "via_count": 1,
+        "via_ids": [
+          "5b22dac8-d2cc-4479-a6bc-eed219e92f16"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1234f21e-b5f0-4e1d-ba5e-34ff9e6e0e54",
+          "7b74089a-4ebb-424b-aa80-68da2690219f",
+          "a48f68ec-21e3-4792-9b4c-3cc780b8b795"
+        ],
+        "node_count": 5,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "reference": "C23",
+      "terminal": "1",
+      "adc_pin": "63",
+      "net": "RLDOUT",
+      "path": {
+        "found": true,
+        "planar_centreline_mm": 3.965838,
+        "via_count": 1,
+        "via_ids": [
+          "ee34a537-3d39-4b36-896f-2411a5c2bdc5"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1680256f-5a36-4161-b368-c72ff6d98b0a",
+          "72072a84-482e-4cec-8b08-0105bb8f80e6",
+          "c04d58e1-7ff2-4173-94ec-165facae174c"
+        ],
+        "node_count": 6,
+        "unsupported_arc_ids": []
+      }
+    },
+    {
+      "reference": "C23",
+      "terminal": "2",
+      "adc_pin": "61",
+      "net": "RLDINV",
+      "path": {
+        "found": true,
+        "planar_centreline_mm": 4.653921,
+        "via_count": 1,
+        "via_ids": [
+          "5b22dac8-d2cc-4479-a6bc-eed219e92f16"
+        ],
+        "layers": [
+          "B.Cu",
+          "F.Cu"
+        ],
+        "track_ids": [
+          "1234f21e-b5f0-4e1d-ba5e-34ff9e6e0e54",
+          "1dbefa01-d553-4ac7-85b6-fc2eac49dc63",
+          "4c690ba6-0a78-4ad5-a1eb-dcd2bf84cfe0",
+          "7b74089a-4ebb-424b-aa80-68da2690219f",
+          "a48f68ec-21e3-4792-9b4c-3cc780b8b795"
+        ],
+        "node_count": 7,
+        "unsupported_arc_ids": []
+      }
+    }
+  ],
+  "C14_to_VREFN_pin25_explicit_return": {
+    "found": true,
+    "planar_centreline_mm": 3.157805,
+    "via_count": 1,
+    "via_ids": [
+      "ca2a2313-9742-4a94-8894-011c68e35b82"
+    ],
+    "layers": [
+      "B.Cu",
+      "F.Cu"
+    ],
+    "track_ids": [
+      "18a780f4-57bd-4242-8e21-611cdb3d02c0",
+      "3aafa8a1-1faf-4278-838a-a03241df5c34",
+      "597274c7-b2a2-4ef7-b394-f480f048fc03"
+    ],
+    "node_count": 9,
+    "unsupported_arc_ids": []
+  },
+  "failures": [],
+  "notes": [
+    "C14 is on B.Cu: the requested limit is a 2D placement limit. Its 3D surface separation and via traversal are reported separately.",
+    "C27 is on B.Cu: the requested limit is a 2D placement limit. Its 3D surface separation and via traversal are reported separately.",
+    "R21 is on B.Cu: the requested limit is a 2D placement limit. Its 3D surface separation and via traversal are reported separately."
+  ],
+  "measurement_definition": {
+    "placement": "Euclidean XY distance from saved footprint origin/centre to saved U1 pad centre; independently recomputed.",
+    "three_dimensional_estimate": "Straight-line surface-to-surface separation uses the configured 1.6 mm board thickness for opposite faces; ignores component and lead heights. Not routed copper length.",
+    "explicit_path": "Shortest explicit copper centreline path, including travel across pads. Excludes copper pours and vertical via-barrel length; via_count counts series layer changes by distinct via UUID.",
+    "local_ground": "Same-face explicit pad-to-via path, with no other component pad bridges or intervening vias; target capacitors must use distinct local vias and local return tracks. Via must span In1.Cu. Plane-fill connection itself requires native DRC.",
+    "scope_limit": "Geometric/connectivity audit only. Does not prove analogue noise, RLD phase margin, capacitor effective capacitance, assembly success, isolation, or human-use safety."
+  }
+}

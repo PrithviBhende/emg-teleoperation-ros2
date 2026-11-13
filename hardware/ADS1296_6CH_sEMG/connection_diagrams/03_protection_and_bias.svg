@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1930" viewBox="0 0 2400 1930">
+<rect width="100%" height="100%" fill="#f3f6f9"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif}path,line,rect{stroke-linejoin:round;stroke-linecap:round}</style>
+<text x="55" y="65" font-size="40" fill="#172d41" font-weight="700" text-anchor="start">Input protection and the separate bias electrode</text>
+<text x="55" y="108" font-size="23" fill="#526778" font-weight="400" text-anchor="start">The protection chip taps both electrode wires. The bias output uses a separate electrode through J8.</text>
+<rect x="40" y="145" width="2315" height="655" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="65" y="185" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">1  One complete electrode input (CH1 shown; the table below identifies CH2–CH6 parts)</text>
+<text x="80" y="292" font-size="23" fill="#172d41" font-weight="700" text-anchor="start">J2 pin 1</text>
+<polyline points="220,285 340,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="340,285 355,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="355" y="272" width="130" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="485,285 500,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="420.0" y="261" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R111 · 22 kΩ</text>
+<polyline points="500,285 1380,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="730" cy="285" r="5" fill="#2177ae"/>
+<polyline points="1380,285 1395,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="1395" y="272" width="150" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1545,285 1560,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1470.0" y="261" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R113 · 24.9 kΩ</text>
+<polyline points="1560,285 2160,285" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="2190" y="292" font-size="22" fill="#172d41" font-weight="700" text-anchor="start">U1 pin 16</text>
+<text x="80" y="562" font-size="23" fill="#172d41" font-weight="700" text-anchor="start">J2 pin 2</text>
+<polyline points="220,555 340,555" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="340,555 355,555" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="355" y="542" width="130" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="485,555 500,555" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="420.0" y="531" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R112 · 22 kΩ</text>
+<polyline points="500,555 1380,555" fill="none" stroke="#2177ae" stroke-width="3"/>
+<circle cx="730" cy="555" r="5" fill="#2177ae"/>
+<polyline points="1380,555 1395,555" fill="none" stroke="#2177ae" stroke-width="3"/>
+<rect x="1395" y="542" width="150" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1545,555 1560,555" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1470.0" y="531" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R114 · 24.9 kΩ</text>
+<polyline points="1560,555 2160,555" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="2190" y="562" font-size="22" fill="#172d41" font-weight="700" text-anchor="start">U1 pin 15</text>
+<rect x="655" y="360" width="440" height="125" rx="15" fill="#e8f4ee" stroke="#71a288" stroke-width="2"/>
+<text x="875" y="400" font-size="26" fill="#172d41" font-weight="700" text-anchor="middle">U3 · TPD4E001</text>
+<text x="685" y="437" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">pin 1 IO1</text>
+<text x="685" y="470" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">pin 6 IO4</text>
+<polyline points="730,285 730,360" fill="none" stroke="#2177ae" stroke-width="3"/>
+<polyline points="730,485 730,555" fill="none" stroke="#2177ae" stroke-width="3"/>
+<text x="1120" y="403" font-size="22" fill="#b94542" font-weight="400" text-anchor="start">pin 5 VCC → AVDD</text>
+<text x="1120" y="447" font-size="22" fill="#526778" font-weight="400" text-anchor="start">pin 2 GND → GND</text>
+<text x="1120" y="487" font-size="21" fill="#526778" font-weight="400" text-anchor="start">pins 3 + 4 → NC</text>
+<polyline points="1850,285 1850,413.0" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="1835,413.0 1865,413.0" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="1835,427.0 1865,427.0" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="1850,427.0 1850,555" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="1873" y="426.0" font-size="19" fill="#172d41" font-weight="400" text-anchor="start">C111  1.8 nF</text>
+<circle cx="1850" cy="285" r="5" fill="#178064"/>
+<circle cx="1850" cy="555" r="5" fill="#178064"/>
+<text x="80" y="660" font-size="23" fill="#526778" font-weight="400" text-anchor="start">J2 pin 3: NC</text>
+<text x="80" y="712" font-size="24" fill="#172d41" font-weight="400" text-anchor="start">C112 100 nF: U3 pin 5 (AVDD) → capacitor → U3 pin 2 (GND)</text>
+<text x="80" y="757" font-size="22" fill="#526778" font-weight="400" text-anchor="start">The differential capacitor bridges IN1P and IN1N. It does not connect to GND.</text>
+<rect x="40" y="830" width="2315" height="405" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="65" y="870" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">2  Repeat the same circuit for all six channels</text>
+<text x="75" y="920" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">Channel / jack</text>
+<text x="380" y="920" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">22 kΩ pair</text>
+<text x="730" y="920" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">Protection IC</text>
+<text x="1080" y="920" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">24.9 kΩ pair</text>
+<text x="1450" y="920" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">1.8 nF bridge</text>
+<text x="1820" y="920" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">100 nF bypass</text>
+<text x="2150" y="920" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">U1 P / N</text>
+<text x="75" y="960" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">CH1 / J2</text>
+<text x="380" y="960" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R111 + R112</text>
+<text x="730" y="960" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U3</text>
+<text x="1080" y="960" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R113 + R114</text>
+<text x="1450" y="960" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C111</text>
+<text x="1820" y="960" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C112</text>
+<text x="2150" y="960" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">16 / 15</text>
+<text x="75" y="1005" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">CH2 / J3</text>
+<text x="380" y="1005" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R121 + R122</text>
+<text x="730" y="1005" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U4</text>
+<text x="1080" y="1005" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R123 + R124</text>
+<text x="1450" y="1005" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C121</text>
+<text x="1820" y="1005" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C122</text>
+<text x="2150" y="1005" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">14 / 13</text>
+<text x="75" y="1050" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">CH3 / J4</text>
+<text x="380" y="1050" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R131 + R132</text>
+<text x="730" y="1050" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U5</text>
+<text x="1080" y="1050" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R133 + R134</text>
+<text x="1450" y="1050" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C131</text>
+<text x="1820" y="1050" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C132</text>
+<text x="2150" y="1050" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">12 / 11</text>
+<text x="75" y="1095" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">CH4 / J5</text>
+<text x="380" y="1095" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R141 + R142</text>
+<text x="730" y="1095" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U6</text>
+<text x="1080" y="1095" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R143 + R144</text>
+<text x="1450" y="1095" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C141</text>
+<text x="1820" y="1095" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C142</text>
+<text x="2150" y="1095" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">10 / 9</text>
+<text x="75" y="1140" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">CH5 / J6</text>
+<text x="380" y="1140" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R151 + R152</text>
+<text x="730" y="1140" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U7</text>
+<text x="1080" y="1140" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R153 + R154</text>
+<text x="1450" y="1140" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C151</text>
+<text x="1820" y="1140" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C152</text>
+<text x="2150" y="1140" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">8 / 7</text>
+<text x="75" y="1185" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">CH6 / J7</text>
+<text x="380" y="1185" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R161 + R162</text>
+<text x="730" y="1185" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U8</text>
+<text x="1080" y="1185" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">R163 + R164</text>
+<text x="1450" y="1185" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C161</text>
+<text x="1820" y="1185" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C162</text>
+<text x="2150" y="1185" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">6 / 5</text>
+<rect x="40" y="1265" width="2315" height="510" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="65" y="1305" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">3  RLD feedback and J8 bias output</text>
+<text x="75" y="1415" font-size="23" fill="#172d41" font-weight="700" text-anchor="start">U1 pin 63</text>
+<text x="75" y="1450" font-size="21" fill="#178064" font-weight="400" text-anchor="start">RLDOUT</text>
+<polyline points="230,1410 780,1410" fill="none" stroke="#178064" stroke-width="3"/>
+<circle cx="340" cy="1410" r="5" fill="#178064"/>
+<polyline points="780,1410 795,1410" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="795" y="1397" width="140" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="935,1410 950,1410" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="865.0" y="1386" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R22 · 110 kΩ</text>
+<polyline points="950,1410 1350,1410" fill="none" stroke="#178064" stroke-width="3"/>
+<circle cx="1110" cy="1410" r="5" fill="#178064"/>
+<polyline points="1350,1410 1365,1410" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="1365" y="1397" width="140" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1505,1410 1520,1410" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="1435.0" y="1386" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R23 · 110 kΩ</text>
+<polyline points="1520,1410 2020,1410" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="2050" y="1417" font-size="22" fill="#172d41" font-weight="700" text-anchor="start">J8 pin 1 → bias electrode</text>
+<text x="2050" y="1460" font-size="21" fill="#526778" font-weight="400" text-anchor="start">J8 pin 2: NC</text>
+<polyline points="340,1410 340,1530 425,1530" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="425,1530 440,1530" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="440" y="1517" width="140" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="580,1530 595,1530" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="510.0" y="1506" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R21 · 1 MΩ</text>
+<polyline points="595,1530 700,1530 700,1650 795,1650" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="340,1530 340,1630 440,1630" fill="none" stroke="#178064" stroke-width="3"/>
+<circle cx="340" cy="1530" r="5" fill="#178064"/>
+<polyline points="440,1630 495,1630" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="495,1614 495,1646" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="511,1614 511,1646" fill="none" stroke="#178064" stroke-width="3"/>
+<polyline points="511,1630 700,1630" fill="none" stroke="#178064" stroke-width="3"/>
+<circle cx="700" cy="1630" r="5" fill="#178064"/>
+<text x="500" y="1685" font-size="21" fill="#172d41" font-weight="400" text-anchor="middle">C23  1.5 nF</text>
+<text x="820" y="1657" font-size="22" fill="#172d41" font-weight="700" text-anchor="start">U1 pin 61 RLDINV</text>
+<rect x="1050" y="1500" width="390" height="170" rx="15" fill="#e8f4ee" stroke="#71a288" stroke-width="2"/>
+<polyline points="1110,1410 1110,1500" fill="none" stroke="#178064" stroke-width="3"/>
+<text x="1075" y="1540" font-size="25" fill="#172d41" font-weight="700" text-anchor="start">U9 · TPD4E001</text>
+<text x="1075" y="1577" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">pin 1: RLD_CLAMP tap</text>
+<text x="1075" y="1613" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pin 5 → AVDD; pin 2 → GND</text>
+<text x="1075" y="1648" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">pins 3, 4, 6: NC</text>
+<text x="1530" y="1565" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">C24 100 nF: AVDD → capacitor → GND</text>
+<text x="1530" y="1610" font-size="22" fill="#178064" font-weight="400" text-anchor="start">R21 and C23 both bridge pins 63 and 61.</text>
+<text x="1530" y="1660" font-size="20" fill="#526778" font-weight="400" text-anchor="start">RLD starts disabled; this drawing shows its wiring.</text>
+<text x="65" y="1825" font-size="21" fill="#526778" font-weight="400" text-anchor="start">Test points: TP1 AVDD · TP2 VSYS · TP3 VREFP · TP4 VCAP1 · TP5 DRDY_N · TP6 RLDOUT · TP7 3V3_D · TP8 GND</text>
+<text x="55" y="1875" font-size="21" fill="#526778" font-weight="400" text-anchor="start">No galvanic isolation is fitted: do not connect electrodes to a person while USB or other externally grounded equipment is attached.</text>
+<text x="55" y="1907" font-size="19" fill="#526778" font-weight="400" text-anchor="start">ADS1296 A4 TinySocket CapFix • electrical connections from the saved KiCad schematic • drawn pin positions are rearranged for clarity</text>
+</svg>

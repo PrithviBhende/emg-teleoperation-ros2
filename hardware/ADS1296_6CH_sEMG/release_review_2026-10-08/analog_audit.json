@@ -1,0 +1,160 @@
+{
+  "audit_date": "2026-10-08",
+  "scope": "Read-only electrical/analog review of ADS1296_RevA4_TinySocket_CapFix; no PCB or schematic changes",
+  "board_sha256": "adb9748b6987b523c18c6ec353b9b18b20cc3a62a4169fec022da6b388176e3e",
+  "saved_netlist_sha256": "e4e8a5d0f64d2052f2ef0082968f3ad737838e846911fa61633e6371110860ce",
+  "conclusion": "The main analog topology and pin connections are consistent with manufacturer guidance. This is still a bench prototype, not a physically validated electrode acquisition system. No confirmed reversed pin or incorrect nominal VCAP/reference value was found in this analog review. Ordering readiness remains conditional on exact parts, capacitor qualifications and the separate mechanical and power/data safety decisions.",
+  "connections_reviewed": {
+    "ADS1296_TQFP64": "All 64 names/pad numbers compared to TI PAG pin tables. Six channel pairs correct; unused IN7/IN8 and test/RLDIN pins tied to AVDD; RESV1 and DAISY_IN grounded; AVSS/DGND grounds, AVDD/AVDD1 and DVDD supplies consistent; RLDREF open only works with internal reference selection.",
+    "LP5907MFX_3V3": {"1": "VSYS/IN", "2": "GND", "3": "VSYS/EN", "4": "NC", "5": "AVDD/OUT"},
+    "TPD4E001DBVR": {"1": "positive or bias clamp", "2": "GND", "3": "unused IO", "4": "unused IO", "5": "AVDD/VCC", "6": "negative clamp for inputs; unused for U9"},
+    "ESD_package_caveat": "TPD4E001RDBVR has a different VCC/GND pin arrangement and must not be substituted. DCK, DRL, DRS and DPK packages must not be substituted into the SOT-23-6 footprint without a new check."
+  },
+  "ordering_gates": [
+    {
+      "id": "exact_packages_and_precision",
+      "status": "required",
+      "action": "Keep ADS1296IPAG/IPAGR TQFP-64, LP5907MFX-3.3/NOPB SOT-23-5 and TPD4E001DBVR SOT-23-6. Keep the 24 electrode input resistors at 0.1% thin-film and the six 1.8nF capacitors at C0G 5%; generic precision substitutions need actual specifications."
+    },
+    {
+      "id": "effective_capacitance",
+      "status": "not fully qualified",
+      "action": "Obtain part-specific DC-bias/ESR curves or confirmation for C2/C3 at their real rail voltages, and C14/C16/C18/C19/C20 at their node voltages. The nominal BOM does not prove effective capacitance. TI LP5907 requires actual input/output capacitance >=0.7uF after bias, tolerance and temperature, and output ESR in its specified range. Do not use an unsupported percentage loss estimate as evidence."
+    },
+    {
+      "id": "body_connected_power_and_data",
+      "status": "unresolved system gate",
+      "action": "The current carrier and USB kit contain no galvanic isolation. Direct body electrodes plus externally powered/grounded USB is not a reviewed human-recording arrangement. Resolve this separately; the series resistors and ESD chips do not replace isolation."
+    }
+  ],
+  "firmware_and_bench_gates": [
+    {
+      "id": "input_common_mode",
+      "status": "required before electrode capture",
+      "finding": "There is no passive input bias return and no input AC coupling. RLD powered down is appropriate for initial internal-short/test/dummy bring-up, but cannot be the final recording condition unless an alternate bias is provided.",
+      "current_hardware_option": "After dummy-load validation, enable the internal RLD midpoint and RLD buffer, connect J8 pin1 to a bias electrode, and initially leave RLD_SENSP/RLD_SENSN zero for buffered midpoint bias. Add CH1-only common-mode feedback only after a real-load stability check."
+    },
+    {
+      "id": "RLD_stability",
+      "status": "unproven",
+      "finding": "The 1Mohm parallel 1.5nF feedback is a TI example, not a phase-margin guarantee. The 220kohm output resistance and actual cable/electrode capacitances change the loop. No real-load stability measurement or verified full RLD loop model exists for this exact board.",
+      "validation": "Check RLDOUT for settling, oscillation, rail saturation and recovery on dummy electrode/cable loads. Start with fixed midpoint bias; if using active feedback, test selected sensing pairs and disconnections."
+    },
+    {
+      "id": "PGA_offset_and_headroom",
+      "status": "must measure",
+      "finding": "DC electrode offset and common-mode interference reach the PGA. Gain6 is a starting point, not a universal optimum; reduce gain if raw samples approach clipping. A later software HPF cannot recover clipped readings."
+    },
+    {
+      "id": "filtering",
+      "status": "software still needed",
+      "finding": "The board has a first-order differential low-pass plus ADC digital decimation. There is no analog high-pass or mains notch. PC-side 20-450Hz filtering/notch is a project choice that needs whole-cascade validation; save raw readings too."
+    },
+    {
+      "id": "reference_startup",
+      "status": "firmware requirement",
+      "finding": "Internal reference buffer is disabled after reset. Firmware must select internal2.4V reference, HR4kSPS, desired gains and internal RLD midpoint as appropriate; wait for supplies/VCAP1 and perform reset/configuration/readback. Do not assume default registers implement the target configuration."
+    },
+    {
+      "id": "actual_noise",
+      "status": "unmeasured",
+      "finding": "No measured board noise, electrode/cable noise, motion artifact, RF immunity or RLD rejection result exists. Compare internal-short noise with externally shorted/bias-held input noise, then controlled waveform and electrode recordings."
+    }
+  ],
+  "input_filter_calculations": {
+    "assumptions": "Ideal negligible-impedance electrode sources; no cable/electrode parasitics; six equal input networks",
+    "each_leg_ohm": 46900,
+    "differential_ohm": 93800,
+    "capacitor_farads": 1.8e-9,
+    "pole_formula": "1/(2*pi*(Rpositive+Rnegative)*Cdiff)",
+    "nominal_pole_Hz": 942.6376634203705,
+    "component_only_pole_min_Hz": 896.8533023361119,
+    "component_only_pole_max_Hz": 993.2434154368796,
+    "RC_at_450Hz_dB": -0.8916135236103419,
+    "HR4k_ADC_sinc3_at_450Hz_dB": -0.544730454214797,
+    "RC_plus_ADC_at_450Hz_dB": -1.436343977825139,
+    "RC_plus_ADC_at_2000Hz_dB": -19.17145743562732,
+    "caveat": "Actual electrode resistance increases filter attenuation, and parasitic imbalance can convert common-mode to differential noise. The pole is not a statement of effective system bandwidth or complete immunity."
+  },
+  "noise_calculations": {
+    "formula_source": "https://www.analog.com/en/resources/faqs/faq_what_is_the_noise_perform_of_digital_potentiom.html",
+    "formula": "sqrt(4*k*T*R*noise_bandwidth), with RC weighting for the exact band integral",
+    "temperature_K": 298.15,
+    "band_Hz": [20, 450],
+    "both_input_legs_RC_shaped_noise_uVrms": 0.785845,
+    "excluded": "Electrode and cable noise, input/clamp leakage fluctuations, ADC noise, power switching, RLD noise, aliases and environmental interference",
+    "cross_check": "Agrees with older executed A1 ideal input-network ngspice result; this is not a physical test of CapFix",
+    "ADC_datasheet_typical_uVrms": 1.5,
+    "ADC_typical_conditions": "HR4kSPS/gain6/3V analog/internal2.4V reference/shorted inputs; full device-filter bandwidth",
+    "do_not_claim": "Do not call the ADC table value measured board performance or directly add values with different bandwidths. 24-bit codes are not24 noise-free bits."
+  },
+  "range_calculations": {
+    "AVDD_V": 3.3,
+    "AVSS_V": 0,
+    "DVDD_V": 3.3,
+    "reference_V": 2.4,
+    "gain": 6,
+    "differential_fullscale_endpoints_V": [-0.4, 0.4],
+    "nominal_LSB_nV": 47.68371582031249,
+    "common_mode_formula": "AVSS+0.2+G*abs(Vdiff)/2 < Vcm < AVDD-0.2-G*abs(Vdiff)/2",
+    "common_mode_range_at_300mV_diff_V": [1.1, 2.2],
+    "common_mode_range_at_400mV_diff_V": [1.4, 1.9],
+    "internal_bias_midpoint_V": 1.65,
+    "gain12_differential_fullscale_V": [-0.2, 0.2],
+    "current_caveat": "These voltage ranges assume valid supply/reference and common-mode. They are not a finger EMG amplitude guarantee."
+  },
+  "capacitors": {
+    "VCAP1": "C16=22uF16V X5R1210 plus C17=100nF16V X7R0805; nominal values match TI",
+    "VCAP2_3_4": "C18/C19/C20=1uF16V X7R0805 each; nominal values match TI. VCAP3 nominally AVDD+1.9V, approximately5.2V here, so its voltage rating must exceed the internal elevated voltage",
+    "reference": "C14=10uF16V X5R1206 plus C15=100nF16V X7R0805 between VREFP and GND; VREFN grounded",
+    "ferroelectric_caveat": "C14/C16 and supply X5R/X7R parts have DC-bias, aging and piezoelectric effects. TI specifically warns VCAP1 vibration/microphonics can degrade reference performance. This is a motion-sensing wearable; mechanical isolation and an actual tap/movement test matter.",
+    "exact_DC_bias_status": "The manufacturer exact-part nominal ratings were verified, but numerical guaranteed effective capacitance at operating voltage/temperature/age was not obtained. Accessible manufacturer reports describe their curves as typical simulations, not guaranteed limits. No percentage derating is asserted here.",
+    "LP5907_direct_AVDD_capacitor_count": 16,
+    "LP5907_direct_AVDD_nominal_total_uF": 5.5,
+    "LP5907_simple_high_tolerance_temperature_screen_uF": 6.9575,
+    "LP5907_screen_assumption": "5.5uF*1.10*1.15; ignores voltage/age effects and is not a full effective-capacitance qualification",
+    "LP5907_current_range": "Output capacitor specified1-10uF nominal application range, actual minimum0.7uF after tolerance/bias/temperature, ESR5-500milliohm. Local C2/C3=2.2uF16V X7R. Input>=1uF nominal and actual>=0.7uF; input within1cm, more input bulk if long inductive supply leads.",
+    "not_direct_AVDD_loading": "C14/C15 reference and C16-C20 internal nodes must not be blindly added to LP5907's direct output capacitance. Current direct rail does not contain15uF."
+  },
+  "RLD_calculations": {
+    "feedback_resistance_ohm": 1000000,
+    "feedback_capacitance_F": 1.5e-9,
+    "feedback_pole_Hz": 106.1032953945969,
+    "output_resistance_ohm": 220000,
+    "ideal_3V3_current_bound_uA_both_resistors": 15,
+    "ideal_3V3_current_bound_uA_one_resistor_remaining": 30,
+    "safety_caveat": "Only low-voltage resistor arithmetic. This is not isolation, aggregate patient leakage, fault analysis or safety certification; other electrode paths and externally grounded equipment remain relevant.",
+    "published_comparison": "TI SBAA188 tests1M||1.5nF using1 sensed channel and output protection50/75/100k; this does not verify our220k/cable/electrode combination."
+  },
+  "TPD4E001_limits": {
+    "maximum_leakage_rating_nA": 1,
+    "stated_electrical_table_conditions": "VCC5V +/-10%; manufacturer operation range includes3.3V but do not claim a measured3.3V leakage result",
+    "illustrative_1nA_times_22k_offset_uV": 22,
+    "illustrative_opposite_two_leg_offset_uV": 44,
+    "caveat": "These are illustrative DC voltage drops, not an RMS noise specification or actual channel offset; source impedance and bias matter. Chip IEC ESD ratings do not prove assembled PCB protection."
+  },
+  "proposed_TPD4E1U06DBVR_substitution": {
+    "status": "Pin-compatible candidate, not approved as an electrically equivalent or fully qualified AFE substitute; native schematic and BOM remain unchanged",
+    "source": "https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf",
+    "pin_compatibility": "DBV SOT-23-6: IO1/3/4/6, GND2, NC5. TI permits NC5 floating, grounded or connected to VCC, so existing AVDD3.3V at pin5 is allowed.",
+    "normal_input_range": "0-5.5V recommended IO range; correctly biased EMG around1.65V is inside it. This device needs no supply.",
+    "protection_difference": "Ground-referenced TVS, not a3.3V rail clamp. Minimum breakdown6.5V; typical clamp11V at1A or15V at3A,8/20us. ADS input protection and rail injection must be assessed as a cascade; ESD system protection is not proven.",
+    "leakage_spec": "1nA typical,10nA maximum at IO2.5V. No exact maximum at the proposed1.65V operating point is specified. The original part's1nA maximum uses different conditions, so do not assert noise equivalence.",
+    "capacitance_spec": "0.8pF typical/1pF maximum at1MHz,2.5V,25C; mismatch0.07pF maximum at2.5V. No assembled-channel CMRR claim follows.",
+    "own_illustrative_offset_calculation": "10nA*22kohm=220uV per input leg, or440uV with opposite leg leakage; electrode source impedance adds further drop. This is DC arithmetic, not RMS noise or a measured offset.",
+    "required_decision": "Explicitly approve and update the exact BOM/symbol identity before purchasing as a substitute. Keep pins5/2 as verified. Compare input DC offsets, rail behavior, shorted-input noise and transient recovery on dummy loads before electrodes; do not claim the alternate device certifies human safety."
+  },
+  "sources": [
+    {"url": "https://www.ti.com/lit/ds/symlink/ads1296.pdf", "sections": "PAG pin tables pp10-11; Table1 noise; sections9.3.1.5,9.3.1.6,9.6 CONFIG3,10.1.2,10.1.3,11,12"},
+    {"url": "https://www.ti.com/lit/an/sbaa188/sbaa188.pdf", "sections": "RLD protection/cable stability, lead-off failure and1-channel measured setup"},
+    {"url": "https://www.ti.com/lit/ds/symlink/lp5907.pdf", "sections": "SOT23-5 pin table, recommended operating conditions, sections7.2.2.4-7.2.2.7"},
+    {"url": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf", "sections": "DBV vsRDBV pin map and electrical limits"},
+    {"url": "https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf", "sections": "DBV pin table, recommended IO range, leakage/capacitance/clamp limits; proposed substitute only"},
+    {"url": "https://search.kemet.com/component-documentation/download/specsheet/C1210C226K4PACTU", "part": "C16"},
+    {"url": "https://yageogroup.com/download/specsheet/C1206C106K4PACTU", "part": "C14"},
+    {"url": "https://yageogroup.com/download/specsheet/C0805C225K4RACTU", "part": "C2/C3"},
+    {"url": "https://yageogroup.com/download/specsheet/C0805C105K4RACTU", "part": "1uF capacitors"},
+    {"url": "https://yageogroup.com/SalesResources/ResourceLibrary/asset/10766", "subject": "Manufacturer explanation of DC-bias/aging effects"},
+    {"url": "https://www.analog.com/en/resources/faqs/faq_what_is_the_noise_perform_of_digital_potentiom.html", "subject": "Johnson-noise equation"}
+  ]
+}

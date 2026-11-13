@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="2220" viewBox="0 0 2400 2220">
+<rect width="100%" height="100%" fill="#f3f6f9"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif}path,line,rect{stroke-linejoin:round;stroke-linecap:round}</style>
+<text x="55" y="65" font-size="40" fill="#172d41" font-weight="700" text-anchor="start">Power supplies, bypass capacitors and control pins</text>
+<text x="55" y="108" font-size="23" fill="#526778" font-weight="400" text-anchor="start">Red = supply rail. Gray = GND return. Capacitors shown in the same group connect in parallel.</text>
+<rect x="40" y="145" width="2315" height="565" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="65" y="185" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">1  Regulated 5 V input, switch and analog regulator</text>
+<text x="80" y="240" font-size="24" fill="#172d41" font-weight="700" text-anchor="start">J1 pin 1</text>
+<text x="80" y="275" font-size="20" fill="#b94542" font-weight="400" text-anchor="start">regulated 5 V</text>
+<polyline points="210,245 265,245" fill="none" stroke="#b94542" stroke-width="3"/>
+<polyline points="265,245 280,245" fill="none" stroke="#b94542" stroke-width="3"/>
+<rect x="280" y="232" width="120" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="400,245 415,245" fill="none" stroke="#b94542" stroke-width="3"/>
+<text x="340.0" y="221" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">F1 · 750mA PTC</text>
+<polyline points="415,245 600,245" fill="none" stroke="#b94542" stroke-width="3"/>
+<circle cx="500" cy="245" r="5" fill="#b94542"/>
+<rect x="600" y="205" width="270" height="120" rx="15" fill="#fff3e8" stroke="#cb9a72" stroke-width="2"/>
+<text x="735" y="238" font-size="23" fill="#172d41" font-weight="700" text-anchor="middle">Q1  AO3401A</text>
+<text x="620" y="280" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">2  S</text>
+<text x="850" y="280" font-size="21" fill="#172d41" font-weight="400" text-anchor="end">3  D</text>
+<text x="735" y="312" font-size="21" fill="#172d41" font-weight="400" text-anchor="middle">1  G</text>
+<polyline points="870,245 965,245" fill="none" stroke="#b94542" stroke-width="3"/>
+<rect x="965" y="220" width="185" height="50" rx="5" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<text x="1057" y="253" font-size="22" fill="#172d41" font-weight="400" text-anchor="middle">D1  SS14</text>
+<text x="970" y="207" font-size="18" fill="#172d41" font-weight="400" text-anchor="start">2  anode</text>
+<text x="1145" y="207" font-size="18" fill="#172d41" font-weight="400" text-anchor="end">1  cathode</text>
+<polyline points="1150,245 1440,245" fill="none" stroke="#b94542" stroke-width="3"/>
+<circle cx="1260" cy="245" r="5" fill="#b94542"/>
+<text x="1250" y="216" font-size="23" fill="#b94542" font-weight="700" text-anchor="start">VSYS</text>
+<rect x="1440" y="200" width="310" height="220" rx="15" fill="#fbece9" stroke="#c38e89" stroke-width="2"/>
+<text x="1595" y="238" font-size="26" fill="#172d41" font-weight="700" text-anchor="middle">U2  LP5907</text>
+<text x="1460" y="279" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">1 IN + 3 EN</text>
+<text x="1730" y="279" font-size="21" fill="#172d41" font-weight="400" text-anchor="end">5 OUT</text>
+<text x="1460" y="360" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">2 GND</text>
+<text x="1460" y="394" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">4 NC</text>
+<polyline points="1750,245 2270,245" fill="none" stroke="#b94542" stroke-width="3"/>
+<text x="1955" y="216" font-size="25" fill="#b94542" font-weight="700" text-anchor="start">AVDD · analog 3.3 V</text>
+<polyline points="1990,245 1990,303.0" fill="none" stroke="#b94542" stroke-width="3"/>
+<polyline points="1975,303.0 2005,303.0" fill="none" stroke="#b94542" stroke-width="3"/>
+<polyline points="1975,317.0 2005,317.0" fill="none" stroke="#b94542" stroke-width="3"/>
+<polyline points="1990,317.0 1990,375" fill="none" stroke="#b94542" stroke-width="3"/>
+<text x="2013" y="316.0" font-size="19" fill="#172d41" font-weight="400" text-anchor="start">C3  2.2 µF</text>
+<circle cx="1990" cy="245" r="5" fill="#b94542"/>
+<circle cx="1990" cy="375" r="5" fill="#b94542"/>
+<polyline points="1990,375 1990,387" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="1975,387 2005,387" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="1980,394 2000,394" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="1985,401 1995,401" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="1450,347 1370,347 1370,460" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="1370,460 1370,472" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="1355,472 1385,472" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="1360,479 1380,479" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="1365,486 1375,486" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="500,245 500,400 570,400" fill="none" stroke="#b94542" stroke-width="3"/>
+<polyline points="570,400 585,400" fill="none" stroke="#b94542" stroke-width="3"/>
+<rect x="585" y="387" width="105" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="690,400 705,400" fill="none" stroke="#b94542" stroke-width="3"/>
+<text x="637.5" y="376" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R47 · 100 kΩ</text>
+<polyline points="705,400 735,400 735,325" fill="none" stroke="#526778" stroke-width="3"/>
+<circle cx="735" cy="400" r="5" fill="#526778"/>
+<polyline points="735,400 735,550 920,550" fill="none" stroke="#526778" stroke-width="3"/>
+<rect x="920" y="505" width="300" height="130" rx="15" fill="#edf1f4" stroke="#aebdca" stroke-width="2"/>
+<text x="1070" y="535" font-size="23" fill="#172d41" font-weight="700" text-anchor="middle">SW1 · battery enable</text>
+<text x="940" y="570" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">2 COM → 1 ON → GND</text>
+<text x="940" y="605" font-size="20" fill="#172d41" font-weight="400" text-anchor="start">3 OFF: unconnected</text>
+<polyline points="1245,550 1245,562" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="1230,562 1260,562" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="1235,569 1255,569" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="1240,576 1250,576" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="1220,550 1245,550" fill="none" stroke="#526778" stroke-width="3"/>
+<text x="80" y="610" font-size="24" fill="#526778" font-weight="400" text-anchor="start">J1 pin 2 → GND</text>
+<text x="1470" y="505" font-size="23" fill="#b94542" font-weight="400" text-anchor="start">VSYS → A1 socket 1 (SYS5V)</text>
+<text x="1470" y="545" font-size="23" fill="#526778" font-weight="400" text-anchor="start">A1 socket 2 → GND</text>
+<text x="1470" y="585" font-size="23" fill="#b94542" font-weight="400" text-anchor="start">A1 socket 3 → 3V3_D (digital 3.3 V output)</text>
+<text x="1470" y="630" font-size="20" fill="#526778" font-weight="400" text-anchor="start">USB power reaches the Tiny through its kit adapter.</text>
+<rect x="40" y="745" width="1135" height="605" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="65" y="785" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">2  Supply capacitors: each branch goes to GND</text>
+<rect x="65" y="815" width="1085" height="132" rx="9" fill="#f8fafc" stroke="#d9e1e8" stroke-width="2"/>
+<text x="81" y="842" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">VSYS input bypass</text>
+<text x="81" y="877" font-size="19" fill="#b94542" font-weight="400" text-anchor="start">VSYS</text>
+<text x="1134" y="877" font-size="19" fill="#526778" font-weight="400" text-anchor="end">GND</text>
+<polyline points="90,903 195,903" fill="none" stroke="#b94542" stroke-width="3"/>
+<rect x="195" y="887" width="830" height="35" rx="4" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="610.0" y="911" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">C1 100 nF  ∥  C2 2.2 µF</text>
+<polyline points="1025,903 1125,903" fill="none" stroke="#526778" stroke-width="3"/>
+<rect x="65" y="958" width="1085" height="132" rx="9" fill="#f8fafc" stroke="#d9e1e8" stroke-width="2"/>
+<text x="81" y="985" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">Analog rail local bypass</text>
+<text x="81" y="1020" font-size="19" fill="#b94542" font-weight="400" text-anchor="start">AVDD</text>
+<text x="1134" y="1020" font-size="19" fill="#526778" font-weight="400" text-anchor="end">GND</text>
+<polyline points="90,1046 195,1046" fill="none" stroke="#b94542" stroke-width="3"/>
+<rect x="195" y="1030" width="830" height="35" rx="4" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="610.0" y="1054" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">C5 100 nF  ∥  C6 100 nF  ∥  C7 100 nF  ∥  C8 100 nF  ∥  C9 100 nF  ∥  C10 100 nF</text>
+<polyline points="1025,1046 1125,1046" fill="none" stroke="#526778" stroke-width="3"/>
+<rect x="65" y="1101" width="1085" height="132" rx="9" fill="#f8fafc" stroke="#d9e1e8" stroke-width="2"/>
+<text x="81" y="1128" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">Analog bulk + pin 54 local branch</text>
+<text x="81" y="1163" font-size="19" fill="#b94542" font-weight="400" text-anchor="start">AVDD</text>
+<text x="1134" y="1163" font-size="19" fill="#526778" font-weight="400" text-anchor="end">GND</text>
+<polyline points="90,1189 195,1189" fill="none" stroke="#b94542" stroke-width="3"/>
+<rect x="195" y="1173" width="830" height="35" rx="4" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="610.0" y="1197" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">C11 1 µF  ∥  C27 1 µF</text>
+<polyline points="1025,1189 1125,1189" fill="none" stroke="#526778" stroke-width="3"/>
+<text x="80" y="1290" font-size="20" fill="#526778" font-weight="400" text-anchor="start">C3 is drawn at U2 above. Each protection IC also has 100 nF.</text>
+<rect x="1210" y="745" width="1145" height="605" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="1235" y="785" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">3  Internal reference and internal regulator capacitors</text>
+<text x="1240" y="847" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 24  VREFP</text>
+<polyline points="1485,840 1600,840" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="1600" y="817" width="535" height="46" rx="5" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="1867" y="847" font-size="21" fill="#172d41" font-weight="400" text-anchor="middle">C14 10 µF  ∥  C15 100 nF</text>
+<polyline points="2135,840 2250,840" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2250,840 2250,852" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2235,852 2265,852" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2240,859 2260,859" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2245,866 2255,866" fill="none" stroke="#526778" stroke-width="2"/>
+<text x="1240" y="925" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 28  VCAP1</text>
+<polyline points="1485,918 1600,918" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="1600" y="895" width="535" height="46" rx="5" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="1867" y="925" font-size="21" fill="#172d41" font-weight="400" text-anchor="middle">C16 22 µF  ∥  C17 100 nF</text>
+<polyline points="2135,918 2250,918" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2250,918 2250,930" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2235,930 2265,930" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2240,937 2260,937" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2245,944 2255,944" fill="none" stroke="#526778" stroke-width="2"/>
+<text x="1240" y="1003" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 30  VCAP2</text>
+<polyline points="1485,996 1600,996" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="1600" y="973" width="535" height="46" rx="5" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="1867" y="1003" font-size="21" fill="#172d41" font-weight="400" text-anchor="middle">C18 1 µF</text>
+<polyline points="2135,996 2250,996" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2250,996 2250,1008" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2235,1008 2265,1008" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2240,1015 2260,1015" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2245,1022 2255,1022" fill="none" stroke="#526778" stroke-width="2"/>
+<text x="1240" y="1081" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 55  VCAP3</text>
+<polyline points="1485,1074 1600,1074" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="1600" y="1051" width="535" height="46" rx="5" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="1867" y="1081" font-size="21" fill="#172d41" font-weight="400" text-anchor="middle">C19 1 µF</text>
+<polyline points="2135,1074 2250,1074" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2250,1074 2250,1086" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2235,1086 2265,1086" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2240,1093 2260,1093" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2245,1100 2255,1100" fill="none" stroke="#526778" stroke-width="2"/>
+<text x="1240" y="1159" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 26  VCAP4</text>
+<polyline points="1485,1152 1600,1152" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="1600" y="1129" width="535" height="46" rx="5" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="1867" y="1159" font-size="21" fill="#172d41" font-weight="400" text-anchor="middle">C20 1 µF</text>
+<polyline points="2135,1152 2250,1152" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2250,1152 2250,1164" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2235,1164 2265,1164" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2240,1171 2260,1171" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2245,1178 2255,1178" fill="none" stroke="#526778" stroke-width="2"/>
+<text x="1240" y="1237" font-size="21" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 64  WCT</text>
+<polyline points="1485,1230 1600,1230" fill="none" stroke="#178064" stroke-width="3"/>
+<rect x="1600" y="1207" width="535" height="46" rx="5" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="1867" y="1237" font-size="21" fill="#172d41" font-weight="400" text-anchor="middle">C21 1 nF</text>
+<polyline points="2135,1230 2250,1230" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2250,1230 2250,1242" fill="none" stroke="#526778" stroke-width="3"/>
+<polyline points="2235,1242 2265,1242" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2240,1249 2260,1249" fill="none" stroke="#526778" stroke-width="2"/>
+<polyline points="2245,1256 2255,1256" fill="none" stroke="#526778" stroke-width="2"/>
+<text x="1240" y="1320" font-size="20" fill="#526778" font-weight="400" text-anchor="start">U1 pin 25 (VREFN) → GND. ∥ means parallel components.</text>
+<rect x="40" y="1385" width="1135" height="690" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="65" y="1425" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">4  ADS1296 supply pins and digital bypass</text>
+<text x="75" y="1470" font-size="25" fill="#b94542" font-weight="700" text-anchor="start">AVDD → U1 pins 19, 21, 22, 54, 56, 59</text>
+<text x="75" y="1520" font-size="25" fill="#b94542" font-weight="700" text-anchor="start">3V3_D → U1 pins 48, 50</text>
+<text x="75" y="1570" font-size="22" fill="#526778" font-weight="400" text-anchor="start">GND → U1 pins 20, 23, 25, 32, 33, 49, 51, 53, 57, 58</text>
+<rect x="65" y="1610" width="1085" height="132" rx="9" fill="#f8fafc" stroke="#d9e1e8" stroke-width="2"/>
+<text x="81" y="1637" font-size="21" fill="#172d41" font-weight="700" text-anchor="start">Digital rail bypass</text>
+<text x="81" y="1672" font-size="19" fill="#b94542" font-weight="400" text-anchor="start">3V3_D</text>
+<text x="1134" y="1672" font-size="19" fill="#526778" font-weight="400" text-anchor="end">GND</text>
+<polyline points="90,1698 195,1698" fill="none" stroke="#b94542" stroke-width="3"/>
+<rect x="195" y="1682" width="830" height="35" rx="4" fill="#fff5df" stroke="#d0b57a" stroke-width="2"/>
+<text x="610.0" y="1706" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">C12 100 nF  ∥  C13 100 nF  ∥  C22 1 µF  ∥  C26 100 nF</text>
+<polyline points="1025,1698 1125,1698" fill="none" stroke="#526778" stroke-width="3"/>
+<text x="75" y="1800" font-size="25" fill="#172d41" font-weight="700" text-anchor="start">Other fixed U1 connections</text>
+<text x="75" y="1850" font-size="23" fill="#b94542" font-weight="400" text-anchor="start">AVDD → pins 1, 2, 3, 4, 17, 18, 62</text>
+<text x="75" y="1895" font-size="23" fill="#526778" font-weight="400" text-anchor="start">GND → pins 31 and 41</text>
+<text x="75" y="1940" font-size="23" fill="#526778" font-weight="400" text-anchor="start">NC → pins 27, 29 and 60</text>
+<text x="75" y="2000" font-size="20" fill="#526778" font-weight="400" text-anchor="start">Pin 60 uses the internal RLD reference in this design.</text>
+<rect x="1210" y="1385" width="1145" height="690" rx="15" fill="white" stroke="#d3dde5" stroke-width="2"/>
+<text x="1235" y="1425" font-size="27" fill="#172d41" font-weight="700" text-anchor="start">5  Pull resistors and fixed logic settings</text>
+<text x="1245" y="1477" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 39</text>
+<polyline points="1420,1470 1530,1470" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1470 1545,1470" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1457" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1470 1720,1470" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1446" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R35 · 10 kΩ</text>
+<polyline points="1720,1470 1880,1470" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1477" font-size="22" fill="#b94542" font-weight="400" text-anchor="start">3V3_D</text>
+<text x="1245" y="1530" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 36</text>
+<polyline points="1420,1523 1530,1523" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1523 1545,1523" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1510" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1523 1720,1523" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1499" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R36 · 10 kΩ</text>
+<polyline points="1720,1523 1880,1523" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1530" font-size="22" fill="#b94542" font-weight="400" text-anchor="start">3V3_D</text>
+<text x="1245" y="1583" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 35</text>
+<polyline points="1420,1576 1530,1576" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1576 1545,1576" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1563" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1576 1720,1576" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1552" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R37 · 10 kΩ</text>
+<polyline points="1720,1576 1880,1576" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1583" font-size="22" fill="#b94542" font-weight="400" text-anchor="start">3V3_D</text>
+<text x="1245" y="1636" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 38</text>
+<polyline points="1420,1629 1530,1629" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1629 1545,1629" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1616" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1629 1720,1629" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1605" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R38 · 10 kΩ</text>
+<polyline points="1720,1629 1880,1629" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1636" font-size="22" fill="#526778" font-weight="400" text-anchor="start">GND</text>
+<text x="1245" y="1689" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 52</text>
+<polyline points="1420,1682 1530,1682" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1682 1545,1682" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1669" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1682 1720,1682" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1658" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R14 · 10 kΩ</text>
+<polyline points="1720,1682 1880,1682" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1689" font-size="22" fill="#b94542" font-weight="400" text-anchor="start">3V3_D</text>
+<text x="1245" y="1742" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 37</text>
+<polyline points="1420,1735 1530,1735" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1735 1545,1735" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1722" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1735 1720,1735" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1711" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R15 · 10 kΩ</text>
+<polyline points="1720,1735 1880,1735" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1742" font-size="22" fill="#526778" font-weight="400" text-anchor="start">GND</text>
+<text x="1245" y="1795" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 42</text>
+<polyline points="1420,1788 1530,1788" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1788 1545,1788" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1775" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1788 1720,1788" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1764" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R10 · 10 kΩ</text>
+<polyline points="1720,1788 1880,1788" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1795" font-size="22" fill="#526778" font-weight="400" text-anchor="start">GND</text>
+<text x="1245" y="1848" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 44</text>
+<polyline points="1420,1841 1530,1841" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1841 1545,1841" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1828" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1841 1720,1841" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1817" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R11 · 10 kΩ</text>
+<polyline points="1720,1841 1880,1841" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1848" font-size="22" fill="#526778" font-weight="400" text-anchor="start">GND</text>
+<text x="1245" y="1901" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 45</text>
+<polyline points="1420,1894 1530,1894" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1894 1545,1894" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1881" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1894 1720,1894" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1870" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R12 · 10 kΩ</text>
+<polyline points="1720,1894 1880,1894" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1901" font-size="22" fill="#526778" font-weight="400" text-anchor="start">GND</text>
+<text x="1245" y="1954" font-size="22" fill="#172d41" font-weight="400" text-anchor="start">U1 pin 46</text>
+<polyline points="1420,1947 1530,1947" fill="none" stroke="#7555a4" stroke-width="3"/>
+<polyline points="1530,1947 1545,1947" fill="none" stroke="#7555a4" stroke-width="3"/>
+<rect x="1545" y="1934" width="160" height="26" rx="3" fill="#fff1d4" stroke="#af8740" stroke-width="2"/>
+<polyline points="1705,1947 1720,1947" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1625.0" y="1923" font-size="18" fill="#172d41" font-weight="400" text-anchor="middle">R13 · 10 kΩ</text>
+<polyline points="1720,1947 1880,1947" fill="none" stroke="#7555a4" stroke-width="3"/>
+<text x="1900" y="1954" font-size="22" fill="#526778" font-weight="400" text-anchor="start">GND</text>
+<text x="55" y="2165" font-size="21" fill="#526778" font-weight="400" text-anchor="start">Supply capacitors are parallel branches between a rail and GND. The two 3.3 V rails are separate named nets. This is an explanatory wiring view.</text>
+<text x="55" y="2197" font-size="19" fill="#526778" font-weight="400" text-anchor="start">ADS1296 A4 TinySocket CapFix • electrical connections from the saved KiCad schematic • drawn pin positions are rearranged for clarity</text>
+</svg>

@@ -1,0 +1,3364 @@
+{
+  "J1": {
+    "ref": "J1",
+    "value": "REGULATED 5V IN",
+    "symbol": "CONN2",
+    "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+    "mpn": "B2B-XH-A(LF)(SN)",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf",
+    "description": "5.0-5.25V regulated source, not raw Li-ion; use battery OR USB for initial tests",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "BAT5V",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      }
+    }
+  },
+  "F1": {
+    "ref": "F1",
+    "value": "750mA PTC",
+    "symbol": "F",
+    "footprint": "Fuse:Fuse_1812_4532Metric",
+    "mpn": "MF-MSMF075-2",
+    "datasheet": "https://www.bourns.com/docs/product-datasheets/mfmsmf.pdf",
+    "description": "0.75A hold / 1.5A trip,13.2V; battery branch only",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "BAT5V",
+      "2": "BAT_FUSED"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "SW1": {
+    "ref": "SW1",
+    "value": "BATTERY ENABLE",
+    "symbol": "SW_SPDT",
+    "footprint": "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN",
+    "mpn": "JS102011SAQN",
+    "datasheet": "https://www.ckswitches.com/media/1422/js.pdf",
+    "description": "SPDT switches MOSFET gate only; USB stays powered with switch OFF",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "GND",
+      "2": "BAT_GATE",
+      "3": null
+    },
+    "pins": {
+      "2": {
+        "name": "COM",
+        "type": "passive"
+      },
+      "1": {
+        "name": "ON",
+        "type": "passive"
+      },
+      "3": {
+        "name": "OFF",
+        "type": "passive"
+      }
+    }
+  },
+  "Q1": {
+    "ref": "Q1",
+    "value": "AO3401A",
+    "symbol": "PMOS_GSD",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "mpn": "AO3401A",
+    "datasheet": "https://www.aosmd.com/pdfs/datasheet/AO3401A.pdf",
+    "description": "S=2, D=3, G=1; P-channel battery high-side switch",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "BAT_GATE",
+      "2": "BAT_FUSED",
+      "3": "BAT_SWITCHED"
+    },
+    "pins": {
+      "1": {
+        "name": "G",
+        "type": "input"
+      },
+      "2": {
+        "name": "S",
+        "type": "passive"
+      },
+      "3": {
+        "name": "D",
+        "type": "passive"
+      }
+    }
+  },
+  "R47": {
+    "ref": "R47",
+    "value": "100k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-07100KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "100k; 1%; 0805; 0.125W; >=50V; Default battery OFF",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "BAT_FUSED",
+      "2": "BAT_GATE"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "D1": {
+    "ref": "D1",
+    "value": "SS14",
+    "symbol": "D",
+    "footprint": "Diode_SMD:D_SMA",
+    "mpn": "SS14",
+    "datasheet": "https://www.diodes.com/assets/Datasheets/ds23001.pdf",
+    "description": "Cathode1=VSYS,anode2=BAT_SWITCHED; blocks USB backfeed to battery",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "VSYS",
+      "2": "BAT_SWITCHED"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C1": {
+    "ref": "C1",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; Additional carrier bypass; Tiny has its own 10uF input capacitor",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "VSYS",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "#FLG01": {
+    "ref": "#FLG01",
+    "value": "VSYS SOURCE",
+    "symbol": "POWER_DRIVER",
+    "footprint": "",
+    "mpn": "",
+    "datasheet": "",
+    "description": "Passive USB source through Tiny onboard diode or battery D1",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "VSYS"
+    },
+    "pins": {
+      "1": {
+        "name": "SUPPLY",
+        "type": "power_out"
+      }
+    }
+  },
+  "#FLG02": {
+    "ref": "#FLG02",
+    "value": "GROUND RETURN",
+    "symbol": "POWER_DRIVER",
+    "footprint": "",
+    "mpn": "",
+    "datasheet": "",
+    "description": "",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "SUPPLY",
+        "type": "power_out"
+      }
+    }
+  },
+  "U2": {
+    "ref": "U2",
+    "value": "LP5907MFX-3.3/NOPB",
+    "symbol": "LDO",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "mpn": "LP5907MFX-3.3/NOPB",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/lp5907.pdf",
+    "description": "3.3V 250mA low-noise LDO; SOT23-5; analogue supply only",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "VSYS",
+      "2": "GND",
+      "3": "VSYS",
+      "4": null,
+      "5": "AVDD"
+    },
+    "pins": {
+      "1": {
+        "name": "IN",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "EN",
+        "type": "input"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "5": {
+        "name": "OUT",
+        "type": "power_out"
+      },
+      "4": {
+        "name": "NC",
+        "type": "no_connect"
+      }
+    }
+  },
+  "C2": {
+    "ref": "C2",
+    "value": "2u2",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C225K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C225K4RACTU",
+    "description": "2u2; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "VSYS",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C3": {
+    "ref": "C3",
+    "value": "2u2",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C225K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C225K4RACTU",
+    "description": "2u2; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "TP1": {
+    "ref": "TP1",
+    "value": "AVDD",
+    "symbol": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "datasheet": "",
+    "description": "Analogue 3.3V test point",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD"
+    },
+    "pins": {
+      "1": {
+        "name": "TP",
+        "type": "passive"
+      }
+    }
+  },
+  "TP2": {
+    "ref": "TP2",
+    "value": "VSYS",
+    "symbol": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "datasheet": "",
+    "description": "5V rail after source diodes",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "VSYS"
+    },
+    "pins": {
+      "1": {
+        "name": "TP",
+        "type": "passive"
+      }
+    }
+  },
+  "C27": {
+    "ref": "C27",
+    "value": "1u",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C105K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C105K4RACTU",
+    "description": "1u; X7R 10% 16V; Local AVDD1 pin54 bulk",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C5": {
+    "ref": "C5",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; Local U1 pin 19 bypass",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C6": {
+    "ref": "C6",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; Local U1 pin 21 bypass",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C7": {
+    "ref": "C7",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; Local U1 pin 22 bypass",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C8": {
+    "ref": "C8",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; Local U1 pin 54 bypass",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C9": {
+    "ref": "C9",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; Local U1 pin 56 bypass",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C10": {
+    "ref": "C10",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; Local U1 pin 59 bypass",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C11": {
+    "ref": "C11",
+    "value": "1u",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C105K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C105K4RACTU",
+    "description": "1u; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C12": {
+    "ref": "C12",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; U1 pin48 bypass",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C13": {
+    "ref": "C13",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; U1 pin50 bypass",
+    "dnp": false,
+    "sheet": 2,
+    "nets": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "U1": {
+    "ref": "U1",
+    "value": "ADS1296IPAG",
+    "symbol": "ADS1296IPAG",
+    "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+    "mpn": "ADS1296IPAG",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/ads1298.pdf",
+    "description": "All 64 pins transcribed from TI SBAS459K pp10-11; non-respiration 6-channel version",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "AVDD",
+      "2": "AVDD",
+      "3": "AVDD",
+      "4": "AVDD",
+      "5": "IN6N",
+      "6": "IN6P",
+      "7": "IN5N",
+      "8": "IN5P",
+      "9": "IN4N",
+      "10": "IN4P",
+      "11": "IN3N",
+      "12": "IN3P",
+      "13": "IN2N",
+      "14": "IN2P",
+      "15": "IN1N",
+      "16": "IN1P",
+      "17": "AVDD",
+      "18": "AVDD",
+      "19": "AVDD",
+      "20": "GND",
+      "21": "AVDD",
+      "22": "AVDD",
+      "23": "GND",
+      "24": "VREFP",
+      "25": "GND",
+      "26": "VCAP4",
+      "27": null,
+      "28": "VCAP1",
+      "29": null,
+      "30": "VCAP2",
+      "31": "GND",
+      "32": "GND",
+      "33": "GND",
+      "34": "ADS_DIN",
+      "35": "ADS_PWDN_N",
+      "36": "ADS_RESET_N",
+      "37": "ADS_CLK_UNUSED",
+      "38": "ADS_START",
+      "39": "ADS_CS_N",
+      "40": "ADS_SCLK",
+      "41": "GND",
+      "42": "ADS_GPIO1",
+      "43": "ADS_DOUT",
+      "44": "ADS_GPIO2",
+      "45": "ADS_GPIO3",
+      "46": "ADS_GPIO4",
+      "47": "ADS_DRDY_N",
+      "48": "3V3_D",
+      "49": "GND",
+      "50": "3V3_D",
+      "51": "GND",
+      "52": "ADS_CLKSEL",
+      "53": "GND",
+      "54": "AVDD",
+      "55": "VCAP3",
+      "56": "AVDD",
+      "57": "GND",
+      "58": "GND",
+      "59": "AVDD",
+      "60": null,
+      "61": "RLDINV",
+      "62": "AVDD",
+      "63": "RLDOUT",
+      "64": "WCT"
+    },
+    "pins": {
+      "16": {
+        "name": "IN1P",
+        "type": "input"
+      },
+      "15": {
+        "name": "IN1N",
+        "type": "input"
+      },
+      "14": {
+        "name": "IN2P",
+        "type": "input"
+      },
+      "13": {
+        "name": "IN2N",
+        "type": "input"
+      },
+      "12": {
+        "name": "IN3P",
+        "type": "input"
+      },
+      "11": {
+        "name": "IN3N",
+        "type": "input"
+      },
+      "10": {
+        "name": "IN4P",
+        "type": "input"
+      },
+      "9": {
+        "name": "IN4N",
+        "type": "input"
+      },
+      "8": {
+        "name": "IN5P",
+        "type": "input"
+      },
+      "7": {
+        "name": "IN5N",
+        "type": "input"
+      },
+      "6": {
+        "name": "IN6P",
+        "type": "input"
+      },
+      "5": {
+        "name": "IN6N",
+        "type": "input"
+      },
+      "4": {
+        "name": "IN7P_UNUSED",
+        "type": "input"
+      },
+      "3": {
+        "name": "IN7N_UNUSED",
+        "type": "input"
+      },
+      "2": {
+        "name": "IN8P_UNUSED",
+        "type": "input"
+      },
+      "1": {
+        "name": "IN8N_UNUSED",
+        "type": "input"
+      },
+      "17": {
+        "name": "TESTP_PACE1",
+        "type": "passive"
+      },
+      "18": {
+        "name": "TESTN_PACE2",
+        "type": "passive"
+      },
+      "60": {
+        "name": "RLDREF",
+        "type": "passive"
+      },
+      "61": {
+        "name": "RLDINV",
+        "type": "passive"
+      },
+      "62": {
+        "name": "RLDIN",
+        "type": "passive"
+      },
+      "63": {
+        "name": "RLDOUT",
+        "type": "passive"
+      },
+      "64": {
+        "name": "WCT",
+        "type": "passive"
+      },
+      "24": {
+        "name": "VREFP",
+        "type": "passive"
+      },
+      "25": {
+        "name": "VREFN",
+        "type": "passive"
+      },
+      "28": {
+        "name": "VCAP1",
+        "type": "passive"
+      },
+      "30": {
+        "name": "VCAP2",
+        "type": "passive"
+      },
+      "55": {
+        "name": "VCAP3",
+        "type": "passive"
+      },
+      "26": {
+        "name": "VCAP4",
+        "type": "passive"
+      },
+      "27": {
+        "name": "NC",
+        "type": "passive"
+      },
+      "29": {
+        "name": "NC",
+        "type": "passive"
+      },
+      "34": {
+        "name": "DIN",
+        "type": "input"
+      },
+      "43": {
+        "name": "DOUT",
+        "type": "output"
+      },
+      "40": {
+        "name": "SCLK",
+        "type": "input"
+      },
+      "39": {
+        "name": "~{CS}",
+        "type": "input"
+      },
+      "47": {
+        "name": "~{DRDY}",
+        "type": "output"
+      },
+      "36": {
+        "name": "~{RESET}",
+        "type": "input"
+      },
+      "35": {
+        "name": "~{PWDN}",
+        "type": "input"
+      },
+      "38": {
+        "name": "START",
+        "type": "input"
+      },
+      "52": {
+        "name": "CLKSEL",
+        "type": "input"
+      },
+      "37": {
+        "name": "CLK",
+        "type": "bidirectional"
+      },
+      "41": {
+        "name": "DAISY_IN",
+        "type": "input"
+      },
+      "31": {
+        "name": "RESV1",
+        "type": "input"
+      },
+      "42": {
+        "name": "GPIO1",
+        "type": "bidirectional"
+      },
+      "44": {
+        "name": "GPIO2",
+        "type": "bidirectional"
+      },
+      "45": {
+        "name": "GPIO3",
+        "type": "bidirectional"
+      },
+      "46": {
+        "name": "GPIO4",
+        "type": "bidirectional"
+      },
+      "19": {
+        "name": "AVDD",
+        "type": "power_in"
+      },
+      "21": {
+        "name": "AVDD",
+        "type": "power_in"
+      },
+      "22": {
+        "name": "AVDD",
+        "type": "power_in"
+      },
+      "54": {
+        "name": "AVDD1",
+        "type": "power_in"
+      },
+      "56": {
+        "name": "AVDD",
+        "type": "power_in"
+      },
+      "59": {
+        "name": "AVDD",
+        "type": "power_in"
+      },
+      "20": {
+        "name": "AVSS",
+        "type": "power_in"
+      },
+      "23": {
+        "name": "AVSS",
+        "type": "power_in"
+      },
+      "32": {
+        "name": "AVSS",
+        "type": "power_in"
+      },
+      "53": {
+        "name": "AVSS1",
+        "type": "power_in"
+      },
+      "57": {
+        "name": "AVSS",
+        "type": "power_in"
+      },
+      "58": {
+        "name": "AVSS",
+        "type": "power_in"
+      },
+      "48": {
+        "name": "DVDD",
+        "type": "power_in"
+      },
+      "50": {
+        "name": "DVDD",
+        "type": "power_in"
+      },
+      "33": {
+        "name": "DGND",
+        "type": "power_in"
+      },
+      "49": {
+        "name": "DGND",
+        "type": "power_in"
+      },
+      "51": {
+        "name": "DGND",
+        "type": "power_in"
+      }
+    }
+  },
+  "C14": {
+    "ref": "C14",
+    "value": "10u",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "mpn": "C1206C106K4PACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C1206C106K4PACTU",
+    "description": "10u; X5R 10% 16V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VREFP",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C15": {
+    "ref": "C15",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VREFP",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C16": {
+    "ref": "C16",
+    "value": "22u",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "mpn": "C1210C226K4PACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C1210C226K4PACTU",
+    "description": "22u; X5R 10% 16V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VCAP1",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C17": {
+    "ref": "C17",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VCAP1",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C18": {
+    "ref": "C18",
+    "value": "1u",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C105K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C105K4RACTU",
+    "description": "1u; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VCAP2",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C19": {
+    "ref": "C19",
+    "value": "1u",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C105K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C105K4RACTU",
+    "description": "1u; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VCAP3",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C20": {
+    "ref": "C20",
+    "value": "1u",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C105K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C105K4RACTU",
+    "description": "1u; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VCAP4",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C21": {
+    "ref": "C21",
+    "value": "1n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C102J5GACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C102J5GACTU",
+    "description": "1n; C0G 5% 50V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "WCT",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C22": {
+    "ref": "C22",
+    "value": "1u",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C105K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C105K4RACTU",
+    "description": "1u; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R10": {
+    "ref": "R10",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; Unused ADS GPIO pulldown; leave configured as input",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "ADS_GPIO1",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R11": {
+    "ref": "R11",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; Unused ADS GPIO pulldown; leave configured as input",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "ADS_GPIO2",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R12": {
+    "ref": "R12",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; Unused ADS GPIO pulldown; leave configured as input",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "ADS_GPIO3",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R13": {
+    "ref": "R13",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; Unused ADS GPIO pulldown; leave configured as input",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "ADS_GPIO4",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R14": {
+    "ref": "R14",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "3V3_D",
+      "2": "ADS_CLKSEL"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R15": {
+    "ref": "R15",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; 10k pulldown; optional clock output remains disabled",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "ADS_CLK_UNUSED",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "TP3": {
+    "ref": "TP3",
+    "value": "VREFP",
+    "symbol": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "datasheet": "",
+    "description": "Bench test point; use high impedance probe",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VREFP"
+    },
+    "pins": {
+      "1": {
+        "name": "TP",
+        "type": "passive"
+      }
+    }
+  },
+  "TP4": {
+    "ref": "TP4",
+    "value": "VCAP1",
+    "symbol": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "datasheet": "",
+    "description": "Bench test point; use high impedance probe",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "VCAP1"
+    },
+    "pins": {
+      "1": {
+        "name": "TP",
+        "type": "passive"
+      }
+    }
+  },
+  "TP5": {
+    "ref": "TP5",
+    "value": "ADS_DRDY_N",
+    "symbol": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "datasheet": "",
+    "description": "Bench test point; use high impedance probe",
+    "dnp": false,
+    "sheet": 3,
+    "nets": {
+      "1": "ADS_DRDY_N"
+    },
+    "pins": {
+      "1": {
+        "name": "TP",
+        "type": "passive"
+      }
+    }
+  },
+  "J2": {
+    "ref": "J2",
+    "value": "CH1: P / N / SHIELD",
+    "symbol": "CONN3",
+    "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "description": "JST PH 3-pin; pin1 positive electrode, pin2 negative electrode, pin3 shield (NC A4S)",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E1P",
+      "2": "E1N",
+      "3": null
+    },
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      },
+      "3": {
+        "name": "3",
+        "type": "passive"
+      }
+    }
+  },
+  "R111": {
+    "ref": "R111",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E1P",
+      "2": "CLAMP1P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R112": {
+    "ref": "R112",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E1N",
+      "2": "CLAMP1N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "U3": {
+    "ref": "U3",
+    "value": "TPD4E001DBVR",
+    "symbol": "TPD4E001_DBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "mpn": "TPD4E001DBVR",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf",
+    "description": "FIT. Input clamps after connector-series 22k; max leakage rating is not a typical noise promise",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP1P",
+      "2": "GND",
+      "3": null,
+      "4": null,
+      "5": "AVDD",
+      "6": "CLAMP1N"
+    },
+    "pins": {
+      "1": {
+        "name": "IO1",
+        "type": "passive"
+      },
+      "6": {
+        "name": "IO4",
+        "type": "passive"
+      },
+      "5": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "IO2_UNUSED",
+        "type": "passive"
+      },
+      "4": {
+        "name": "IO3_UNUSED",
+        "type": "passive"
+      }
+    }
+  },
+  "R113": {
+    "ref": "R113",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP1P",
+      "2": "IN1P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R114": {
+    "ref": "R114",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP1N",
+      "2": "IN1N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C111": {
+    "ref": "C111",
+    "value": "1n8",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C182J5GACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C182J5GACTU",
+    "description": "1n8; C0G 5% 50V; 1.8 nF, C0G, 5%, 50 V, 0805; differential capacitor, not a cap to ground",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "IN1P",
+      "2": "IN1N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C112": {
+    "ref": "C112",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; 100 nF 16 V X7R bypass at TPD4E001 VCC pin5",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "J3": {
+    "ref": "J3",
+    "value": "CH2: P / N / SHIELD",
+    "symbol": "CONN3",
+    "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "description": "JST PH 3-pin; pin1 positive electrode, pin2 negative electrode, pin3 shield (NC A4S)",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E2P",
+      "2": "E2N",
+      "3": null
+    },
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      },
+      "3": {
+        "name": "3",
+        "type": "passive"
+      }
+    }
+  },
+  "R121": {
+    "ref": "R121",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E2P",
+      "2": "CLAMP2P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R122": {
+    "ref": "R122",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E2N",
+      "2": "CLAMP2N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "U4": {
+    "ref": "U4",
+    "value": "TPD4E001DBVR",
+    "symbol": "TPD4E001_DBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "mpn": "TPD4E001DBVR",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf",
+    "description": "FIT. Input clamps after connector-series 22k; max leakage rating is not a typical noise promise",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP2P",
+      "2": "GND",
+      "3": null,
+      "4": null,
+      "5": "AVDD",
+      "6": "CLAMP2N"
+    },
+    "pins": {
+      "1": {
+        "name": "IO1",
+        "type": "passive"
+      },
+      "6": {
+        "name": "IO4",
+        "type": "passive"
+      },
+      "5": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "IO2_UNUSED",
+        "type": "passive"
+      },
+      "4": {
+        "name": "IO3_UNUSED",
+        "type": "passive"
+      }
+    }
+  },
+  "R123": {
+    "ref": "R123",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP2P",
+      "2": "IN2P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R124": {
+    "ref": "R124",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP2N",
+      "2": "IN2N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C121": {
+    "ref": "C121",
+    "value": "1n8",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C182J5GACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C182J5GACTU",
+    "description": "1n8; C0G 5% 50V; 1.8 nF, C0G, 5%, 50 V, 0805; differential capacitor, not a cap to ground",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "IN2P",
+      "2": "IN2N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C122": {
+    "ref": "C122",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; 100 nF 16 V X7R bypass at TPD4E001 VCC pin5",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "J4": {
+    "ref": "J4",
+    "value": "CH3: P / N / SHIELD",
+    "symbol": "CONN3",
+    "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "description": "JST PH 3-pin; pin1 positive electrode, pin2 negative electrode, pin3 shield (NC A4S)",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E3P",
+      "2": "E3N",
+      "3": null
+    },
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      },
+      "3": {
+        "name": "3",
+        "type": "passive"
+      }
+    }
+  },
+  "R131": {
+    "ref": "R131",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E3P",
+      "2": "CLAMP3P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R132": {
+    "ref": "R132",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "E3N",
+      "2": "CLAMP3N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "U5": {
+    "ref": "U5",
+    "value": "TPD4E001DBVR",
+    "symbol": "TPD4E001_DBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "mpn": "TPD4E001DBVR",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf",
+    "description": "FIT. Input clamps after connector-series 22k; max leakage rating is not a typical noise promise",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP3P",
+      "2": "GND",
+      "3": null,
+      "4": null,
+      "5": "AVDD",
+      "6": "CLAMP3N"
+    },
+    "pins": {
+      "1": {
+        "name": "IO1",
+        "type": "passive"
+      },
+      "6": {
+        "name": "IO4",
+        "type": "passive"
+      },
+      "5": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "IO2_UNUSED",
+        "type": "passive"
+      },
+      "4": {
+        "name": "IO3_UNUSED",
+        "type": "passive"
+      }
+    }
+  },
+  "R133": {
+    "ref": "R133",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP3P",
+      "2": "IN3P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R134": {
+    "ref": "R134",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "CLAMP3N",
+      "2": "IN3N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C131": {
+    "ref": "C131",
+    "value": "1n8",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C182J5GACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C182J5GACTU",
+    "description": "1n8; C0G 5% 50V; 1.8 nF, C0G, 5%, 50 V, 0805; differential capacitor, not a cap to ground",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "IN3P",
+      "2": "IN3N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C132": {
+    "ref": "C132",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; 100 nF 16 V X7R bypass at TPD4E001 VCC pin5",
+    "dnp": false,
+    "sheet": 4,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "J5": {
+    "ref": "J5",
+    "value": "CH4: P / N / SHIELD",
+    "symbol": "CONN3",
+    "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "description": "JST PH 3-pin; pin1 positive electrode, pin2 negative electrode, pin3 shield (NC A4S)",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E4P",
+      "2": "E4N",
+      "3": null
+    },
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      },
+      "3": {
+        "name": "3",
+        "type": "passive"
+      }
+    }
+  },
+  "R141": {
+    "ref": "R141",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E4P",
+      "2": "CLAMP4P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R142": {
+    "ref": "R142",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E4N",
+      "2": "CLAMP4N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "U6": {
+    "ref": "U6",
+    "value": "TPD4E001DBVR",
+    "symbol": "TPD4E001_DBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "mpn": "TPD4E001DBVR",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf",
+    "description": "FIT. Input clamps after connector-series 22k; max leakage rating is not a typical noise promise",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP4P",
+      "2": "GND",
+      "3": null,
+      "4": null,
+      "5": "AVDD",
+      "6": "CLAMP4N"
+    },
+    "pins": {
+      "1": {
+        "name": "IO1",
+        "type": "passive"
+      },
+      "6": {
+        "name": "IO4",
+        "type": "passive"
+      },
+      "5": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "IO2_UNUSED",
+        "type": "passive"
+      },
+      "4": {
+        "name": "IO3_UNUSED",
+        "type": "passive"
+      }
+    }
+  },
+  "R143": {
+    "ref": "R143",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP4P",
+      "2": "IN4P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R144": {
+    "ref": "R144",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP4N",
+      "2": "IN4N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C141": {
+    "ref": "C141",
+    "value": "1n8",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C182J5GACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C182J5GACTU",
+    "description": "1n8; C0G 5% 50V; 1.8 nF, C0G, 5%, 50 V, 0805; differential capacitor, not a cap to ground",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "IN4P",
+      "2": "IN4N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C142": {
+    "ref": "C142",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; 100 nF 16 V X7R bypass at TPD4E001 VCC pin5",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "J6": {
+    "ref": "J6",
+    "value": "CH5: P / N / SHIELD",
+    "symbol": "CONN3",
+    "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "description": "JST PH 3-pin; pin1 positive electrode, pin2 negative electrode, pin3 shield (NC A4S)",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E5P",
+      "2": "E5N",
+      "3": null
+    },
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      },
+      "3": {
+        "name": "3",
+        "type": "passive"
+      }
+    }
+  },
+  "R151": {
+    "ref": "R151",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E5P",
+      "2": "CLAMP5P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R152": {
+    "ref": "R152",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E5N",
+      "2": "CLAMP5N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "U7": {
+    "ref": "U7",
+    "value": "TPD4E001DBVR",
+    "symbol": "TPD4E001_DBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "mpn": "TPD4E001DBVR",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf",
+    "description": "FIT. Input clamps after connector-series 22k; max leakage rating is not a typical noise promise",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP5P",
+      "2": "GND",
+      "3": null,
+      "4": null,
+      "5": "AVDD",
+      "6": "CLAMP5N"
+    },
+    "pins": {
+      "1": {
+        "name": "IO1",
+        "type": "passive"
+      },
+      "6": {
+        "name": "IO4",
+        "type": "passive"
+      },
+      "5": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "IO2_UNUSED",
+        "type": "passive"
+      },
+      "4": {
+        "name": "IO3_UNUSED",
+        "type": "passive"
+      }
+    }
+  },
+  "R153": {
+    "ref": "R153",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP5P",
+      "2": "IN5P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R154": {
+    "ref": "R154",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP5N",
+      "2": "IN5N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C151": {
+    "ref": "C151",
+    "value": "1n8",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C182J5GACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C182J5GACTU",
+    "description": "1n8; C0G 5% 50V; 1.8 nF, C0G, 5%, 50 V, 0805; differential capacitor, not a cap to ground",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "IN5P",
+      "2": "IN5N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C152": {
+    "ref": "C152",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; 100 nF 16 V X7R bypass at TPD4E001 VCC pin5",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "J7": {
+    "ref": "J7",
+    "value": "CH6: P / N / SHIELD",
+    "symbol": "CONN3",
+    "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "description": "JST PH 3-pin; pin1 positive electrode, pin2 negative electrode, pin3 shield (NC A4S)",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E6P",
+      "2": "E6N",
+      "3": null
+    },
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      },
+      "3": {
+        "name": "3",
+        "type": "passive"
+      }
+    }
+  },
+  "R161": {
+    "ref": "R161",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E6P",
+      "2": "CLAMP6P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R162": {
+    "ref": "R162",
+    "value": "22k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0722KL",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "E6N",
+      "2": "CLAMP6N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "U8": {
+    "ref": "U8",
+    "value": "TPD4E001DBVR",
+    "symbol": "TPD4E001_DBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "mpn": "TPD4E001DBVR",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf",
+    "description": "FIT. Input clamps after connector-series 22k; max leakage rating is not a typical noise promise",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP6P",
+      "2": "GND",
+      "3": null,
+      "4": null,
+      "5": "AVDD",
+      "6": "CLAMP6N"
+    },
+    "pins": {
+      "1": {
+        "name": "IO1",
+        "type": "passive"
+      },
+      "6": {
+        "name": "IO4",
+        "type": "passive"
+      },
+      "5": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "IO2_UNUSED",
+        "type": "passive"
+      },
+      "4": {
+        "name": "IO3_UNUSED",
+        "type": "passive"
+      }
+    }
+  },
+  "R163": {
+    "ref": "R163",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP6P",
+      "2": "IN6P"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R164": {
+    "ref": "R164",
+    "value": "24k9",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RT0805BRD0724K9L",
+    "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l",
+    "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "CLAMP6N",
+      "2": "IN6N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C161": {
+    "ref": "C161",
+    "value": "1n8",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C182J5GACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C182J5GACTU",
+    "description": "1n8; C0G 5% 50V; 1.8 nF, C0G, 5%, 50 V, 0805; differential capacitor, not a cap to ground",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "IN6P",
+      "2": "IN6N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C162": {
+    "ref": "C162",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; 100 nF 16 V X7R bypass at TPD4E001 VCC pin5",
+    "dnp": false,
+    "sheet": 5,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R21": {
+    "ref": "R21",
+    "value": "1M",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-071ML",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "1M; 1%; 0805; 0.125W; >=50V; 1 MOhm 1% 0805; TI typical feedback value",
+    "dnp": false,
+    "sheet": 6,
+    "nets": {
+      "1": "RLDOUT",
+      "2": "RLDINV"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C23": {
+    "ref": "C23",
+    "value": "1n5",
+    "symbol": "C",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C152J5GACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C152J5GACTU",
+    "description": "1n5; C0G 5% 50V; 1.5 nF 5% C0G 50 V; parallel feedback; TI typical value",
+    "dnp": false,
+    "sheet": 6,
+    "nets": {
+      "1": "RLDOUT",
+      "2": "RLDINV"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R22": {
+    "ref": "R22",
+    "value": "110k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-07110KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "110k; 1%; 0805; 0.125W; >=50V; 110k 1% 0805; first RLD output series resistor",
+    "dnp": false,
+    "sheet": 6,
+    "nets": {
+      "1": "RLDOUT",
+      "2": "RLD_CLAMP"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R23": {
+    "ref": "R23",
+    "value": "110k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-07110KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "110k; 1%; 0805; 0.125W; >=50V; 110k 1% 0805; second RLD output series resistor",
+    "dnp": false,
+    "sheet": 6,
+    "nets": {
+      "1": "RLD_CLAMP",
+      "2": "BIAS_ELECTRODE"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "J8": {
+    "ref": "J8",
+    "value": "BIAS: 1=RLD 2=NC",
+    "symbol": "CONN2",
+    "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+    "mpn": "B2B-PH-K-S(LF)(SN)",
+    "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "description": "Separate body bias pad; pin2 open. Connector differs from 3-pin sensing connectors.",
+    "dnp": false,
+    "sheet": 6,
+    "nets": {
+      "1": "BIAS_ELECTRODE",
+      "2": null
+    },
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      }
+    }
+  },
+  "U9": {
+    "ref": "U9",
+    "value": "TPD4E001DBVR",
+    "symbol": "TPD4E001_DBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "mpn": "TPD4E001DBVR",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf",
+    "description": "Bias clamp between two 110k resistors; unused IO2 open",
+    "dnp": false,
+    "sheet": 6,
+    "nets": {
+      "1": "RLD_CLAMP",
+      "2": "GND",
+      "3": null,
+      "4": null,
+      "5": "AVDD",
+      "6": null
+    },
+    "pins": {
+      "1": {
+        "name": "IO1",
+        "type": "passive"
+      },
+      "6": {
+        "name": "IO4",
+        "type": "passive"
+      },
+      "5": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "IO2_UNUSED",
+        "type": "passive"
+      },
+      "4": {
+        "name": "IO3_UNUSED",
+        "type": "passive"
+      }
+    }
+  },
+  "C24": {
+    "ref": "C24",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; ",
+    "dnp": false,
+    "sheet": 6,
+    "nets": {
+      "1": "AVDD",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "TP6": {
+    "ref": "TP6",
+    "value": "RLDOUT",
+    "symbol": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "datasheet": "",
+    "description": "RLD output bench check, before series resistance",
+    "dnp": false,
+    "sheet": 6,
+    "nets": {
+      "1": "RLDOUT"
+    },
+    "pins": {
+      "1": {
+        "name": "TP",
+        "type": "passive"
+      }
+    }
+  },
+  "A1": {
+    "ref": "A1",
+    "value": "Waveshare Tiny + 2x9 socket assembly",
+    "symbol": "WAVESHARE_TINY",
+    "footprint": "EMG_A4S:Waveshare_ESP32_S3_Tiny_Socket18",
+    "mpn": "ESP32-S3-Tiny-Kit (27070)",
+    "datasheet": "https://files.waveshare.com/wiki/ESP32-S3-Tiny/ESP32-S3-Tiny-Sch.pdf",
+    "description": "Waveshare SKU27069; KIT27070 includes adapter and FPC; 18 side socket contacts; bottom five omitted; 18x23.5mm body",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "VSYS",
+      "2": "GND",
+      "3": "3V3_D",
+      "4": "MCU_MOSI",
+      "5": "MCU_CS",
+      "6": null,
+      "7": null,
+      "8": null,
+      "9": null,
+      "10": null,
+      "11": null,
+      "12": null,
+      "13": "ADS_RESET_N",
+      "14": "ADS_PWDN_N",
+      "15": "ADS_START",
+      "16": "ADS_DRDY_N",
+      "17": "MCU_MISO",
+      "18": "MCU_SCLK"
+    },
+    "pins": {
+      "1": {
+        "name": "SYS5V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "3V3_OUT",
+        "type": "power_out"
+      },
+      "4": {
+        "name": "GPIO1",
+        "type": "bidirectional"
+      },
+      "5": {
+        "name": "GPIO2",
+        "type": "bidirectional"
+      },
+      "6": {
+        "name": "GPIO3",
+        "type": "bidirectional"
+      },
+      "7": {
+        "name": "GPIO4",
+        "type": "bidirectional"
+      },
+      "8": {
+        "name": "GPIO5",
+        "type": "bidirectional"
+      },
+      "9": {
+        "name": "GPIO6",
+        "type": "bidirectional"
+      },
+      "10": {
+        "name": "TX_GPIO43",
+        "type": "bidirectional"
+      },
+      "11": {
+        "name": "RX_GPIO44",
+        "type": "bidirectional"
+      },
+      "12": {
+        "name": "GPIO18",
+        "type": "bidirectional"
+      },
+      "18": {
+        "name": "GPIO12",
+        "type": "bidirectional"
+      },
+      "17": {
+        "name": "GPIO13",
+        "type": "bidirectional"
+      },
+      "16": {
+        "name": "GPIO14",
+        "type": "bidirectional"
+      },
+      "15": {
+        "name": "GPIO15",
+        "type": "bidirectional"
+      },
+      "14": {
+        "name": "GPIO16",
+        "type": "bidirectional"
+      },
+      "13": {
+        "name": "GPIO17",
+        "type": "bidirectional"
+      }
+    }
+  },
+  "R31": {
+    "ref": "R31",
+    "value": "33R",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0733RL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "33R; 1%; 0805; 0.125W; >=50V; Damping: R31-33 at Tiny, R34 at ADS1296",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "MCU_SCLK",
+      "2": "ADS_SCLK"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R32": {
+    "ref": "R32",
+    "value": "33R",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0733RL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "33R; 1%; 0805; 0.125W; >=50V; Damping: R31-33 at Tiny, R34 at ADS1296",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "MCU_MOSI",
+      "2": "ADS_DIN"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R33": {
+    "ref": "R33",
+    "value": "33R",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0733RL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "33R; 1%; 0805; 0.125W; >=50V; Damping: R31-33 at Tiny, R34 at ADS1296",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "MCU_CS",
+      "2": "ADS_CS_N"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R34": {
+    "ref": "R34",
+    "value": "33R",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0733RL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "33R; 1%; 0805; 0.125W; >=50V; Damping: R31-33 at Tiny, R34 at ADS1296",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "ADS_DOUT",
+      "2": "MCU_MISO"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R35": {
+    "ref": "R35",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "ADS_CS_N",
+      "2": "3V3_D"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R36": {
+    "ref": "R36",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "ADS_RESET_N",
+      "2": "3V3_D"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R37": {
+    "ref": "R37",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "ADS_PWDN_N",
+      "2": "3V3_D"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "R38": {
+    "ref": "R38",
+    "value": "10k",
+    "symbol": "R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "mpn": "RC0805FR-0710KL",
+    "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "description": "10k; 1%; 0805; 0.125W; >=50V; ",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "ADS_START",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "C26": {
+    "ref": "C26",
+    "value": "100n",
+    "symbol": "C_V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "C0805C104K4RACTU",
+    "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU",
+    "description": "100n; X7R 10% 16V; Carrier bypass at Tiny 3V3 output; no extra 22uF bulk",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "~",
+        "type": "passive"
+      },
+      "2": {
+        "name": "~",
+        "type": "passive"
+      }
+    }
+  },
+  "TP7": {
+    "ref": "TP7",
+    "value": "3V3_D",
+    "symbol": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "datasheet": "",
+    "description": "Tiny digital supply output test pad",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "3V3_D"
+    },
+    "pins": {
+      "1": {
+        "name": "TP",
+        "type": "passive"
+      }
+    }
+  },
+  "TP8": {
+    "ref": "TP8",
+    "value": "GND",
+    "symbol": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "datasheet": "",
+    "description": "Ground test pad",
+    "dnp": false,
+    "sheet": 7,
+    "nets": {
+      "1": "GND"
+    },
+    "pins": {
+      "1": {
+        "name": "TP",
+        "type": "passive"
+      }
+    }
+  },
+  "H1": {
+    "ref": "H1",
+    "value": "M3 NPTH",
+    "symbol": "MECH",
+    "footprint": "MountingHole:MountingHole_3.2mm_M3",
+    "mpn": "M3 nylon screw + spacer",
+    "datasheet": "",
+    "description": "3.2mm NPTH,nylon mounting hardware",
+    "dnp": false,
+    "sheet": 1,
+    "nets": {},
+    "pins": {}
+  },
+  "H2": {
+    "ref": "H2",
+    "value": "M3 NPTH",
+    "symbol": "MECH",
+    "footprint": "MountingHole:MountingHole_3.2mm_M3",
+    "mpn": "M3 nylon screw + spacer",
+    "datasheet": "",
+    "description": "3.2mm NPTH,nylon mounting hardware",
+    "dnp": false,
+    "sheet": 1,
+    "nets": {},
+    "pins": {}
+  },
+  "H3": {
+    "ref": "H3",
+    "value": "M3 NPTH",
+    "symbol": "MECH",
+    "footprint": "MountingHole:MountingHole_3.2mm_M3",
+    "mpn": "M3 nylon screw + spacer",
+    "datasheet": "",
+    "description": "3.2mm NPTH,nylon mounting hardware",
+    "dnp": false,
+    "sheet": 1,
+    "nets": {},
+    "pins": {}
+  },
+  "H4": {
+    "ref": "H4",
+    "value": "M3 NPTH",
+    "symbol": "MECH",
+    "footprint": "MountingHole:MountingHole_3.2mm_M3",
+    "mpn": "M3 nylon screw + spacer",
+    "datasheet": "",
+    "description": "3.2mm NPTH,nylon mounting hardware",
+    "dnp": false,
+    "sheet": 1,
+    "nets": {},
+    "pins": {}
+  }
+}

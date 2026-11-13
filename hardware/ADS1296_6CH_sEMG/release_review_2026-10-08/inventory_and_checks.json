@@ -1,0 +1,409 @@
+{
+  "checked_at_utc": "2026-10-08T09:05:01.663534+00:00",
+  "board_sha256": "adb9748b6987b523c18c6ec353b9b18b20cc3a62a4169fec022da6b388176e3e",
+  "native_connectivity_and_inventory_passed": true,
+  "issues": [],
+  "fresh_checks": {
+    "drc": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "erc": 0
+  },
+  "dimensions_mm": [
+    100.0,
+    80.0
+  ],
+  "copper_layers": 4,
+  "board_thickness_mm": 1.6,
+  "footprints": 113,
+  "bom_component_positions": 101,
+  "backside": [
+    "C14",
+    "C23",
+    "C27",
+    "R21"
+  ],
+  "tracks": 686,
+  "vias": 122,
+  "track_layers": {
+    "F.Cu": 530,
+    "In2.Cu": 81,
+    "B.Cu": 75
+  },
+  "smallest_track_width_mm": 0.15,
+  "local_footprint_types": 17,
+  "missing_local_footprints": [],
+  "child_schematics": [
+    "02_power.kicad_sch",
+    "03_ads1296.kicad_sch",
+    "07_waveshare_tiny.kicad_sch",
+    "04_inputs_1_3.kicad_sch",
+    "05_inputs_4_6.kicad_sch",
+    "06_body_bias.kicad_sch"
+  ],
+  "missing_child_schematics": [],
+  "grouped_bom": [
+    {
+      "mpn": "B2B-XH-A(LF)(SN)",
+      "refs": [
+        "J1"
+      ],
+      "quantity_per_board": 1,
+      "value": "REGULATED 5V IN",
+      "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "description": "5.0-5.25V regulated source, not raw Li-ion; use battery OR USB for initial tests",
+      "datasheet": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
+    },
+    {
+      "mpn": "MF-MSMF075-2",
+      "refs": [
+        "F1"
+      ],
+      "quantity_per_board": 1,
+      "value": "750mA PTC",
+      "footprint": "Fuse:Fuse_1812_4532Metric",
+      "description": "0.75A hold / 1.5A trip,13.2V; battery branch only",
+      "datasheet": "https://www.bourns.com/docs/product-datasheets/mfmsmf.pdf"
+    },
+    {
+      "mpn": "JS102011SAQN",
+      "refs": [
+        "SW1"
+      ],
+      "quantity_per_board": 1,
+      "value": "BATTERY ENABLE",
+      "footprint": "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN",
+      "description": "SPDT switches MOSFET gate only; USB stays powered with switch OFF",
+      "datasheet": "https://www.ckswitches.com/media/1422/js.pdf"
+    },
+    {
+      "mpn": "AO3401A",
+      "refs": [
+        "Q1"
+      ],
+      "quantity_per_board": 1,
+      "value": "AO3401A",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "description": "S=2, D=3, G=1; P-channel battery high-side switch",
+      "datasheet": "https://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
+    },
+    {
+      "mpn": "RC0805FR-07100KL",
+      "refs": [
+        "R47"
+      ],
+      "quantity_per_board": 1,
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "description": "100k; 1%; 0805; 0.125W; >=50V; Default battery OFF",
+      "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    },
+    {
+      "mpn": "SS14",
+      "refs": [
+        "D1"
+      ],
+      "quantity_per_board": 1,
+      "value": "SS14",
+      "footprint": "Diode_SMD:D_SMA",
+      "description": "Cathode1=VSYS,anode2=BAT_SWITCHED; blocks USB backfeed to battery",
+      "datasheet": "https://www.diodes.com/assets/Datasheets/ds23001.pdf"
+    },
+    {
+      "mpn": "C0805C104K4RACTU",
+      "refs": [
+        "C1",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C10",
+        "C12",
+        "C13",
+        "C15",
+        "C17",
+        "C112",
+        "C122",
+        "C132",
+        "C142",
+        "C152",
+        "C162",
+        "C24",
+        "C26"
+      ],
+      "quantity_per_board": 19,
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "description": "100n; X7R 10% 16V; Additional carrier bypass; Tiny has its own 10uF input capacitor",
+      "datasheet": "https://yageogroup.com/download/specsheet/C0805C104K4RACTU"
+    },
+    {
+      "mpn": "LP5907MFX-3.3/NOPB",
+      "refs": [
+        "U2"
+      ],
+      "quantity_per_board": 1,
+      "value": "LP5907MFX-3.3/NOPB",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "description": "3.3V 250mA low-noise LDO; SOT23-5; analogue supply only",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/lp5907.pdf"
+    },
+    {
+      "mpn": "C0805C225K4RACTU",
+      "refs": [
+        "C2",
+        "C3"
+      ],
+      "quantity_per_board": 2,
+      "value": "2u2",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "description": "2u2; X7R 10% 16V; ",
+      "datasheet": "https://yageogroup.com/download/specsheet/C0805C225K4RACTU"
+    },
+    {
+      "mpn": "C0805C105K4RACTU",
+      "refs": [
+        "C27",
+        "C11",
+        "C18",
+        "C19",
+        "C20",
+        "C22"
+      ],
+      "quantity_per_board": 6,
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "description": "1u; X7R 10% 16V; Local AVDD1 pin54 bulk",
+      "datasheet": "https://yageogroup.com/download/specsheet/C0805C105K4RACTU"
+    },
+    {
+      "mpn": "ADS1296IPAG",
+      "refs": [
+        "U1"
+      ],
+      "quantity_per_board": 1,
+      "value": "ADS1296IPAG",
+      "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "description": "All 64 pins transcribed from TI SBAS459K pp10-11; non-respiration 6-channel version",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/ads1298.pdf"
+    },
+    {
+      "mpn": "C1206C106K4PACTU",
+      "refs": [
+        "C14"
+      ],
+      "quantity_per_board": 1,
+      "value": "10u",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "description": "10u; X5R 10% 16V; ",
+      "datasheet": "https://yageogroup.com/download/specsheet/C1206C106K4PACTU"
+    },
+    {
+      "mpn": "C1210C226K4PACTU",
+      "refs": [
+        "C16"
+      ],
+      "quantity_per_board": 1,
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "description": "22u; X5R 10% 16V; ",
+      "datasheet": "https://yageogroup.com/download/specsheet/C1210C226K4PACTU"
+    },
+    {
+      "mpn": "C0805C102J5GACTU",
+      "refs": [
+        "C21"
+      ],
+      "quantity_per_board": 1,
+      "value": "1n",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "description": "1n; C0G 5% 50V; ",
+      "datasheet": "https://yageogroup.com/download/specsheet/C0805C102J5GACTU"
+    },
+    {
+      "mpn": "RC0805FR-0710KL",
+      "refs": [
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R35",
+        "R36",
+        "R37",
+        "R38"
+      ],
+      "quantity_per_board": 10,
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "description": "10k; 1%; 0805; 0.125W; >=50V; Unused ADS GPIO pulldown; leave configured as input",
+      "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    },
+    {
+      "mpn": "B3B-PH-K-S(LF)(SN)",
+      "refs": [
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7"
+      ],
+      "quantity_per_board": 6,
+      "value": "CH1: P / N / SHIELD",
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+      "description": "JST PH 3-pin; pin1 positive electrode, pin2 negative electrode, pin3 shield (NC A4S)",
+      "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+    },
+    {
+      "mpn": "RT0805BRD0722KL",
+      "refs": [
+        "R111",
+        "R112",
+        "R121",
+        "R122",
+        "R131",
+        "R132",
+        "R141",
+        "R142",
+        "R151",
+        "R152",
+        "R161",
+        "R162"
+      ],
+      "quantity_per_board": 12,
+      "value": "22k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "description": "22k; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l"
+    },
+    {
+      "mpn": "TPD4E001DBVR",
+      "refs": [
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8",
+        "U9"
+      ],
+      "quantity_per_board": 7,
+      "value": "TPD4E001DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "description": "FIT. Input clamps after connector-series 22k; max leakage rating is not a typical noise promise",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tpd4e001.pdf"
+    },
+    {
+      "mpn": "RT0805BRD0724K9L",
+      "refs": [
+        "R113",
+        "R114",
+        "R123",
+        "R124",
+        "R133",
+        "R134",
+        "R143",
+        "R144",
+        "R153",
+        "R154",
+        "R163",
+        "R164"
+      ],
+      "quantity_per_board": 12,
+      "value": "24k9",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "description": "24k9; 0.1%, <=25 ppm/K; 0805; 0.125W; >=50V; ",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l"
+    },
+    {
+      "mpn": "C0805C182J5GACTU",
+      "refs": [
+        "C111",
+        "C121",
+        "C131",
+        "C141",
+        "C151",
+        "C161"
+      ],
+      "quantity_per_board": 6,
+      "value": "1n8",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "description": "1n8; C0G 5% 50V; 1.8 nF, C0G, 5%, 50 V, 0805; differential capacitor, not a cap to ground",
+      "datasheet": "https://yageogroup.com/download/specsheet/C0805C182J5GACTU"
+    },
+    {
+      "mpn": "RC0805FR-071ML",
+      "refs": [
+        "R21"
+      ],
+      "quantity_per_board": 1,
+      "value": "1M",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "description": "1M; 1%; 0805; 0.125W; >=50V; 1 MOhm 1% 0805; TI typical feedback value",
+      "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    },
+    {
+      "mpn": "C0805C152J5GACTU",
+      "refs": [
+        "C23"
+      ],
+      "quantity_per_board": 1,
+      "value": "1n5",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "description": "1n5; C0G 5% 50V; 1.5 nF 5% C0G 50 V; parallel feedback; TI typical value",
+      "datasheet": "https://yageogroup.com/download/specsheet/C0805C152J5GACTU"
+    },
+    {
+      "mpn": "RC0805FR-07110KL",
+      "refs": [
+        "R22",
+        "R23"
+      ],
+      "quantity_per_board": 2,
+      "value": "110k",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "description": "110k; 1%; 0805; 0.125W; >=50V; 110k 1% 0805; first RLD output series resistor",
+      "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    },
+    {
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "refs": [
+        "J8"
+      ],
+      "quantity_per_board": 1,
+      "value": "BIAS: 1=RLD 2=NC",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "description": "Separate body bias pad; pin2 open. Connector differs from 3-pin sensing connectors.",
+      "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+    },
+    {
+      "mpn": "ESP32-S3-Tiny-Kit (27070)",
+      "refs": [
+        "A1"
+      ],
+      "quantity_per_board": 1,
+      "value": "Waveshare Tiny + 2x9 socket assembly",
+      "footprint": "EMG_A4S:Waveshare_ESP32_S3_Tiny_Socket18",
+      "description": "Waveshare SKU27069; KIT27070 includes adapter and FPC; 18 side socket contacts; bottom five omitted; 18x23.5mm body",
+      "datasheet": "https://files.waveshare.com/wiki/ESP32-S3-Tiny/ESP32-S3-Tiny-Sch.pdf"
+    },
+    {
+      "mpn": "RC0805FR-0733RL",
+      "refs": [
+        "R31",
+        "R32",
+        "R33",
+        "R34"
+      ],
+      "quantity_per_board": 4,
+      "value": "33R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "description": "33R; 1%; 0805; 0.125W; >=50V; Damping: R31-33 at Tiny, R34 at ADS1296",
+      "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    }
+  ],
+  "scope": "Read-only geometric, inventory and connectivity checks; not electrical simulation, measured noise, safety certification, socket-fit or ML validation."
+}

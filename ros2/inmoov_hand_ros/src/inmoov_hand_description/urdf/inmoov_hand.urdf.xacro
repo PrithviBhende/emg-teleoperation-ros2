@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<robot name="inmoov_hand" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Include configurations -->
+  <xacro:include filename="$(find inmoov_hand_description)/urdf/config.joints.urdf.xacro" />
+  <xacro:include filename="$(find inmoov_hand_description)/urdf/config.inertial.urdf.xacro" />
+  <xacro:include filename="$(find inmoov_hand_description)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find inmoov_hand_description)/urdf/asmHand.urdf.xacro" />
+
+  <!-- World anchor link so the robotic hand is rigidly fixed in Gazebo space -->
+  <link name="world"/>
+
+  <!-- Sleek desktop pedestal / mount stand -->
+  <link name="stand_base">
+    <!-- Desktop mounting baseplate -->
+    <visual>
+      <geometry>
+        <box size="0.22 0.22 0.015"/>
+      </geometry>
+      <origin xyz="0 0 0.0075" rpy="0 0 0"/>
+      <material name="cbase">
+        <color rgba="0.15 0.15 0.15 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.22 0.22 0.015"/>
+      </geometry>
+      <origin xyz="0 0 0.0075" rpy="0 0 0"/>
+    </collision>
+
+    <!-- Slender vertical support column below the wrist -->
+    <visual>
+      <geometry>
+        <cylinder length="0.18" radius="0.018"/>
+      </geometry>
+      <origin xyz="0 0 0.105" rpy="0 0 0"/>
+      <material name="cframe">
+        <color rgba="0.30 0.30 0.30 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.18" radius="0.018"/>
+      </geometry>
+      <origin xyz="0 0 0.105" rpy="0 0 0"/>
+    </collision>
+
+    <!-- Wrist adapter collar -->
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.035"/>
+      </geometry>
+      <origin xyz="0 0 0.1925" rpy="0 0 0"/>
+      <material name="cbase">
+        <color rgba="0.15 0.15 0.15 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.015" radius="0.035"/>
+      </geometry>
+      <origin xyz="0 0 0.1925" rpy="0 0 0"/>
+    </collision>
+
+    <inertial>
+      <mass value="3.0"/>
+      <origin xyz="0 0 0.08" rpy="0 0 0"/>
+      <inertia ixx="0.02" ixy="0" ixz="0" iyy="0.02" iyz="0" izz="0.015"/>
+    </inertial>
+  </link>
+
+  <joint name="world_to_stand_joint" type="fixed">
+    <parent link="world"/>
+    <child link="stand_base"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Mount the InMoov Right Hand atop the stand oriented straight UP.
+       rpy="0 3.14159265 0" inverts the hand so fingers point straight UP (+Z) 
+       and the palm faces forward (+X), completely above the mounting stand! -->
+  <joint name="stand_to_hand_joint" type="fixed">
+    <parent link="stand_base"/>
+    <child link="r_hand_link"/>
+    <origin xyz="0 0 0.20" rpy="0 3.14159265 0"/>
+  </joint>
+
+  <!-- Instantiate Right InMoov Hand with realistic meshes -->
+  <xacro:hand side="r" flip="1" covers="yes" />
+
+  <!-- Gazebo Material Renderings -->
+  <gazebo reference="stand_base">
+    <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  <gazebo reference="r_hand_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="r_handcover_link">
+    <material>Gazebo/White</material>
+  </gazebo>
+  <gazebo reference="r_thumb1_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_thumb2_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_thumb3_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_index1_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_index2_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_index3_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_middle1_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_middle2_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_middle3_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_ring1_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_ring2_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_ring3_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_ring4_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_pinky1_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_pinky2_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_pinky3_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="r_pinky4_link"><material>Gazebo/White</material></gazebo>
+
+  <!-- ROS 2 Control Hardware Interface for Gazebo -->
+  <!-- Declaring all 17 revolute joints ensures Gazebo holds every phalanx firmly against gravity -->
+  <ros2_control name="InMoovHandGazebo" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    
+    <!-- Thumb Joints -->
+    <joint name="r_thumb1_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_thumb_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_thumb3_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+
+    <!-- Index Joints -->
+    <joint name="r_index1_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_index_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_index3_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+
+    <!-- Middle Joints -->
+    <joint name="r_middle1_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_middle_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_middle3_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+
+    <!-- Ring Joints -->
+    <joint name="r_ring1_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_ring_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_ring3_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_ring4_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+
+    <!-- Pinky Joints -->
+    <joint name="r_pinky1_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_pinky_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_pinky3_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+    <joint name="r_pinky4_joint">
+      <command_interface name="position"><param name="min">0.0</param><param name="max">1.5708</param></command_interface>
+      <state_interface name="position"/><state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <!-- Gazebo ROS 2 Control Plugin -->
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>$(find inmoov_hand_description)/config/hand_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+</robot>
