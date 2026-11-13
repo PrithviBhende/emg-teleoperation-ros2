@@ -20,6 +20,9 @@ An end-to-end cyber-physical pipeline integrating **surface electromyography (sE
 5. [Signal Processing, Feature Sets (A to G) & ML Models](#5-signal-processing-feature-sets-a-to-g--ml-models)
 6. [ROS 2 & Gazebo Virtual Robotic Hand Simulation](#6-ros-2--gazebo-virtual-robotic-hand-simulation)
 7. [Experimental Results & Benchmark Performance](#7-experimental-results--benchmark-performance)
+   - [Master Benchmark Evaluation Table](#master-benchmark-evaluation-table)
+   - [Waveform Characteristics (All 8 Gestures)](#waveform-characteristics)
+   - [Training Results & Graphical Representations (`results/training_results/`)](#-training-results--graphical-representations-directory)
 8. [Step-by-Step Guide: How to Make It Work](#8-step-by-step-guide-how-to-make-it-work)
 9. [Relative Repositories, Documentation & References](#9-relative-repositories-documentation--references)
 
@@ -287,18 +290,46 @@ Comprehensive benchmarking was performed across 9 distinct experimental protocol
 | **9** | `rest, thumb, index, fist` (Placement P3) | 4 | 80 | **`G_TF8__SVM`** | **96.3%** | 30 | **83.3%** | 0.8765 | 63.3% | **90.0%** (`27/30`) |
 
 ### Waveform Characteristics
-Mean window RMS waveforms ($\pm 1\text{ SD}$) across training trials demonstrate distinct physiological contraction envelopes:
+Mean window RMS waveforms ($\pm 1\text{ SD}$) across training trials demonstrate distinct physiological contraction envelopes across all 8 evaluated movements and fingers:
 
-| Rest Baseline | Index Finger Flexion | Middle Finger Flexion | Power Fist |
+#### Individual Digits & Rest Baseline
+| Rest Baseline | Thumb Flexion | Index Finger Flexion | Middle Finger Flexion |
 |:---:|:---:|:---:|:---:|
-| ![Rest](docs/images/waveforms/rest_mean_RMS.png) | ![Index](docs/images/waveforms/index_mean_RMS.png) | ![Middle](docs/images/waveforms/middle_mean_RMS.png) | ![Fist](docs/images/waveforms/fist_mean_RMS.png) |
+| ![Rest](docs/images/waveforms/rest_mean_RMS.png) | ![Thumb](docs/images/waveforms/thumb_mean_RMS.png) | ![Index](docs/images/waveforms/index_mean_RMS.png) | ![Middle](docs/images/waveforms/middle_mean_RMS.png) |
 
-### 2D & 3D Feature Projections
-Principal Component Analysis (PCA) projections illustrate cluster separability and non-linear decision boundaries:
-* **2D Decision Boundaries**:
+#### Central / Ulnar Digits & Compound Grasps
+| Ring Finger Flexion | Little Finger Flexion | Precision Pinch | Power Fist |
+|:---:|:---:|:---:|:---:|
+| ![Ring](docs/images/waveforms/ring_mean_RMS.png) | ![Little](docs/images/waveforms/little_mean_RMS.png) | ![Pinch](docs/images/waveforms/pinch_mean_RMS.png) | ![Fist](docs/images/waveforms/fist_mean_RMS.png) |
+
+---
+
+### 2D & 3D Feature Projections & Decision Boundaries
+
+Principal Component Analysis (PCA) projections illustrate cluster separability, spatial cluster distributions, and non-linear decision boundaries for LDA, SVM, and KNN classifiers.
+
+* **Sample 2D Decision Boundaries (Placement P3, 4 Gestures, TF8 Features)**:
   ![2D Projections](docs/images/projections/P01_P3_4_gestures_training_KNN_SVM_LDA_2D.png)
-* **3D Decision Boundaries**:
+* **Sample 3D Decision Boundaries (Placement P3, 4 Gestures, TF8 Features)**:
   ![3D Projections](docs/images/projections/P01_P3_4_gestures_training_KNN_SVM_LDA_3D.png)
+
+#### 📁 Training Results & Graphical Representations Directory
+
+All graphical representation pictures (2D projections, 3D projections, and continuous probability gradient heatmaps) are organized into test-specific folders named by the exact fingers tested in the **[`results/training_results/`](results/training_results/)** archive:
+
+| Test Folder | Tested Fingers / Movements | Gestures ($N$) | Champion Model | CV Accuracy | Test Accuracy |
+|:---|:---|:---:|:---|:---:|:---:|
+| [**`01_rest_index_fist`**](results/training_results/01_rest_index_fist/) | Rest, Index, Fist | 3 | `A_RMS__KNN` | **100.00%** | **100.00%** |
+| [**`02_rest_middle_fist`**](results/training_results/02_rest_middle_fist/) | Rest, Middle, Fist | 3 | `B_MAV__KNN` | **100.00%** | **100.00%** |
+| [**`03_ring_little`**](results/training_results/03_ring_little/) | Ring, Little (Hard Adjacent Pair) | 2 | `C_WL__KNN` / `F_MAV_MAX_MIN__SVM` | **70.00%** | **68.75%** (Best) |
+| [**`04_middle_ring_little`**](results/training_results/04_middle_ring_little/) | Middle, Ring, Little (Adjacent Central/Ulnar) | 3 | `D_TD4__LDA` / `G_TF8__KNN` | **76.67%** | **92.86%** (Best) |
+| [**`05_rest_thumb_index_middle_fist`**](results/training_results/05_rest_thumb_index_middle_fist/) | Rest, Thumb, Index, Middle, Fist | 5 | `G_TF8__SVM` | **98.00%** | **86.67%** |
+| [**`06_rest_thumb_index_pinch_fist`**](results/training_results/06_rest_thumb_index_pinch_fist/) | Rest, Thumb, Index, Pinch, Fist | 5 | `G_TF8__SVM` | **90.00%** | **92.31%** |
+| [**`07_all_8_gestures`**](results/training_results/07_all_8_gestures/) | All 8 Gestures (Cross-Day P1 Evaluation) | 8 | `G_TF8__SVM` | **76.40%** | **42.42%** |
+| [**`08_rest_index_fist_p3`**](results/training_results/08_rest_index_fist_p3/) | Rest, Index, Fist (Placement P3 Baseline) | 3 | `C_WL__KNN` | **100.00%** | **100.00%** |
+| [**`09_rest_thumb_index_fist_p3`**](results/training_results/09_rest_thumb_index_fist_p3/) | Rest, Thumb, Index, Fist (Placement P3 Multi-Session) | 4 | `G_TF8__SVM` / `F_MAV_MAX_MIN__KNN` | **96.25%** | **87.27%** (Best) |
+
+Each subfolder contains high-resolution 2D scatter plots, 3D rotating perspective plots, and continuous decision boundary gradient heatmaps across all 3 classifiers.
 
 ---
 
